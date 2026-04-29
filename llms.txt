@@ -1,6 +1,6 @@
 # Procura West
 
-> Outsourced procurement consulting for oil & gas and construction companies in Western Canada.
+> Your fractional procurement department for oil & gas and construction companies in Western Canada. Fractional CPO services, Procurement Health Check, and outsourced procurement consulting.
 
 ## About
 
@@ -10,6 +10,8 @@ We serve companies that need dedicated procurement expertise but don't want — 
 
 ## Services
 
+- Fractional CPO / Fractional Procurement Department: Outsourced procurement leadership
+- Free Procurement Health Check: We review your current setup and show you where the gaps are
 - Services Procurement: End-to-end contractor sourcing and management
 - T&M Contract Management: Time & materials administration, rate auditing, PO reconciliation
 - Vendor Evaluation: Supplier qualification, performance tracking, risk assessment
@@ -27,14 +29,15 @@ We serve companies that need dedicated procurement expertise but don't want — 
 ## Target Clients
 
 - CEOs, Presidents, CFOs, VPs of Operations, Project Management Directors
-- Companies with $20M–$100M+ revenue without in-house procurement
+- Companies with 50–500 employees and $20M–$500M revenue without in-house procurement
 - Companies in Western Canada, primarily Alberta
 
 ## Engagement Model
 
-- Monthly consulting packages (Foundation, Operations, Enterprise tiers)
+- Monthly consulting packages (Foundation from $2,500/mo, Operations from $5,500/mo, Enterprise from $10,000/mo)
 - No long-term contracts
 - Predictable monthly costs
+- Free Procurement Health Check as entry point
 - Ad-hoc project work also available
 
 ## Contact
