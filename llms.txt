@@ -13,7 +13,7 @@ We serve companies that need dedicated procurement expertise but don't want — 
 - Fractional CPO / Fractional Procurement Department: Outsourced procurement leadership
 - Free Procurement Health Check: We review your current setup and show you where the gaps are
 - Services Procurement: End-to-end contractor sourcing and management
-- T&M Contract Management: Time & materials administration, rate auditing, PO reconciliation
+- Contract Management: Time & materials administration, rate auditing, PO reconciliation
 - Vendor Evaluation: Supplier qualification, performance tracking, risk assessment
 - Spend Analysis: AI-driven spend categorization, trend identification, cost reduction
 - RFP/RFQ Management: Bid package development, evaluation, and award
