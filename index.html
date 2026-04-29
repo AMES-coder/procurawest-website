@@ -1,0 +1,1378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Outsourced procurement for oil & gas and construction in Calgary. Built for CEOs, CFOs, Presidents, VPs, and Directors who need procurement expertise without the full-time hire. Monthly packages, AI-powered.">
+<title>Procura West — Outsourced Procurement · Calgary</title>
+
+<link rel="icon" type="image/png" href="assets/procura_west_logo_icon.png">
+<meta property="og:image" content="https://procurawest.ca/assets/procura_west_logo.png">
+<meta property="og:image:alt" content="Procura West logo — mountain mark with tagline Built on Trust Driven by Results">
+<meta property="og:title" content="Procura West — Your Outsourced Procurement Department">
+<meta property="og:description" content="Services procurement, T&M contract management, and vendor evaluation for oil & gas and construction companies in Western Canada. Monthly packages. No long-term contracts.">
+<meta property="og:type" content="website">
+<link rel="canonical" href="https://procurawest.ca/">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<style>
+/* ============================================================
+   PROCURA WEST · BRAND-COMPLIANT
+   Headings:  Georgia (serif) — authority
+   Body:      Inter (sans)    — clarity
+   Palette:   Midnight → Deep → Signal · Ice · Slate · Steel
+   Copper:    reserved for the Enterprise/premium tier only
+   Tier map (per service_tiers.md):
+     Foundation  → Signal Blue
+     Operations  → Deep Blue
+     Enterprise  → Copper
+   ============================================================ */
+
+:root{
+  --midnight:#042C53;
+  --deep:#0C447C;
+  --signal:#185FA5;
+  --ice:#B5D4F4;
+  --slate:#5A7A9E;
+  --steel:#C8D4E0;
+  --offwhite:#F5F7FA;
+  --warm:#E8E6E3;
+  --copper:#C4844E;
+  --success:#2E7D4F;
+
+  --rule:rgba(4,44,83,.12);
+  --rule-strong:rgba(4,44,83,.3);
+  --ink:#042C53;
+  --muted:#5A7A9E;
+
+  --serif:Georgia, "Times New Roman", serif;
+  --sans:"Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
+  --mono:"Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
+
+  --pad:clamp(20px, 4vw, 56px);
+  --gutter:clamp(16px, 2vw, 28px);
+}
+
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+html,body{
+  background:var(--offwhite);color:var(--ink);
+  font-family:var(--sans);font-weight:400;font-size:16px;line-height:1.55;
+  -webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility;
+  overflow-x:hidden;
+}
+a{color:inherit;text-decoration:none}
+img{display:block;max-width:100%}
+button{font:inherit;cursor:pointer;background:none;border:0;color:inherit}
+::selection{background:var(--midnight);color:var(--offwhite)}
+.skip-link{position:absolute;left:-9999px;top:0;z-index:999;background:var(--midnight);color:var(--offwhite);padding:10px 14px}
+.skip-link:focus{left:8px;top:8px}
+
+.shell{max-width:1480px;margin:0 auto;padding:0 var(--pad);position:relative}
+
+/* Headings — Georgia with disciplined tracking */
+h1,h2,h3,h4{font-family:var(--serif);font-weight:400;letter-spacing:-.02em;line-height:1.04;color:var(--midnight)}
+/* Italic emphasis defaults to Signal Blue. Copper reserved for Enterprise. */
+h1 em,h2 em,h3 em{font-style:italic;font-weight:400;color:var(--signal)}
+
+.eyebrow{
+  font-family:var(--mono);font-size:11px;letter-spacing:.16em;
+  text-transform:uppercase;color:var(--slate);font-weight:500;
+  display:inline-flex;align-items:center;gap:10px;
+}
+.eyebrow::before{content:"";width:22px;height:1px;background:currentColor;display:inline-block}
+.section-num{font-family:var(--mono);font-size:11px;letter-spacing:.16em;color:var(--slate);font-weight:500}
+
+/* ============================================================
+   LOGO — faithful reconstruction of primary mark
+   Three triangles: Signal (small), Deep (mid), Midnight (large)
+   Ice Blue pentagon cap on tallest peak · ground baseline
+   Thin vertical divider · PROCURA / WEST wordmark
+   ============================================================ */
+.logo{display:flex;align-items:center;gap:14px;color:var(--midnight)}
+.logo-mark{flex:0 0 auto;display:block}
+.logo-divider{
+  width:1px;align-self:stretch;background:var(--steel);
+  margin:4px 0;
+}
+.logo-wordmark{display:flex;flex-direction:column;align-items:flex-start;line-height:1}
+.logo-procura{
+  font-family:var(--serif);font-weight:400;
+  font-size:22px;letter-spacing:.12em;
+  color:var(--midnight);text-transform:uppercase;
+}
+.logo-west-row{
+  display:flex;align-items:center;gap:8px;margin-top:4px;
+}
+.logo-west{
+  font-family:var(--serif);font-weight:400;
+  font-size:13px;letter-spacing:.22em;
+  color:var(--signal);text-transform:uppercase;
+}
+.logo-rule{flex:1;height:1px;background:var(--signal);opacity:.8;min-width:24px}
+
+/* ---------- MASTHEAD ---------- */
+.masthead{
+  position:sticky;top:0;z-index:50;
+  background:rgba(245,247,250,.9);
+  backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);
+  border-bottom:1px solid var(--rule);
+}
+.masthead-inner{
+  display:grid;grid-template-columns:1fr auto 1fr;
+  align-items:center;padding:14px 0;gap:24px;
+}
+.meta{
+  font-family:var(--mono);font-size:11px;letter-spacing:.14em;
+  color:var(--slate);text-transform:uppercase;text-align:center;
+  white-space:nowrap;font-weight:500;
+}
+.nav{
+  display:flex;justify-content:flex-end;gap:26px;
+  font-family:var(--mono);font-size:12px;letter-spacing:.12em;
+  text-transform:uppercase;font-weight:500;
+}
+.nav a{position:relative;padding:4px 0;color:var(--midnight)}
+.nav a::after{
+  content:"";position:absolute;left:0;right:0;bottom:0;height:1px;
+  background:var(--signal);transform:scaleX(0);transform-origin:left;
+  transition:transform .35s cubic-bezier(.2,.7,.2,1);
+}
+.nav a:hover{color:var(--signal)}
+.nav a:hover::after{transform:scaleX(1)}
+.menu-btn{display:none;font-family:var(--mono);font-size:12px;letter-spacing:.12em;text-transform:uppercase;font-weight:500;color:var(--midnight)}
+
+/* ---------- HERO ---------- */
+.hero{padding:clamp(40px,8vw,120px) 0 clamp(60px,9vw,140px);position:relative;overflow:hidden}
+.hero-eyebrow-row{
+  display:flex;justify-content:space-between;align-items:center;
+  padding-bottom:28px;border-bottom:1px solid var(--rule);
+  margin-bottom:clamp(40px,7vw,90px);flex-wrap:wrap;gap:12px;
+  position:relative;z-index:2;
+}
+.hero-eyebrow-row .date{font-family:var(--mono);font-size:11px;letter-spacing:.14em;color:var(--slate);text-transform:uppercase;font-weight:500}
+.hero h1{
+  font-family:var(--serif);font-size:clamp(42px,7.4vw,108px);
+  line-height:1.02;letter-spacing:-.025em;font-weight:400;
+  max-width:16ch;position:relative;z-index:2;color:var(--midnight);
+}
+.hero h1 em{font-style:italic;color:var(--signal);font-weight:400}
+.hero h1 .underline{display:inline-block;position:relative}
+.hero h1 .underline::after{
+  content:"";position:absolute;left:0;right:0;bottom:.04em;height:3px;
+  background:var(--signal);transform-origin:left;
+  animation:drawLine 1.4s cubic-bezier(.7,0,.2,1) .5s both;
+}
+@keyframes drawLine{from{transform:scaleX(0)}to{transform:scaleX(1)}}
+
+.hero-bottom{
+  display:grid;grid-template-columns:1fr 1fr 1fr;gap:var(--gutter);
+  margin-top:clamp(40px,6vw,80px);padding-top:32px;
+  border-top:1px solid var(--rule);position:relative;z-index:2;
+}
+.hero-lede{
+  font-family:var(--sans);font-size:clamp(17px,1.3vw,20px);
+  line-height:1.55;font-weight:400;grid-column:1 / span 2;
+  max-width:56ch;color:var(--ink);
+}
+.hero-lede b{font-weight:500;color:var(--midnight)}
+.hero-cta{display:flex;flex-direction:column;align-items:flex-start;gap:14px;justify-content:flex-end}
+
+/* Primary CTA = Signal Blue */
+.btn{
+  display:inline-flex;align-items:center;gap:12px;
+  font-family:var(--mono);font-size:12px;letter-spacing:.14em;
+  text-transform:uppercase;font-weight:500;
+  padding:16px 22px;border:1px solid var(--signal);
+  background:var(--signal);color:#fff;border-radius:2px;
+  transition:background .3s,border-color .3s,color .3s,transform .3s;cursor:pointer;
+}
+.btn .arrow{transition:transform .3s}
+.btn:hover{background:var(--midnight);border-color:var(--midnight)}
+.btn:hover .arrow{transform:translateX(4px)}
+.btn-ghost{background:transparent;color:var(--midnight);border-color:var(--midnight)}
+.btn-ghost:hover{background:var(--midnight);color:var(--offwhite)}
+.btn-light{background:var(--offwhite);color:var(--midnight);border-color:var(--offwhite)}
+.btn-light:hover{background:var(--ice);color:var(--midnight);border-color:var(--ice)}
+.btn-copper{background:var(--copper);border-color:var(--copper);color:#fff}
+.btn-copper:hover{background:#9f6a3b;border-color:#9f6a3b}
+
+/* Hero photo — Bow Lake, Banff (Canadian Rockies).
+   Presented as a full-width panoramic band beneath the headline.
+   The photo is given room to breathe; a soft top fade transitions it
+   into the headline area, and a bottom fade settles it into the data strip.
+   A subtle cool wash pulls it toward the brand palette.
+   SVG fallback remains in markup; revealed if the photo fails. */
+.hero-photo-wrap{
+  position:relative;
+  margin-top:clamp(36px, 5vw, 64px);
+  width:100%;
+  aspect-ratio: 2.4 / 1;
+  max-height:clamp(260px, 36vw, 520px);
+  overflow:hidden;
+  pointer-events:none;
+}
+.hero-photo{
+  position:absolute;inset:0;
+  width:100%;height:100%;
+  object-fit:cover;
+  object-position:center 55%;
+  filter:saturate(.88) contrast(1.02);
+}
+/* Soft vignette top & bottom — settles the photo into the page */
+.hero-photo-wrap::after{
+  content:"";position:absolute;inset:0;z-index:2;pointer-events:none;
+  background:
+    linear-gradient(180deg,
+      rgba(245,247,250,.35) 0%,
+      rgba(245,247,250,0) 12%,
+      rgba(245,247,250,0) 82%,
+      rgba(245,247,250,.6) 100%),
+    linear-gradient(180deg,
+      rgba(4,44,83,.04) 0%,
+      rgba(4,44,83,.1) 100%);
+}
+/* SVG fallback (shown only if photo fails to load) */
+.hero-range{
+  position:absolute;inset:0;
+  width:100%;height:100%;
+  pointer-events:none;
+  display:none;
+}
+.hero-photo-wrap.photo-failed{background:var(--warm)}
+.hero-photo-wrap.photo-failed .hero-range{display:block}
+.hero-photo-wrap.photo-failed .hero-photo,
+.hero-photo-wrap.photo-failed::after{display:none}
+
+@media (max-width:820px){
+  .hero-photo-wrap{
+    aspect-ratio: 1.6 / 1;
+    max-height:320px;
+  }
+}
+
+/* ---------- DATA TICKER ---------- */
+.strip{
+  background:var(--midnight);color:var(--offwhite);overflow:hidden;
+  border-top:1px solid var(--midnight);border-bottom:1px solid var(--midnight);
+}
+.strip-track{
+  display:flex;gap:64px;align-items:center;padding:18px 0;white-space:nowrap;
+  animation:scroll 54s linear infinite;
+  font-family:var(--mono);font-size:13px;letter-spacing:.1em;
+  text-transform:uppercase;font-weight:500;
+  width:max-content;
+}
+.strip-track span{display:inline-flex;align-items:center;gap:16px;flex:0 0 auto}
+.strip-track b{color:var(--ice);font-weight:500;letter-spacing:.06em}
+.strip-track .src{color:rgba(181,212,244,.55);font-size:10px;letter-spacing:.14em}
+.strip-track .dot{width:4px;height:4px;border-radius:50%;background:var(--signal);flex:0 0 auto}
+@keyframes scroll{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+
+/* ---------- SECTION FRAME ---------- */
+.section{padding:clamp(70px,9vw,140px) 0;position:relative}
+.section-head{
+  display:grid;grid-template-columns:1fr 2fr;gap:var(--gutter);
+  padding-bottom:clamp(36px,5vw,64px);border-bottom:1px solid var(--rule);
+  margin-bottom:clamp(36px,5vw,64px);align-items:end;
+}
+.section-head h2{font-size:clamp(34px,5vw,68px);letter-spacing:-.02em;line-height:1.02;max-width:16ch}
+.section-head .lede{
+  font-family:var(--sans);font-size:clamp(16px,1.15vw,19px);
+  line-height:1.55;font-weight:400;color:var(--ink);max-width:56ch;
+}
+.section-head .lede b{color:var(--midnight);font-weight:500}
+.head-meta{display:flex;flex-direction:column;gap:14px}
+
+/* ---------- PROBLEM ---------- */
+.pain-list{display:grid;grid-template-columns:1fr 1fr;border-top:1px solid var(--rule)}
+.pain-item{
+  display:grid;grid-template-columns:90px 1fr;gap:24px;
+  padding:clamp(28px,3vw,40px) clamp(20px,2.4vw,32px);
+  border-bottom:1px solid var(--rule);border-right:1px solid var(--rule);
+  position:relative;transition:background .4s;
+}
+.pain-item:nth-child(2n){border-right:0}
+.pain-item:hover{background:var(--warm)}
+.pain-item .n{
+  font-family:var(--serif);font-weight:400;font-size:clamp(40px,4vw,56px);
+  line-height:1;color:var(--signal);font-variant-numeric:tabular-nums;letter-spacing:-.04em;
+}
+.pain-item h3{font-size:clamp(22px,2vw,28px);margin-bottom:12px;font-weight:400;letter-spacing:-.01em;color:var(--midnight)}
+.pain-item p{color:var(--slate);font-size:15px;line-height:1.6;max-width:44ch}
+
+/* ---------- COMPARISON ---------- */
+.comparison{margin-top:clamp(40px,5vw,72px);border:1px solid var(--rule);overflow:hidden}
+.comparison h3{font-size:clamp(22px,2vw,30px);font-weight:400;letter-spacing:-.01em;color:var(--midnight);padding:clamp(24px,3vw,36px);border-bottom:1px solid var(--rule);font-family:var(--serif);background:var(--offwhite)}
+.comp-grid{display:grid;grid-template-columns:1fr 1fr}
+.comp-col{padding:clamp(24px,3vw,40px);display:flex;flex-direction:column;gap:16px}
+.comp-col:first-child{border-right:1px solid var(--rule);background:var(--warm)}
+.comp-col-highlight{background:var(--midnight);color:var(--offwhite)}
+.comp-label{font-family:var(--mono);font-size:11px;letter-spacing:.16em;text-transform:uppercase;font-weight:500;color:var(--slate)}
+.comp-col-highlight .comp-label{color:var(--ice);opacity:.8}
+.comp-col ul{list-style:none;display:flex;flex-direction:column;gap:0}
+.comp-col li{padding:14px 0;border-top:1px solid var(--rule);font-size:15px;line-height:1.5;display:flex;align-items:flex-start;gap:12px;color:var(--ink)}
+.comp-col-highlight li{border-color:rgba(181,212,244,.2);color:rgba(245,247,250,.9)}
+.comp-col li::before{content:"\2014";color:var(--slate);flex:0 0 auto}
+.comp-col-highlight li::before{content:"\2192";color:var(--ice)}
+
+/* ---------- SERVICES ---------- */
+.services{background:var(--warm);border-top:1px solid var(--rule);border-bottom:1px solid var(--rule)}
+.services-grid{display:grid;grid-template-columns:repeat(3,1fr)}
+.svc{
+  padding:clamp(32px,3.5vw,52px) clamp(22px,2.4vw,36px);
+  border-right:1px solid var(--rule);border-bottom:1px solid var(--rule);
+  position:relative;min-height:280px;
+  display:flex;flex-direction:column;justify-content:space-between;gap:24px;
+  transition:background .3s;background:transparent;
+}
+.svc:nth-child(3n){border-right:0}
+.svc:nth-last-child(-n+3){border-bottom:0}
+.svc:hover{background:var(--offwhite)}
+.svc .svc-no{font-family:var(--mono);font-size:11px;letter-spacing:.16em;color:var(--signal);text-transform:uppercase;font-weight:500}
+.svc h3{font-size:clamp(22px,2vw,30px);font-weight:400;letter-spacing:-.01em;margin:10px 0 14px;color:var(--midnight)}
+.svc p{color:var(--slate);font-size:15px;line-height:1.6}
+.svc .tag{
+  font-family:var(--mono);font-size:10px;letter-spacing:.16em;
+  text-transform:uppercase;color:var(--deep);display:inline-block;
+  padding:5px 11px;border:1px solid var(--steel);border-radius:2px;
+  width:max-content;font-weight:500;background:var(--offwhite);
+}
+.svc-link{
+  font-family:var(--mono);font-size:12px;letter-spacing:.1em;
+  text-transform:uppercase;color:var(--signal);font-weight:500;
+  margin-top:14px;display:inline-flex;align-items:center;gap:8px;
+  transition:color .3s,gap .3s;
+}
+.svc-link:hover{color:var(--midnight);gap:12px}
+.svc-all{display:flex;justify-content:center;margin-top:clamp(36px,4vw,56px)}
+
+/* Ad-hoc services rail */
+.adhoc{
+  margin-top:clamp(36px,4vw,60px);
+  display:grid;grid-template-columns:1fr 2fr;gap:clamp(24px,4vw,60px);
+  padding:clamp(28px,3vw,44px);
+  background:var(--offwhite);border:1px solid var(--rule);
+  align-items:start;
+}
+.adhoc h4{
+  font-family:var(--serif);font-size:clamp(22px,2vw,28px);
+  font-weight:400;letter-spacing:-.01em;color:var(--midnight);
+  margin-bottom:8px;line-height:1.1;
+}
+.adhoc .adhoc-label{
+  font-family:var(--mono);font-size:10px;letter-spacing:.18em;
+  text-transform:uppercase;color:var(--slate);margin-bottom:12px;display:block;font-weight:500;
+}
+.adhoc p{color:var(--slate);font-size:14px;line-height:1.55;max-width:32ch}
+.adhoc ul{
+  display:grid;grid-template-columns:repeat(2,1fr);gap:0;list-style:none;
+  border-top:1px solid var(--rule);
+}
+.adhoc li{
+  padding:16px 0;border-bottom:1px solid var(--rule);
+  display:flex;align-items:center;gap:12px;
+  font-family:var(--mono);font-size:12px;letter-spacing:.08em;
+  text-transform:uppercase;color:var(--midnight);font-weight:500;
+}
+.adhoc li::before{content:"+";color:var(--signal);font-weight:400;font-size:16px;flex:0 0 auto;font-family:var(--serif)}
+.adhoc li:nth-child(odd){padding-right:12px}
+.adhoc li:nth-child(even){padding-left:12px;border-left:1px solid var(--rule)}
+
+/* ---------- INDUSTRIES ---------- */
+.industries-grid{display:grid;grid-template-columns:1fr 1fr;border:1px solid var(--rule)}
+.ind{padding:clamp(36px,4vw,60px);display:flex;flex-direction:column;gap:22px;position:relative}
+.ind:first-child{border-right:1px solid var(--rule);background:var(--warm)}
+.ind:last-child{background:var(--midnight);color:var(--offwhite)}
+.ind:last-child .ind-label{color:var(--ice);opacity:.8}
+.ind:last-child h3{color:var(--offwhite)}
+.ind:last-child h3 em{color:var(--ice)}
+.ind:last-child p{color:rgba(245,247,250,.82)}
+.ind:last-child li{border-color:rgba(181,212,244,.2);color:var(--offwhite)}
+.ind:last-child li::before{color:var(--ice)}
+.ind h3{font-size:clamp(40px,5vw,68px);font-weight:400;letter-spacing:-.025em;line-height:1}
+.ind h3 em{font-style:italic;color:var(--signal);font-weight:400}
+.ind .ind-label{font-family:var(--mono);font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--slate);font-weight:500}
+.ind p{font-family:var(--sans);font-weight:400;font-size:16px;line-height:1.6;max-width:44ch;color:var(--ink)}
+.ind ul{list-style:none;margin-top:8px}
+.ind li{
+  display:flex;align-items:center;gap:14px;padding:14px 0;
+  border-top:1px solid var(--rule);
+  font-family:var(--mono);font-size:12px;letter-spacing:.08em;
+  text-transform:uppercase;font-weight:500;color:var(--midnight);
+}
+.ind li::before{content:"\2192";font-family:var(--serif);font-size:14px;color:var(--signal);flex:0 0 auto;font-weight:400}
+
+/* ---------- PULL QUOTE ---------- */
+.pullquote{
+  padding:clamp(70px,9vw,130px) 0;background:var(--offwhite);
+  border-top:1px solid var(--rule);border-bottom:1px solid var(--rule);
+  position:relative;overflow:hidden;
+}
+.pullquote::before{
+  content:"\201C";position:absolute;left:var(--pad);top:calc(var(--pad) * 1.2);
+  font-family:var(--serif);font-size:clamp(120px,16vw,240px);line-height:.8;
+  color:var(--ice);opacity:.8;pointer-events:none;z-index:0;
+}
+.pullquote .shell{position:relative;z-index:1}
+.pullquote blockquote{
+  font-family:var(--serif);font-weight:400;font-style:italic;
+  font-size:clamp(28px,4.2vw,58px);line-height:1.12;letter-spacing:-.015em;
+  max-width:24ch;color:var(--midnight);
+}
+.pullquote blockquote b{font-weight:400;font-style:normal;color:var(--signal);display:block;margin-top:.1em}
+.pullquote .attrib{margin-top:36px;font-family:var(--mono);font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--slate);font-weight:500}
+
+/* ---------- RESULTS ---------- */
+.results-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:var(--gutter);border-top:1px solid var(--rule)}
+.result-item{padding:clamp(28px,3vw,44px) 0;border-bottom:1px solid var(--rule);display:flex;flex-direction:column;gap:14px}
+.result-num{font-family:var(--serif);font-size:clamp(36px,4vw,56px);font-weight:400;color:var(--signal);letter-spacing:-.03em;line-height:1}
+.result-item h3{font-size:clamp(18px,1.4vw,22px);font-weight:400;letter-spacing:-.01em;color:var(--midnight)}
+.result-item p{color:var(--slate);font-size:15px;line-height:1.6;max-width:44ch}
+.result-tag{font-family:var(--mono);font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--slate);font-weight:500;margin-top:auto}
+
+/* ---------- PACKAGES ---------- */
+.packages{background:var(--midnight);color:var(--offwhite);border-top:1px solid var(--midnight)}
+.packages .section-head{border-color:rgba(181,212,244,.2)}
+.packages .section-head h2{color:var(--offwhite)}
+.packages .section-head h2 em{color:var(--ice)}
+.packages .section-head .lede{color:rgba(245,247,250,.8)}
+.packages .section-head .lede b{color:var(--offwhite)}
+.packages .section-num,.packages .eyebrow{color:var(--ice);opacity:.75}
+
+.pkg-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:var(--gutter);align-items:stretch}
+.pkg{
+  background:rgba(255,255,255,.03);
+  border:1px solid rgba(181,212,244,.18);
+  padding:clamp(28px,2.6vw,40px);
+  display:flex;flex-direction:column;gap:22px;position:relative;
+  transition:background .4s,transform .4s,border-color .4s;border-radius:2px;
+}
+.pkg:hover{transform:translateY(-4px)}
+
+/* Foundation — Signal Blue accent */
+.pkg[data-tier="foundation"] .pkg-tier-bar{background:var(--signal)}
+.pkg[data-tier="foundation"]:hover{border-color:var(--signal);background:rgba(24,95,165,.06)}
+.pkg[data-tier="foundation"] .pkg-features li::before{background:var(--signal)}
+
+/* Operations — Deep Blue accent */
+.pkg[data-tier="operations"] .pkg-tier-bar{background:var(--deep)}
+.pkg[data-tier="operations"]:hover{border-color:var(--deep);background:rgba(12,68,124,.1)}
+.pkg[data-tier="operations"] .pkg-features li::before{background:var(--deep)}
+
+/* Enterprise — Copper accent (premium tier, per service_tiers.md) */
+.pkg[data-tier="enterprise"]{
+  border-color:var(--copper);
+  background:linear-gradient(180deg, rgba(196,132,78,.08) 0%, rgba(196,132,78,.02) 100%);
+  transform:translateY(-10px);
+}
+.pkg[data-tier="enterprise"]:hover{transform:translateY(-14px);background:rgba(196,132,78,.12)}
+.pkg[data-tier="enterprise"] .pkg-tier-bar{background:var(--copper)}
+.pkg[data-tier="enterprise"] .pkg-tier{color:var(--copper)}
+.pkg[data-tier="enterprise"] .pkg-features li::before{background:var(--copper)}
+.pkg[data-tier="enterprise"] .pkg-name em{color:var(--copper)}
+
+.pkg-tier-bar{
+  position:absolute;top:0;left:0;right:0;height:3px;
+}
+.pkg-top{
+  display:flex;justify-content:space-between;align-items:flex-start;gap:16px;
+  padding-bottom:18px;border-bottom:1px solid rgba(181,212,244,.18);
+  padding-top:6px;
+}
+.pkg-name{
+  font-family:var(--serif);font-size:clamp(28px,2.6vw,38px);
+  font-weight:400;letter-spacing:-.015em;line-height:1;color:var(--offwhite);
+}
+.pkg-name em{font-style:italic;color:var(--ice);font-weight:400}
+.pkg-tier{
+  font-family:var(--mono);font-size:10px;letter-spacing:.16em;
+  text-transform:uppercase;color:var(--ice);opacity:.75;
+  text-align:right;white-space:nowrap;font-weight:500;
+}
+.pkg-desc{font-family:var(--sans);font-size:15px;line-height:1.55;font-weight:400;color:rgba(245,247,250,.82);min-height:3em}
+.pkg-pricing{font-family:var(--mono);font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--ice);opacity:.65;font-weight:500;padding:10px 0;border-top:1px solid rgba(181,212,244,.12)}
+.pkg-features{list-style:none;display:flex;flex-direction:column;gap:0;flex:1}
+.pkg-features li{
+  display:flex;align-items:flex-start;gap:14px;padding:12px 0;
+  border-bottom:1px solid rgba(181,212,244,.12);
+  font-size:14px;line-height:1.45;color:rgba(245,247,250,.92);
+}
+.pkg-features li:last-child{border-bottom:0}
+.pkg-features li::before{
+  content:"";flex:0 0 auto;width:10px;height:1px;margin-top:10px;
+  background:var(--ice);
+}
+.pkg .btn{margin-top:8px;align-self:flex-start}
+.pkg[data-tier="foundation"] .btn{background:var(--signal);border-color:var(--signal)}
+.pkg[data-tier="foundation"] .btn:hover{background:var(--ice);color:var(--midnight);border-color:var(--ice)}
+.pkg[data-tier="operations"] .btn{background:var(--offwhite);border-color:var(--offwhite);color:var(--midnight)}
+.pkg[data-tier="operations"] .btn:hover{background:var(--ice);color:var(--midnight);border-color:var(--ice)}
+.pkg[data-tier="enterprise"] .btn{background:var(--copper);border-color:var(--copper);color:#fff}
+.pkg[data-tier="enterprise"] .btn:hover{background:#9f6a3b;border-color:#9f6a3b}
+
+.pkg-ribbon{
+  position:absolute;top:-12px;left:32px;z-index:2;
+  background:var(--copper);color:#fff;
+  font-family:var(--mono);font-size:10px;letter-spacing:.16em;
+  text-transform:uppercase;padding:6px 12px;font-weight:500;border-radius:2px;
+}
+
+/* ---------- ABOUT ---------- */
+.about-grid{display:grid;grid-template-columns:1fr 1.4fr;gap:clamp(36px,5vw,80px);align-items:start}
+.about-grid h2{font-size:clamp(38px,5vw,72px);letter-spacing:-.025em;line-height:1.02}
+.about-grid h2 em{font-style:italic;color:var(--signal);font-weight:400}
+.about-body{display:flex;flex-direction:column;gap:22px}
+.about-body p{font-family:var(--sans);font-weight:400;font-size:clamp(17px,1.2vw,19px);line-height:1.6;max-width:60ch;color:var(--ink)}
+.about-body p b{font-weight:500;color:var(--midnight)}
+.about-sign{
+  display:flex;align-items:center;gap:24px;margin-top:16px;padding-top:24px;
+  border-top:1px solid var(--rule);
+  font-family:var(--mono);font-size:11px;letter-spacing:.16em;
+  text-transform:uppercase;color:var(--slate);font-weight:500;
+}
+.about-sign .mark{
+  display:inline-block;width:10px;height:10px;border-radius:50%;
+  background:var(--signal);
+  box-shadow:0 0 0 2px var(--offwhite), 0 0 0 3px var(--signal);
+}
+
+/* ---------- CONTACT ---------- */
+.contact{background:var(--midnight);color:var(--offwhite);border-top:1px solid var(--midnight)}
+.contact .section-head{border-color:rgba(181,212,244,.2)}
+.contact .section-head h2{color:var(--offwhite)}
+.contact .section-head h2 em{color:var(--ice)}
+.contact .section-num,.contact .eyebrow{color:var(--ice);opacity:.75}
+
+.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:clamp(30px,5vw,80px);align-items:start}
+.contact .lede{font-family:var(--sans);font-weight:400;font-size:clamp(17px,1.2vw,19px);line-height:1.6;color:rgba(245,247,250,.82);margin:0 0 28px;max-width:50ch}
+.contact-details{list-style:none;display:flex;flex-direction:column;gap:0;border-top:1px solid rgba(181,212,244,.18)}
+.contact-details li{display:grid;grid-template-columns:140px 1fr auto;gap:18px;align-items:center;padding:18px 0;border-bottom:1px solid rgba(181,212,244,.18)}
+.contact-details .lbl{font-family:var(--mono);font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--ice);opacity:.7;font-weight:500}
+.contact-details a{font-family:var(--serif);font-size:clamp(18px,1.4vw,22px);font-weight:400;letter-spacing:-.005em;transition:color .3s;color:var(--offwhite)}
+.contact-details a:hover{color:var(--ice)}
+.contact-details .arrow{font-family:var(--mono);color:var(--ice);opacity:.5;font-size:16px;transition:transform .3s,opacity .3s}
+.contact-details li:hover .arrow{opacity:1;transform:translateX(4px)}
+
+.form{background:rgba(255,255,255,.03);border:1px solid rgba(181,212,244,.18);padding:clamp(28px,3vw,42px);display:flex;flex-direction:column;gap:20px;border-radius:2px}
+.form .row{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.fld{display:flex;flex-direction:column;gap:8px}
+.fld label{font-family:var(--mono);font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:var(--ice);opacity:.7;font-weight:500}
+.fld input,.fld textarea{background:transparent;border:0;border-bottom:1px solid rgba(181,212,244,.35);color:var(--offwhite);font-family:var(--sans);font-size:17px;font-weight:400;padding:10px 0;outline:none;transition:border-color .3s}
+.fld input:focus,.fld textarea:focus{border-color:var(--ice)}
+.fld input::placeholder,.fld textarea::placeholder{color:rgba(181,212,244,.4)}
+.fld textarea{resize:vertical;min-height:80px}
+
+/* ---------- FOOTER ---------- */
+.footer{background:var(--offwhite);padding:clamp(50px,6vw,90px) 0 30px;border-top:1px solid var(--rule)}
+.footer-top{padding-bottom:40px;border-bottom:1px solid var(--rule);display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:clamp(24px,3vw,60px)}
+.footer-brand .footer-logo{margin-bottom:20px}
+.footer-brand .tagline{
+  font-family:var(--mono);font-size:11px;letter-spacing:.18em;
+  text-transform:uppercase;color:var(--slate);font-weight:500;line-height:1.7;
+}
+.footer h4{font-family:var(--serif);font-size:14px;letter-spacing:.04em;text-transform:uppercase;color:var(--slate);margin-bottom:16px;font-weight:400}
+.footer ul{list-style:none;display:flex;flex-direction:column;gap:10px}
+.footer a{transition:color .3s;color:var(--midnight)}
+.footer a:hover{color:var(--signal)}
+.footer-bottom{display:flex;justify-content:space-between;align-items:center;padding-top:24px;font-family:var(--mono);font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--slate);flex-wrap:wrap;gap:12px;font-weight:500}
+
+/* ---------- REVEAL ---------- */
+.reveal{opacity:0;transform:translateY(16px);transition:opacity .9s cubic-bezier(.2,.7,.2,1),transform .9s cubic-bezier(.2,.7,.2,1)}
+.reveal.in{opacity:1;transform:translateY(0)}
+.reveal[data-d="1"]{transition-delay:.08s}
+.reveal[data-d="2"]{transition-delay:.16s}
+.reveal[data-d="3"]{transition-delay:.24s}
+
+@media (prefers-reduced-motion: reduce){
+  *,*::before,*::after{animation:none !important;transition:none !important}
+  .reveal{opacity:1;transform:none}
+}
+
+/* ---------- RESPONSIVE ---------- */
+@media (max-width: 1080px){
+  .pkg-grid{grid-template-columns:1fr}
+  .pkg[data-tier="enterprise"]{transform:none}
+  .pkg[data-tier="enterprise"]:hover{transform:translateY(-4px)}
+  .services-grid{grid-template-columns:repeat(2,1fr)}
+  .svc:nth-child(3n){border-right:1px solid var(--rule)}
+  .svc:nth-child(2n){border-right:0}
+  .svc:nth-last-child(-n+3){border-bottom:1px solid var(--rule)}
+  .svc:nth-last-child(-n+2){border-bottom:0}
+  .adhoc{grid-template-columns:1fr}
+  .results-grid{grid-template-columns:1fr}
+}
+@media (max-width: 820px){
+  .masthead-inner{grid-template-columns:1fr auto}
+  .meta{display:none}
+  .nav{display:none}
+  .nav.open{display:flex;flex-direction:column;position:fixed;inset:0;background:var(--offwhite);padding:100px 32px 32px;font-size:22px;gap:18px;z-index:40}
+  .nav.open a{font-family:var(--serif);letter-spacing:-.01em;text-transform:none;font-size:30px;color:var(--midnight)}
+  .menu-btn{display:inline-flex;z-index:60;position:relative}
+  .pain-list{grid-template-columns:1fr}
+  .pain-item{border-right:0 !important}
+  .services-grid{grid-template-columns:1fr}
+  .svc{border-right:0 !important;min-height:auto}
+  .industries-grid{grid-template-columns:1fr}
+  .ind:first-child{border-right:0;border-bottom:1px solid var(--rule)}
+  .hero-bottom{grid-template-columns:1fr}
+  .hero-lede{grid-column:1}
+  .section-head{grid-template-columns:1fr}
+  .about-grid,.contact-grid{grid-template-columns:1fr}
+  .form .row{grid-template-columns:1fr}
+  .footer-top{grid-template-columns:1fr 1fr;gap:30px}
+  .contact-details li{grid-template-columns:1fr;gap:6px}
+  .contact-details .arrow{display:none}
+  .adhoc{grid-template-columns:1fr}
+  .adhoc ul{grid-template-columns:1fr}
+  .adhoc li:nth-child(even){padding-left:0;border-left:0}
+  .adhoc li:nth-child(odd){padding-right:0}
+  .comp-grid{grid-template-columns:1fr}
+  .comp-col:first-child{border-right:0;border-bottom:1px solid var(--rule)}
+  .results-grid{grid-template-columns:1fr}
+  .pkg-grid{grid-template-columns:1fr}
+  .pkg[data-tier="enterprise"]{transform:none}
+  .pkg[data-tier="enterprise"]:hover{transform:translateY(-4px)}
+}
+@media (max-width:540px){
+  .footer-top{grid-template-columns:1fr}
+  .footer-bottom{flex-direction:column;align-items:flex-start}
+  .logo-procura{font-size:18px;letter-spacing:.1em}
+  .logo-west{font-size:11px;letter-spacing:.2em}
+  .hero h1{font-size:clamp(32px,9vw,42px)}
+  .pain-item{grid-template-columns:1fr;gap:10px}
+  .pain-item .n{font-size:28px}
+  .section-head h2{font-size:clamp(28px,7vw,34px)}
+  .pullquote blockquote{font-size:clamp(22px,6vw,28px)}
+  .btn{width:100%;justify-content:center}
+  .hero-cta{width:100%}
+  .hero-cta .btn{width:100%}
+  .pkg-ribbon{left:16px}
+  .about-sign{flex-wrap:wrap}
+  .strip-track{animation-duration:34s}
+}
+</style>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  "name": "Procura West",
+  "description": "Outsourced procurement consulting for oil & gas and construction companies in Western Canada. Services procurement, T&M contract management, vendor evaluation, spend analysis, RFP management, compliance tracking, and invoice validation. AI-powered tools with 13+ years of industry experience. Monthly packages, no long-term contracts.",
+  "url": "https://procurawest.ca",
+  "telephone": "+1-403-519-9044",
+  "email": "info@procurawest.ca",
+  "logo": "https://procurawest.ca/assets/procura_west_logo.png",
+  "image": "https://procurawest.ca/assets/procura_west_logo.png",
+  "foundingDate": "2026",
+  "founder": {
+    "@type": "Person",
+    "name": "Amy-Marie Holland",
+    "jobTitle": "Founder"
+  },
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Calgary",
+    "addressRegion": "AB",
+    "addressCountry": "CA"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 51.0447,
+    "longitude": -114.0719
+  },
+  "areaServed": [
+    {"@type": "Place", "name": "Western Canada"},
+    {"@type": "Place", "name": "Alberta"},
+    {"@type": "Place", "name": "Calgary"}
+  ],
+  "serviceType": [
+    "Procurement Consulting",
+    "Supply Chain Management",
+    "Services Procurement",
+    "T&M Contract Management",
+    "Vendor Evaluation",
+    "Spend Analysis",
+    "RFP Management",
+    "RFQ Management",
+    "Compliance Tracking",
+    "Invoice Validation",
+    "Sub-Contractor Management",
+    "AI-Powered Procurement Analysis"
+  ],
+  "industry": ["Oil and Gas", "Construction"],
+  "knowsAbout": [
+    "Procurement",
+    "Supply Chain Management",
+    "Time and Materials Contracts",
+    "Vendor Management",
+    "COR Compliance",
+    "ISN Compliance",
+    "WCB Compliance",
+    "Avetta",
+    "ISNetworld",
+    "ComplyWorks",
+    "AI in Procurement",
+    "Spend Analysis",
+    "Contract Negotiation",
+    "Oil and Gas Procurement",
+    "Construction Procurement"
+  ],
+  "slogan": "Built on Trust | Driven by Results",
+  "priceRange": "Monthly consulting packages",
+  "paymentAccepted": "Monthly invoicing",
+  "sameAs": [
+    "https://linkedin.com/company/procura-west"
+  ]
+}
+</script>
+</head>
+<body>
+
+<a href="#main" class="skip-link">Skip to content</a>
+
+<!-- ============ MASTHEAD ============ -->
+<header class="masthead">
+  <div class="shell masthead-inner">
+    <a href="#" class="logo" aria-label="Procura West — Home">
+      <svg class="logo-mark" width="46" height="36" viewBox="0 0 60 46" aria-hidden="true">
+        <polygon points="6,42 14,24 22,42" fill="#185FA5"/>
+        <polygon points="14,42 24,16 34,42" fill="#0C447C"/>
+        <polygon points="22,42 40,6 58,42" fill="#042C53"/>
+        <polygon points="37,10 40,6 43,10 42,12.5 38,12.5" fill="#B5D4F4"/>
+        <rect x="4" y="42" width="54" height="1" fill="#042C53"/>
+      </svg>
+      <span class="logo-divider" aria-hidden="true"></span>
+      <span class="logo-wordmark">
+        <span class="logo-procura">Procura</span>
+        <span class="logo-west-row">
+          <span class="logo-west">West</span>
+        </span>
+      </span>
+    </a>
+    <div class="meta" aria-hidden="true">Calgary · Western Canada</div>
+    <nav class="nav" id="nav">
+      <a href="#services">Services</a>
+      <a href="#industries">Industries</a>
+      <a href="#results">Results</a>
+      <a href="#ai">AI</a>
+      <a href="#packages">Packages</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <button class="menu-btn" id="menuBtn" aria-label="Toggle menu" aria-expanded="false">Menu</button>
+  </div>
+</header>
+
+<main id="main">
+
+<!-- ============ HERO ============ -->
+<section class="hero">
+  <div class="shell">
+    <div class="hero-eyebrow-row reveal">
+      <span class="eyebrow">No 01 · Outsourced Procurement</span>
+      <span class="date">Oil &amp; Gas · Construction · Western Canada</span>
+    </div>
+
+    <h1 class="reveal" data-d="1">
+      Procurement is a <span class="underline">bottom-line decision</span>.<br>
+      Stop treating it <em>as</em> a side task.
+    </h1>
+
+    <div class="hero-photo-wrap reveal" data-d="2" id="heroPhoto">
+      <img
+        class="hero-photo"
+        src="hero-rockies.jpg"
+        alt="Bow Lake at sunrise, Banff National Park, Alberta — Canadian Rockies"
+        loading="eager"
+        decoding="async"
+        onerror="this.closest('.hero-photo-wrap').classList.add('photo-failed')"
+      >
+      <svg class="hero-range" viewBox="0 0 700 300" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+        <rect width="700" height="300" fill="#E8E6E3"/>
+        <polygon points="0,270 130,140 260,270" fill="#185FA5" opacity=".9"/>
+        <polygon points="160,270 320,80 480,270" fill="#0C447C"/>
+        <polygon points="280,270 500,20 700,270" fill="#042C53"/>
+        <polygon points="488,40 500,20 512,40 508,52 492,52" fill="#B5D4F4"/>
+        <rect x="0" y="270" width="700" height="3" fill="#042C53"/>
+      </svg>
+    </div>
+
+    <div class="hero-bottom">
+      <p class="hero-lede reveal" data-d="3">
+        Procura West is your <b>procurement partner</b> for oil &amp; gas and construction companies across Western Canada. <b>13 years of industry experience, amplified by AI.</b> Built for the leaders who know procurement matters — whether you need to strengthen your existing team or build the function from scratch.
+      </p>
+      <div class="hero-cta reveal" data-d="3">
+        <a href="#contact" class="btn">Book a free 15-min call <span class="arrow">&rarr;</span></a>
+        <a href="#packages" class="btn btn-ghost">View packages <span class="arrow">&darr;</span></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ DATA TICKER ============ -->
+<div class="strip" aria-label="Industry statistics">
+  <div class="strip-track">
+    <span><b>Cut Costs</b> &nbsp; Reduce contract leakage and eliminate maverick spending</span>
+    <span class="dot"></span>
+    <span><b>Stay Compliant</b> &nbsp; COR, ISN, WCB, Avetta — tracked and managed for you</span>
+    <span class="dot"></span>
+    <span><b>Save Time</b> &nbsp; Free your team from procurement tasks that aren't their job</span>
+    <span class="dot"></span>
+    <span><b>Negotiate Better</b> &nbsp; Expert rate benchmarking and contract negotiation on every deal</span>
+    <span class="dot"></span>
+    <span><b>Reduce Risk</b> &nbsp; Proper vendor qualification and performance tracking from day one</span>
+    <span class="dot"></span>
+    <span><b>No Overhead</b> &nbsp; Procurement expertise without the $150K–$230K full-time hire</span>
+    <span class="dot"></span>
+    <span><b>AI-Powered</b> &nbsp; Spend analysis and contract review enhanced by artificial intelligence</span>
+    <span class="dot"></span>
+    <!-- duplicate for seamless scroll -->
+    <span><b>Cut Costs</b> &nbsp; Reduce contract leakage and eliminate maverick spending</span>
+    <span class="dot"></span>
+    <span><b>Stay Compliant</b> &nbsp; COR, ISN, WCB, Avetta — tracked and managed for you</span>
+    <span class="dot"></span>
+    <span><b>Save Time</b> &nbsp; Free your team from procurement tasks that aren't their job</span>
+    <span class="dot"></span>
+    <span><b>Negotiate Better</b> &nbsp; Expert rate benchmarking and contract negotiation on every deal</span>
+    <span class="dot"></span>
+    <span><b>Reduce Risk</b> &nbsp; Proper vendor qualification and performance tracking from day one</span>
+    <span class="dot"></span>
+    <span><b>No Overhead</b> &nbsp; Procurement expertise without the $150K–$230K full-time hire</span>
+    <span class="dot"></span>
+    <span><b>AI-Powered</b> &nbsp; Spend analysis and contract review enhanced by artificial intelligence</span>
+    <span class="dot"></span>
+  </div>
+</div>
+
+<!-- ============ PROBLEM ============ -->
+<section class="section" id="problems">
+  <div class="shell">
+    <div class="section-head">
+      <div class="head-meta reveal">
+        <span class="section-num">§ 02 / The Problem</span>
+        <span class="eyebrow">Where Margin Goes to Die</span>
+      </div>
+      <div class="reveal" data-d="1">
+        <h2>The most expensive problem you're <em>not solving.</em></h2>
+        <p class="lede" style="margin-top:24px">
+          Your ops manager reviews T&amp;M contracts between site visits. Your PM runs RFQs off the side of their desk. If you're the President, CEO, CFO, VP, or Director — <b>this is hitting your bottom line whether you see it or not.</b>
+        </p>
+      </div>
+    </div>
+
+    <div class="pain-list">
+      <div class="pain-item reveal"><span class="n">01</span><div><h3>Cost leakage is invisible</h3><p>Rate escalations buried in contract amendments. Duplicate vendor agreements. Blanket POs that haven't been reconciled in eighteen months. Industry benchmarks show 3–5% of construction spend is lost to invoice fraud, duplicate payments, and unauthorized purchasing alone. On a $50M project, that's $1.5M–$2.5M walking out the door.</p></div></div>
+      <div class="pain-item reveal" data-d="1"><span class="n">02</span><div><h3>Compliance is a full-time job</h3><p>COR, ISN, WCB, Avetta, ComplyWorks, ContractorCheck — contractor compliance isn't optional, and it isn't simple. Add insurance and bonding requirements, Indigenous content commitments under IBAs, and AER regulations — and you've got a full-time job nobody's doing full-time.</p></div></div>
+      <div class="pain-item reveal" data-d="2"><span class="n">03</span><div><h3>Your people are stretched too thin</h3><p>Once you cross $20M–$100M in revenue, the owner or project manager can't handle purchasing on the side anymore. Procurement is its own discipline — with its own skill set, tools, and pitfalls. Asking your team to do it is like asking your PM to run your books. They can try. You won't like the results.</p></div></div>
+      <div class="pain-item reveal" data-d="3"><span class="n">04</span><div><h3>A full-time hire doesn't pencil</h3><p>A procurement specialist in Alberta runs $90–120K base and $150–230K fully loaded. For most companies, that's hard to justify — especially when project loads fluctuate. You need the expertise without the overhead.</p></div></div>
+      <div class="pain-item reveal"><span class="n">05</span><div><h3>Supply chain risk is unmanaged</h3><p>Post-COVID exposed companies running on single-source vendors for pipe, valves, and specialty trades. Some saw 6–18 month project delays in the oilsands. Without someone tracking your supply chain risk, you won't see the problem until it's already on your critical path.</p></div></div>
+      <div class="pain-item reveal" data-d="1"><span class="n">06</span><div><h3>You're leaving contracts on the table</h3><p>Alberta Transportation, Alberta Infrastructure, and municipal RFPs score your procurement methodology. No documented SCM approach means you're losing points before your technical team even gets evaluated. Companies with formal procurement processes win more public work — period.</p></div></div>
+    </div>
+
+    <!-- Direct comparison: ops team vs. dedicated procurement -->
+    <div class="comparison reveal">
+      <h3>Your ops team <em>vs.</em> a dedicated procurement function</h3>
+      <div class="comp-grid">
+        <div class="comp-col">
+          <span class="comp-label">What happens now</span>
+          <ul>
+            <li>Contracts reviewed between site visits</li>
+            <li>RFQs managed off the side of their desk</li>
+            <li>Compliance tracked on spreadsheets — maybe</li>
+            <li>Vendor rates renegotiated... never</li>
+            <li>Spend analysis happens at year-end — if at all</li>
+            <li>Invoices approved without checking rates or field tickets</li>
+          </ul>
+        </div>
+        <div class="comp-col comp-col-highlight">
+          <span class="comp-label">With Procura West</span>
+          <ul>
+            <li>Every contract reviewed before signature</li>
+            <li>RFQs scoped, issued, and evaluated properly</li>
+            <li>Compliance tracked in real time across all platforms</li>
+            <li>Rates benchmarked and renegotiated annually</li>
+            <li>Monthly spend reports on your desk</li>
+            <li>AI-powered analysis catches what manual reviews miss</li>
+            <li>Invoices validated against contracted rates, POs, and field receipts</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SERVICES ============ -->
+<section class="section services" id="services">
+  <div class="shell">
+    <div class="section-head">
+      <div class="head-meta reveal">
+        <span class="section-num">§ 03 / Services</span>
+        <span class="eyebrow">Scope of Work</span>
+      </div>
+      <div class="reveal" data-d="1">
+        <h2>What we <em>handle.</em></h2>
+        <p class="lede" style="margin-top:24px">
+          We manage the procurement work your team shouldn't have to do. We collaborate directly with your internal teams to ensure every contractor and vendor is aligned with your company's goals and values. From RFPs to rate negotiation to contractor compliance — <b>we handle the details so your team can focus on the work that moves your projects forward.</b>
+        </p>
+      </div>
+    </div>
+
+    <div class="services-grid">
+      <div class="svc reveal"><div><div class="svc-no">— 01</div><h3>Services Procurement</h3><p>End-to-end contractor sourcing and management.</p><a href="services.html#services-procurement" class="svc-link">Learn more <span class="arrow">&rarr;</span></a></div><span class="tag">Core</span></div>
+      <div class="svc reveal" data-d="1"><div><div class="svc-no">— 02</div><h3>T&amp;M Contract Management</h3><p>Administration and oversight that protects your margin.</p><a href="services.html#tm-contract-management" class="svc-link">Learn more <span class="arrow">&rarr;</span></a></div><span class="tag">Core</span></div>
+      <div class="svc reveal" data-d="2"><div><div class="svc-no">— 03</div><h3>Vendor Evaluation &amp; Qualification</h3><p>Capability, compliance, safety, and pricing — assessed and tracked.</p><a href="services.html#vendor-evaluation" class="svc-link">Learn more <span class="arrow">&rarr;</span></a></div><span class="tag">Strategic</span></div>
+      <div class="svc reveal"><div><div class="svc-no">— 04</div><h3>Spend Analysis &amp; Reporting</h3><p>See where your money goes and where savings hide.</p><a href="services.html#spend-analysis" class="svc-link">Learn more <span class="arrow">&rarr;</span></a></div><span class="tag">Analysis</span></div>
+      <div class="svc reveal" data-d="1"><div><div class="svc-no">— 05</div><h3>RFP &amp; RFQ Management</h3><p>Competitive bidding from scope to award.</p><a href="services.html#rfp-management" class="svc-link">Learn more <span class="arrow">&rarr;</span></a></div><span class="tag">Execution</span></div>
+      <div class="svc reveal" data-d="2"><div><div class="svc-no">— 06</div><h3>Contractor Compliance Tracking</h3><p>Every platform, every requirement, always current.</p><a href="services.html#compliance-tracking" class="svc-link">Learn more <span class="arrow">&rarr;</span></a></div><span class="tag">Compliance</span></div>
+      <div class="svc reveal"><div><div class="svc-no">— 07</div><h3>Invoice Review &amp; Validation</h3><p>Three-way matching before anything hits AP.</p><a href="services.html#invoice-review" class="svc-link">Learn more <span class="arrow">&rarr;</span></a></div><span class="tag">Financial Control</span></div>
+    </div>
+    <div class="svc-all reveal"><a href="services.html" class="btn btn-ghost">View all services <span class="arrow">&rarr;</span></a></div>
+
+    <!-- Ad-hoc services block (from service_tiers.md) -->
+    <div class="adhoc reveal">
+      <div>
+        <span class="adhoc-label">§ 03b / Ad Hoc</span>
+        <h4>Available at any tier, when you need it.</h4>
+        <p>Some work can't wait for the next monthly review. These services are available à la carte, alongside any retainer package.</p>
+      </div>
+      <ul>
+        <li>On-site procurement support</li>
+        <li>Emergency contract review</li>
+        <li>Vendor dispute resolution</li>
+        <li>Procurement training for your staff</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ============ INDUSTRIES ============ -->
+<section class="section industries" id="industries">
+  <div class="shell">
+    <div class="section-head">
+      <div class="head-meta reveal">
+        <span class="section-num">§ 04 / Industries</span>
+        <span class="eyebrow">Where We Work</span>
+      </div>
+      <div class="reveal" data-d="1">
+        <h2>Two industries. <em>Deep focus.</em></h2>
+        <p class="lede" style="margin-top:24px">
+          We don't try to be everything to everyone. We focus on two industries where procurement <b>makes or breaks the bottom line.</b>
+        </p>
+      </div>
+    </div>
+
+    <div class="industries-grid reveal">
+      <div class="ind">
+        <span class="ind-label">Sector 01 — Energy</span>
+        <h3>Oil <em>&amp;</em> Gas</h3>
+        <p>Western Canada's energy sector runs on contracted services — and your supply chain team is juggling MSA negotiations, field ticket reconciliation, turnaround scoping, and vendor compliance all at once. Whether you're a SAGD operator, midstream company, or oilfield service provider, we know the work because we've done the work.</p>
+        <ul>
+          <li>MSA &amp; rate schedule negotiation</li>
+          <li>Field ticket reconciliation against POs &amp; invoices</li>
+          <li>Turnaround contractor scoping &amp; mobilization</li>
+          <li>Vendor master data cleanup &amp; compliance updates</li>
+          <li>Long-lead procurement &amp; expediting</li>
+          <li>Change orders &amp; extra work authorizations</li>
+          <li>Quarterly business reviews &amp; supplier KPIs</li>
+          <li>Indigenous &amp; local content tracking</li>
+        </ul>
+      </div>
+      <div class="ind">
+        <span class="ind-label">Sector 02 — Build</span>
+        <h3>Construction</h3>
+        <p>Construction procurement is fast-paced and unforgiving. Your team is building bid packages, prequalifying sub-trades, chasing submittals, and managing holdbacks — often across multiple active projects. If you're a GC, ICI builder, or industrial constructor in Alberta, we know the pressure and we know the process.</p>
+        <ul>
+          <li>Bid package development &amp; sub-trade evaluation</li>
+          <li>Sub-trade prequalification (WCB, COR, bonding)</li>
+          <li>Contract buyout &amp; PO issuance post-award</li>
+          <li>Material submittal &amp; shop drawing expediting</li>
+          <li>Sub-trade performance management &amp; KPIs</li>
+          <li>Change order negotiation &amp; T&amp;M reconciliation</li>
+          <li>Progress claim validation against field reports</li>
+          <li>CCDC contract administration &amp; prompt payment compliance</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PULL QUOTE ============ -->
+<section class="pullquote">
+  <div class="shell">
+    <blockquote class="reveal">
+      You wouldn't ask your PM to run your books.
+      <b>So why ask them to negotiate a $500K T&amp;M contract?</b>
+    </blockquote>
+    <p class="attrib reveal" data-d="1">— The thesis, in one line</p>
+  </div>
+</section>
+
+<!-- ============ RESULTS ============ -->
+<section class="section" id="results">
+  <div class="shell">
+    <div class="section-head">
+      <div class="head-meta reveal">
+        <span class="section-num">§ 05 / The Reality</span>
+        <span class="eyebrow">Industry Data</span>
+      </div>
+      <div class="reveal" data-d="1">
+        <h2>Numbers don't <em>lie.</em></h2>
+        <p class="lede" style="margin-top:24px">
+          These aren't our numbers — they're the industry's. And they're exactly why companies like yours bring in dedicated procurement support.
+        </p>
+      </div>
+    </div>
+
+    <div class="results-grid">
+      <div class="result-item reveal">
+        <span class="result-num">6–12%</span>
+        <h3>Cost savings on addressable spend</h3>
+        <p>Companies with dedicated procurement functions save 6–12% on addressable spend compared to those managing it off the side of someone's desk. That's real money left on the table every year.</p>
+        <span class="result-tag">Source · The Hackett Group</span>
+      </div>
+      <div class="result-item reveal" data-d="1">
+        <span class="result-num">80%</span>
+        <h3>Of revenue flows through procurement</h3>
+        <p>Up to 80% of a company's revenue passes through purchasing decisions. When nobody's watching that spend, small inefficiencies add up to six- and seven-figure problems fast.</p>
+        <span class="result-tag">Source · CAPS Research</span>
+      </div>
+      <div class="result-item reveal" data-d="2">
+        <span class="result-num">64%</span>
+        <h3>Of companies don't manage supplier relationships</h3>
+        <p>Only 36% of organizations actively manage their supplier relationships beyond the initial contract. The rest are running on autopilot — paying whatever gets invoiced without a second look.</p>
+        <span class="result-tag">Source · Deloitte Global CPO Survey</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ AI + PROCUREMENT ============ -->
+<section class="section" id="ai">
+  <div class="shell">
+    <div class="section-head">
+      <div class="head-meta reveal">
+        <span class="section-num">§ 06 / AI + Procurement</span>
+        <span class="eyebrow">How We Work</span>
+      </div>
+      <div class="reveal" data-d="1">
+        <h2>13 years of experience, <em>amplified by AI.</em></h2>
+        <p class="lede" style="margin-top:24px">
+          AI handles the grunt work — we handle the judgment calls. That's the difference between software and a procurement partner.
+        </p>
+      </div>
+    </div>
+
+    <div class="pain-list">
+      <div class="pain-item reveal">
+        <span class="n" style="font-size:clamp(28px,3vw,40px)">01</span>
+        <div>
+          <h3>We automate what should be automated</h3>
+          <p>Invoice matching, spend categorization, contract deadline tracking, PO reconciliation — these eat hours every week. AI handles them in seconds so your team stays focused on the work that actually moves projects forward.</p>
+        </div>
+      </div>
+      <div class="pain-item reveal" data-d="1">
+        <span class="n" style="font-size:clamp(28px,3vw,40px)">02</span>
+        <div>
+          <h3>Smarter analysis, faster decisions</h3>
+          <p>AI-driven spend analysis spots patterns humans miss — rate creep across vendors, duplicate contracts, compliance gaps. We use it to surface the problems. Then we fix them with 13 years of knowing how these industries actually work.</p>
+        </div>
+      </div>
+      <div class="pain-item reveal" data-d="2">
+        <span class="n" style="font-size:clamp(28px,3vw,40px)">03</span>
+        <div>
+          <h3>Relationships still run on trust</h3>
+          <p>AI can't negotiate a rate reduction over coffee. It can't read the room in a vendor dispute. Supplier relationships, contract negotiations, and the judgment calls that save you real money — that's still us. AI makes us faster. It doesn't replace what matters.</p>
+        </div>
+      </div>
+      <div class="pain-item reveal" data-d="3">
+        <span class="n" style="font-size:clamp(28px,3vw,40px)">04</span>
+        <div>
+          <h3>30–50% of procurement tasks can be automated</h3>
+          <p>Industry data says up to half of procurement tasks are automatable. The roles don't disappear — they evolve. We've already made that shift. You get the efficiency of AI and the experience of a team that's done this for over a decade.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PACKAGES ============ -->
+<section class="section packages" id="packages">
+  <div class="shell">
+    <div class="section-head">
+      <div class="head-meta reveal">
+        <span class="section-num">§ 07 / Engagement</span>
+        <span class="eyebrow">Monthly Packages</span>
+      </div>
+      <div class="reveal" data-d="1">
+        <h2>Scaled to where you <em>actually are.</em></h2>
+        <p class="lede" style="margin-top:24px">
+          No long-term contracts. No retainer surprises. Just the procurement support you need, scaled to where your business is right now — <b>a fraction of the cost of a full-time hire.</b>
+        </p>
+      </div>
+    </div>
+
+    <div class="pkg-grid">
+      <!-- FOUNDATION · Signal Blue -->
+      <article class="pkg reveal" data-tier="foundation">
+        <div class="pkg-tier-bar" aria-hidden="true"></div>
+        <div class="pkg-top">
+          <div class="pkg-name">Foundation</div>
+          <div class="pkg-tier">Tier 01 · Basic</div>
+        </div>
+        <p class="pkg-desc">For companies starting to formalize their procurement function. Guidance and oversight.</p>
+        <p class="pkg-pricing">Pricing based on company size and scope</p>
+        <ul class="pkg-features">
+          <li>On-call procurement guidance &amp; mentorship</li>
+          <li>Vendor evaluation &amp; qualification support</li>
+          <li>Procurement process assessment</li>
+          <li>Basic spend categorization</li>
+          <li>Monthly check-in call</li>
+        </ul>
+        <a href="#contact" class="btn">Book a call <span class="arrow">&rarr;</span></a>
+      </article>
+
+      <!-- OPERATIONS · Deep Blue -->
+      <article class="pkg reveal" data-d="1" data-tier="operations">
+        <div class="pkg-tier-bar" aria-hidden="true"></div>
+        <div class="pkg-top">
+          <div class="pkg-name">Operations</div>
+          <div class="pkg-tier">Tier 02 · Plus</div>
+        </div>
+        <p class="pkg-desc">For companies with active projects needing hands-on procurement support.</p>
+        <p class="pkg-pricing">Pricing based on project count and complexity</p>
+        <ul class="pkg-features">
+          <li>Everything in Foundation</li>
+          <li>RFP / RFQ development &amp; management</li>
+          <li>Contract review &amp; negotiation support</li>
+          <li>T&amp;M contract administration</li>
+          <li>Vendor performance tracking</li>
+          <li>Invoice review &amp; three-way matching</li>
+          <li>Bi-weekly procurement calls</li>
+          <li>Procurement documentation &amp; filing</li>
+        </ul>
+        <a href="#contact" class="btn">Talk to us <span class="arrow">&rarr;</span></a>
+      </article>
+
+      <!-- ENTERPRISE · Copper (premium) -->
+      <article class="pkg reveal" data-d="2" data-tier="enterprise">
+        <span class="pkg-ribbon">Premium</span>
+        <div class="pkg-tier-bar" aria-hidden="true"></div>
+        <div class="pkg-top">
+          <div class="pkg-name">Enterprise</div>
+          <div class="pkg-tier">Tier 03 · Full Outsource</div>
+        </div>
+        <p class="pkg-desc">Your full outsourced procurement department — end-to-end management.</p>
+        <p class="pkg-pricing">Custom pricing for full outsource engagements</p>
+        <ul class="pkg-features">
+          <li>Everything in Operations</li>
+          <li>Complete spend analysis &amp; reporting</li>
+          <li>Sub-contractor management &amp; onboarding</li>
+          <li>Compliance tracking (COR, ISN, WCB)</li>
+          <li>Supply chain risk assessment</li>
+          <li>Monthly executive procurement reports</li>
+          <li>Full invoice validation &amp; vendor dispute resolution</li>
+          <li>Platform management (Avetta, ISNetworld, ComplyWorks)</li>
+          <li>On-site support included</li>
+        </ul>
+        <a href="#contact" class="btn">Request pricing <span class="arrow">&rarr;</span></a>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ ABOUT ============ -->
+<section class="section" id="about">
+  <div class="shell">
+    <div class="about-grid">
+      <div class="reveal">
+        <span class="section-num">§ 08 / About</span>
+        <h2 style="margin-top:16px">Built on trust. <em>Driven by results.</em></h2>
+      </div>
+      <div class="about-body reveal" data-d="1">
+        <p>Procura West is a supply chain management consulting firm based in Calgary, Alberta. With <b>over 13 years of experience in the Construction and Oil &amp; Gas industry across Canada</b>, we bring deep roots and genuine connections within the industries we serve — from vendor evaluation and RFP management to full T&amp;M administration and compliance tracking.</p>
+        <p>We built this firm on a straightforward idea: companies in energy and construction need real procurement expertise, but not every company needs — or wants — a full-time hire. We fill that gap with flexible monthly packages that combine <b>deep industry knowledge with AI-powered tools</b> — giving you the analytical horsepower of a large procurement team at a fraction of the cost.</p>
+        <p>We work as an extension of your team. Same goals. Same urgency. <b>Predictable monthly costs.</b></p>
+        <div class="about-sign">
+          <span class="mark"></span>
+          <span>13+ Years · Calgary, Alberta · Western Canada</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CONTACT ============ -->
+<section class="section contact" id="contact">
+  <div class="shell">
+    <div class="section-head">
+      <div class="head-meta reveal">
+        <span class="section-num">§ 09 / Contact</span>
+        <span class="eyebrow">Start the Conversation</span>
+      </div>
+      <div class="reveal" data-d="1">
+        <h2>Call us. <em>We'll sort it out.</em></h2>
+      </div>
+    </div>
+
+    <div class="contact-grid">
+      <div class="reveal">
+        <p class="lede">
+          Whether you're a CEO looking at the big picture, a CFO watching the numbers, or a VP running operations — if procurement isn't getting the attention it deserves, we should talk. No pitch, no pressure. Just a straight conversation.
+        </p>
+        <ul class="contact-details">
+          <li><span class="lbl">Phone</span><a href="tel:+14035199044">403-519-9044</a><span class="arrow">&nearr;</span></li>
+          <li><span class="lbl">Email</span><a href="mailto:info@procurawest.ca">info@procurawest.ca</a><span class="arrow">&nearr;</span></li>
+          <li><span class="lbl">LinkedIn</span><a href="https://linkedin.com/company/procurawest" target="_blank" rel="noopener">/company/procurawest</a><span class="arrow">&nearr;</span></li>
+          <li><span class="lbl">Office</span><a>Calgary, Alberta</a><span class="arrow">&nearr;</span></li>
+        </ul>
+      </div>
+
+      <form class="form reveal" data-d="1" name="contact" method="POST" data-netlify="true" id="contactForm">
+        <input type="hidden" name="form-name" value="contact">
+        <div class="row">
+          <div class="fld">
+            <label for="f-name">Name</label>
+            <input id="f-name" type="text" name="name" placeholder="Your name" required autocomplete="name">
+          </div>
+          <div class="fld">
+            <label for="f-company">Company</label>
+            <input id="f-company" type="text" name="company" placeholder="Your company" autocomplete="organization">
+          </div>
+        </div>
+        <div class="fld">
+          <label for="f-email">Email</label>
+          <input id="f-email" type="email" name="email" placeholder="you@company.com" required autocomplete="email">
+        </div>
+        <div class="fld">
+          <label for="f-msg">What are you dealing with?</label>
+          <textarea id="f-msg" name="message" rows="4" placeholder="Tell us — we'll take it from there."></textarea>
+        </div>
+        <button type="submit" class="btn btn-light" id="submitBtn">Send message <span class="arrow">&rarr;</span></button>
+      </form>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="footer">
+  <div class="shell">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <div class="footer-logo">
+          <a href="#" class="logo" style="align-items:flex-start">
+            <svg class="logo-mark" width="64" height="50" viewBox="0 0 60 46" aria-hidden="true">
+              <polygon points="6,42 14,24 22,42" fill="#185FA5"/>
+              <polygon points="14,42 24,16 34,42" fill="#0C447C"/>
+              <polygon points="22,42 40,6 58,42" fill="#042C53"/>
+              <polygon points="37,10 40,6 43,10 42,12.5 38,12.5" fill="#B5D4F4"/>
+              <rect x="4" y="42" width="54" height="1" fill="#042C53"/>
+            </svg>
+            <span class="logo-divider" aria-hidden="true"></span>
+            <span class="logo-wordmark">
+              <span class="logo-procura" style="font-size:28px">Procura</span>
+              <span class="logo-west-row">
+                <span class="logo-west" style="font-size:15px">West</span>
+              </span>
+            </span>
+          </a>
+        </div>
+        <p class="tagline">Built on Trust | Driven by Results</p>
+      </div>
+      <div>
+        <h4>Navigate</h4>
+        <ul>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#industries">Industries</a></li>
+          <li><a href="#results">Results</a></li>
+          <li><a href="#ai">AI + Procurement</a></li>
+          <li><a href="#packages">Packages</a></li>
+          <li><a href="#about">About</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Connect</h4>
+        <ul>
+          <li><a href="tel:+14035199044">403-519-9044</a></li>
+          <li><a href="mailto:info@procurawest.ca">info@procurawest.ca</a></li>
+          <li><a href="https://linkedin.com/company/procurawest" target="_blank" rel="noopener">LinkedIn</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Office</h4>
+        <ul>
+          <li>Calgary, Alberta</li>
+          <li>Western Canada</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; 2026 Procura West. All rights reserved.</span>
+      <span>YYC</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+  const io = new IntersectionObserver((entries)=>{
+    entries.forEach(e=>{ if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target); }});
+  }, { threshold:.12, rootMargin:'0px 0px -40px 0px' });
+  document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+
+  const menuBtn = document.getElementById('menuBtn');
+  const nav = document.getElementById('nav');
+  menuBtn.addEventListener('click', ()=>{
+    const open = nav.classList.toggle('open');
+    menuBtn.textContent = open ? 'Close' : 'Menu';
+    menuBtn.setAttribute('aria-expanded', open);
+    document.body.style.overflow = open ? 'hidden' : '';
+  });
+  nav.querySelectorAll('a').forEach(a=>a.addEventListener('click', ()=>{
+    nav.classList.remove('open');
+    menuBtn.textContent = 'Menu';
+    menuBtn.setAttribute('aria-expanded','false');
+    document.body.style.overflow='';
+  }));
+
+  const contactForm = document.getElementById('contactForm');
+  if(contactForm){
+    contactForm.addEventListener('submit', function(e){
+      e.preventDefault();
+      const btn = document.getElementById('submitBtn');
+      const formData = new FormData(this);
+      btn.innerHTML = 'Sending\u2026';
+      btn.disabled = true;
+      fetch('/', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+        body: new URLSearchParams(formData).toString()
+      }).then(function(){
+        btn.innerHTML = 'Message sent \u2713';
+        btn.style.background = '#2E7D4F';
+        btn.style.borderColor = '#2E7D4F';
+        btn.style.color = '#fff';
+        setTimeout(function(){
+          contactForm.reset();
+          btn.innerHTML = 'Send message <span class="arrow">\u2192</span>';
+          btn.style.background = '';
+          btn.style.borderColor = '';
+          btn.style.color = '';
+          btn.disabled = false;
+        }, 2800);
+      }).catch(function(){
+        btn.innerHTML = 'Error \u2014 try again';
+        btn.style.background = '#8B2020';
+        btn.style.borderColor = '#8B2020';
+        btn.disabled = false;
+      });
+    });
+  }
+</script>
+
+</body>
+</html>
