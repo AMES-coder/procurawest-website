@@ -556,6 +556,19 @@ h1 em,h2 em,h3 em{font-style:italic;font-weight:400;color:var(--signal)}
   box-shadow:0 0 0 2px var(--offwhite), 0 0 0 3px var(--signal);
 }
 
+/* ---------- FOUNDER ---------- */
+.founder{background:var(--warm);border-top:1px solid var(--rule)}
+.founder-grid{display:grid;grid-template-columns:1fr 1.6fr;gap:clamp(36px,5vw,80px);align-items:center}
+.founder-photo{position:relative;overflow:hidden;border-radius:4px}
+.founder-photo img{width:100%;height:auto;display:block;filter:grayscale(0)}
+.founder-bio{display:flex;flex-direction:column;gap:20px}
+.founder-bio h3{font-size:clamp(28px,3.5vw,44px);letter-spacing:-.02em;line-height:1.08}
+.founder-bio h3 em{font-style:italic;color:var(--signal);font-weight:400}
+.founder-bio p{font-family:var(--sans);font-weight:400;font-size:clamp(16px,1.1vw,18px);line-height:1.65;max-width:56ch;color:var(--ink)}
+.founder-bio p b{font-weight:500;color:var(--midnight)}
+.founder-name{font-family:var(--serif);font-size:18px;color:var(--midnight);letter-spacing:-.01em}
+.founder-title{font-family:var(--mono);font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--slate);font-weight:500;margin-top:2px}
+
 /* ---------- CONTACT ---------- */
 .contact{background:var(--midnight);color:var(--offwhite);border-top:1px solid var(--midnight)}
 .contact .section-head{border-color:rgba(181,212,244,.2)}
@@ -637,7 +650,7 @@ h1 em,h2 em,h3 em{font-style:italic;font-weight:400;color:var(--signal)}
   .hero-bottom{grid-template-columns:1fr}
   .hero-lede{grid-column:1}
   .section-head{grid-template-columns:1fr}
-  .about-grid,.contact-grid{grid-template-columns:1fr}
+  .about-grid,.contact-grid,.founder-grid{grid-template-columns:1fr}
   .form .row{grid-template-columns:1fr}
   .footer-top{grid-template-columns:1fr 1fr;gap:30px}
   .contact-details li{grid-template-columns:1fr;gap:6px}
@@ -1264,6 +1277,28 @@ h1 em,h2 em,h3 em{font-style:italic;font-weight:400;color:var(--signal)}
         <div class="about-sign">
           <span class="mark"></span>
           <span>13+ Years · Calgary, Alberta · Western Canada</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FOUNDER ============ -->
+<section class="section founder">
+  <div class="shell">
+    <div class="founder-grid">
+      <div class="founder-photo reveal">
+        <img src="assets/corporate shot.png" alt="Amy-Marie Holland, Principal Consultant at Procura West" loading="lazy" width="600" height="750">
+      </div>
+      <div class="founder-bio reveal" data-d="1">
+        <span class="section-num">§ 08b / Founder</span>
+        <h3>Amy-Marie <em>Holland.</em></h3>
+        <p>13 years in procurement across Western Canada's oil & gas and construction industries. I've managed T&M contracts, run RFPs, built vendor evaluation programs, and tracked compliance for companies that build real things in tough environments.</p>
+        <p>I started Procura West because too many mid-size companies are either overpaying for procurement help or going without it entirely. <b>You deserve a procurement partner who knows your industry, speaks your language, and shows up ready to work</b> — not a generalist who bills you to learn on the job.</p>
+        <p>Based in Calgary. Working across Western Canada.</p>
+        <div>
+          <span class="founder-name">Amy-Marie Holland</span>
+          <div class="founder-title">Principal Consultant & Founder</div>
         </div>
       </div>
     </div>
