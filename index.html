@@ -1331,8 +1331,7 @@ h1 em,h2 em,h3 em{font-style:italic;font-weight:400;color:var(--signal)}
         </ul>
       </div>
 
-      <form class="form reveal" data-d="1" name="contact" method="POST" data-netlify="true" id="contactForm">
-        <input type="hidden" name="form-name" value="contact">
+      <form class="form reveal" data-d="1" action="https://formspree.io/f/xpqblynn" method="POST" id="contactForm">
         <div class="row">
           <div class="fld">
             <label for="f-name">Name</label>
@@ -1448,23 +1447,27 @@ h1 em,h2 em,h3 em{font-style:italic;font-weight:400;color:var(--signal)}
       const formData = new FormData(this);
       btn.innerHTML = 'Sending\u2026';
       btn.disabled = true;
-      fetch('/', {
+      fetch('https://formspree.io/f/xpqblynn', {
         method: 'POST',
-        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-        body: new URLSearchParams(formData).toString()
-      }).then(function(){
-        btn.innerHTML = 'Message sent \u2713';
-        btn.style.background = '#2E7D4F';
-        btn.style.borderColor = '#2E7D4F';
-        btn.style.color = '#fff';
-        setTimeout(function(){
-          contactForm.reset();
-          btn.innerHTML = 'Send message <span class="arrow">\u2192</span>';
-          btn.style.background = '';
-          btn.style.borderColor = '';
-          btn.style.color = '';
-          btn.disabled = false;
-        }, 2800);
+        body: formData,
+        headers: { 'Accept': 'application/json' }
+      }).then(function(response){
+        if(response.ok){
+          btn.innerHTML = 'Message sent \u2713';
+          btn.style.background = '#2E7D4F';
+          btn.style.borderColor = '#2E7D4F';
+          btn.style.color = '#fff';
+          setTimeout(function(){
+            contactForm.reset();
+            btn.innerHTML = 'Send message <span class="arrow">\u2192</span>';
+            btn.style.background = '';
+            btn.style.borderColor = '';
+            btn.style.color = '';
+            btn.disabled = false;
+          }, 2800);
+        } else {
+          throw new Error('Form submission failed');
+        }
       }).catch(function(){
         btn.innerHTML = 'Error \u2014 try again';
         btn.style.background = '#8B2020';
