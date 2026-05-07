@@ -4,7 +4,7 @@
 
 ## About
 
-Procura West is a supply chain management consulting firm based in Calgary, Alberta. Founded by Amy-Marie Holland, a procurement professional with over 13 years of experience in Western Canada's oil & gas and construction industries.
+Procura West is a supply chain management consulting firm based in Calgary, Alberta. Founded by Amy-Marie Holland, a procurement professional with over 15 years of experience in Western Canada's oil & gas and construction industries.
 
 We serve companies that need dedicated procurement expertise but don't want — or need — a full-time hire. We combine deep industry knowledge with AI-powered tools to deliver the analytical horsepower of a large procurement team at a fraction of the cost.
 
@@ -50,7 +50,7 @@ We serve companies that need dedicated procurement expertise but don't want — 
 
 ## Key Differentiators
 
-- 13+ years of direct industry experience in oil & gas and construction procurement
+- 15+ years of direct industry experience in oil & gas and construction procurement
 - AI-powered analysis tools for spend analysis, contract review, and vendor evaluation
 - Not a staffing agency, not a software company — a hands-on procurement partner
 - Deep knowledge of Western Canadian oil & gas and construction markets
