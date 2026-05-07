@@ -638,7 +638,8 @@ h1 em,h2 em,h3 em{font-style:italic;font-weight:400;color:var(--signal)}
   .masthead-inner{grid-template-columns:1fr auto}
   .meta{display:none}
   .nav{display:none}
-  .nav.open{display:flex;flex-direction:column;position:fixed;inset:0;background:var(--offwhite);padding:100px 32px 32px;font-size:22px;gap:18px;z-index:40}
+  .nav.open{display:flex;flex-direction:column;position:fixed;top:0;left:0;right:0;bottom:0;background:var(--offwhite);padding:100px 32px 32px;font-size:22px;gap:18px;z-index:999}
+  .masthead.menu-open{backdrop-filter:none;-webkit-backdrop-filter:none}
   .nav.open a{font-family:var(--serif);letter-spacing:-.01em;text-transform:none;font-size:30px;color:var(--midnight)}
   .menu-btn{display:inline-flex;z-index:60;position:relative}
   .pain-list{grid-template-columns:1fr}
@@ -1426,14 +1427,17 @@ h1 em,h2 em,h3 em{font-style:italic;font-weight:400;color:var(--signal)}
 
   const menuBtn = document.getElementById('menuBtn');
   const nav = document.getElementById('nav');
+  const masthead = document.querySelector('.masthead');
   menuBtn.addEventListener('click', ()=>{
     const open = nav.classList.toggle('open');
+    masthead.classList.toggle('menu-open', open);
     menuBtn.textContent = open ? 'Close' : 'Menu';
     menuBtn.setAttribute('aria-expanded', open);
     document.body.style.overflow = open ? 'hidden' : '';
   });
   nav.querySelectorAll('a').forEach(a=>a.addEventListener('click', ()=>{
     nav.classList.remove('open');
+    masthead.classList.remove('menu-open');
     menuBtn.textContent = 'Menu';
     menuBtn.setAttribute('aria-expanded','false');
     document.body.style.overflow='';
