@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html><head>
+<meta charset="utf-8">
+<title>Sprint Log</title>
+<style>
+body { font-family: Arial, Inter, sans-serif; max-width: 800px; margin: 40px auto; padding: 0 20px; color: #1D1D1F; line-height: 1.6; background: #FAFAFA; }
+h1 { font-family: Georgia, serif; color: #042C53; font-size: 32px; font-weight: normal; border-bottom: 2px solid #C8D4E0; padding-bottom: 12px; }
+h2 { font-family: Georgia, serif; color: #0C447C; font-size: 22px; font-weight: normal; margin-top: 36px; }
+h3 { color: #185FA5; font-size: 16px; margin-top: 24px; }
+p { margin: 8px 0; }
+strong { color: #042C53; }
+table { border-collapse: collapse; width: 100%; margin: 16px 0; }
+th { background: #042C53; color: white; padding: 10px 12px; text-align: left; font-size: 13px; }
+td { padding: 8px 12px; border-bottom: 1px solid #E0E0E0; font-size: 13px; }
+tr:nth-child(even) { background: #F5F7FA; }
+hr { border: none; border-top: 1px solid #C8D4E0; margin: 32px 0; }
+blockquote { border-left: 3px solid #185FA5; padding-left: 16px; color: #5A7A9E; font-style: italic; }
+code { background: #F5F7FA; padding: 2px 6px; border-radius: 3px; font-size: 13px; }
+ul, ol { padding-left: 24px; }
+li { margin: 4px 0; }
+</style>
+</head><body><h1>Sprint Log</h1>
+<blockquote>
+<p>Agents append their work summaries here after each sprint.
+Format below. Never delete previous entries.</p>
+</blockquote>
+<hr />
+<h2>Sprint 1 — 2026-04-16</h2>
+<h3>Marketing Agent</h3>
+<ul>
+<li><strong>Task:</strong> Write all website copy</li>
+<li><strong>Output:</strong> website/copy.md</li>
+<li><strong>Learnings:</strong> Leaned into the "you wouldn't ask your PM to do your accounting" angle as the core differentiator — it's the clearest way to articulate why outsourced procurement makes sense without insulting ops managers who are currently doing the work. Used specific numbers (8-12% contract leakage, $90-120K salary comparison) to make the value prop concrete. Kept industry acronyms (PO, T&amp;M, RFP, COR, ISN, WCB) in naturally — the target audience knows these terms and using them signals credibility. Avoided any reference to AI or automation; positioned capabilities as "modern tools and streamlined processes." Kept the About section company-first with minimal personal branding per brand guidelines.</li>
+<li><strong>Blockers:</strong> None. Phone number and LinkedIn URL need Amy's input (marked as placeholders).</li>
+<li><strong>Files changed:</strong> website/copy.md, knowledge/sprint_log.md</li>
+</ul>
+<hr />
+<h2>Sprint 1 — 2026-04-16</h2>
+<h3>Biz Dev Agent</h3>
+<ul>
+<li><strong>Task:</strong> Develop value proposition and competitive positioning</li>
+<li><strong>Output:</strong> website/value_prop.md</li>
+<li><strong>Learnings:</strong> The strongest proof points come from McKinsey (85% of construction projects have cost overruns averaging 28%), The Hackett Group (companies lose 10-20% of savings to maverick buying), and KPMG (every dollar under procurement control saves 6-12%). The Calgary procurement manager salary data ($155K-$164K base, $150K-$230K fully loaded) makes the cost comparison against monthly retainer pricing very compelling. The "you wouldn't ask your PM to do your accounting" framing from the Marketing agent's copy.md is the strongest objection handler — extended it across all five objections. Industry-specific credibility (COR, ISN, WCB, SAGD, T&amp;M) is the key differentiator vs. big consultancies.</li>
+<li><strong>Blockers:</strong> None</li>
+<li><strong>Files changed:</strong> website/value_prop.md, knowledge/sprint_log.md</li>
+</ul>
+<hr />
+<h2>Sprint 1 — 2026-04-16</h2>
+<h3>Dev Agent</h3>
+<ul>
+<li><strong>Task:</strong> Build HTML/CSS website structure</li>
+<li><strong>Output:</strong> website/index.html, website/styles.css</li>
+<li><strong>Learnings:</strong> Built a single-page responsive site with all 10 sections using vanilla HTML/CSS/JS — no frameworks. Key design decisions: (1) Used CSS custom properties for all brand colors to make future palette updates trivial. (2) Mountain silhouette SVG in the hero is built from the logo polygon shapes, scaled to full viewport width with multiple layered peaks for depth. (3) Intersection Observer handles scroll fade-in animations — each <code>.fade-in</code> element triggers once and is then unobserved for performance. (4) Mobile nav uses a slide-in drawer with overlay rather than a full-screen takeover — keeps it lightweight. (5) All copy is placeholder text written in the brand voice (straight-shooter, industry acronyms, specific numbers) so the Marketing agent's final copy can be swapped in directly. (6) Accessibility: skip-link, ARIA labels on nav/sections, proper heading hierarchy (single H1), focus-visible states on buttons, semantic HTML throughout. (7) Typography uses clamp() for fluid responsive sizing rather than rigid breakpoints. (8) Contact form is frontend-only with a visual success state — backend integration is a future sprint.</li>
+<li><strong>Blockers:</strong> None</li>
+<li><strong>Files changed:</strong> website/index.html, website/styles.css, knowledge/sprint_log.md</li>
+</ul></body></html>
