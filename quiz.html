@@ -450,7 +450,7 @@ function submitEmail(){
   data.append('quiz', 'contractor-overpay');
   data.append('score', score);
   data.append('band', score<=6?'writing-blank-cheques':score<=12?'paying-a-premium':'locked-down');
-  fetch('https://formspree.io/f/xpqblynn', {
+  fetch('https://formspree.io/f/mlgyldrb', {
     method:'POST', body:data, headers:{'Accept':'application/json'}
   }).then(function(r){
     if(r.ok){

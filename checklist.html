@@ -204,7 +204,7 @@ h1 em,h2 em,h3 em{font-style:italic;font-weight:400;color:var(--signal)}
 
   <!-- ======== EMAIL GATE ======== -->
   <div class="gate-section" id="gateSection">
-    <form class="gate-form" id="gateForm" action="https://formspree.io/f/xpqblynn" method="POST">
+    <form class="gate-form" id="gateForm" action="https://formspree.io/f/mlgyldrb" method="POST">
       <input type="hidden" name="_subject" value="Checklist Download Request">
       <input type="text" name="name" id="gateName" placeholder="Your name" required autocomplete="name">
       <input type="email" name="email" id="gateEmail" placeholder="you@company.com" required autocomplete="email">
@@ -487,7 +487,7 @@ gateForm.addEventListener('submit', function(e){
   data.append('email', email);
   data.append('source', 'contractor-compliance-checklist');
 
-  fetch('https://formspree.io/f/xpqblynn', {
+  fetch('https://formspree.io/f/mlgyldrb', {
     method: 'POST',
     body: data,
     headers: {'Accept': 'application/json'}
