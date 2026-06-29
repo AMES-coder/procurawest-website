@@ -620,6 +620,21 @@ h1 em,h2 em,h3 em{font-style:italic;font-weight:400;color:var(--signal)}
 .footer a:hover{color:var(--signal)}
 .footer-bottom{display:flex;justify-content:space-between;align-items:center;padding-top:24px;font-family:var(--mono);font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--slate);flex-wrap:wrap;gap:12px;font-weight:500}
 
+/* ---------- EXIT INTENT ---------- */
+.exit-overlay{position:fixed;inset:0;background:rgba(4,44,83,.7);z-index:200;display:none;align-items:center;justify-content:center;backdrop-filter:blur(4px);-webkit-backdrop-filter:blur(4px)}
+.exit-overlay.show{display:flex}
+.exit-modal{background:var(--offwhite);max-width:520px;width:90%;padding:clamp(32px,4vw,52px);position:relative;border-radius:4px;text-align:center}
+.exit-modal h3{font-family:var(--serif);font-size:clamp(24px,3vw,36px);font-weight:400;letter-spacing:-.02em;color:var(--midnight);margin-bottom:12px;line-height:1.1}
+.exit-modal h3 em{font-style:italic;color:var(--signal);font-weight:400}
+.exit-modal p{font-family:var(--sans);font-size:16px;line-height:1.6;color:var(--slate);margin-bottom:24px;max-width:40ch;margin-left:auto;margin-right:auto}
+.exit-modal .btn{margin:6px}
+.exit-close{position:absolute;top:16px;right:16px;font-family:var(--mono);font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:var(--slate);cursor:pointer;background:none;border:0;padding:8px;font-weight:500}
+.exit-close:hover{color:var(--midnight)}
+
+/* ---------- ROTATING QUOTES ---------- */
+.pullquote blockquote{transition:opacity .6s ease}
+.pullquote blockquote.fading{opacity:0}
+
 /* ---------- REVEAL ---------- */
 .reveal{opacity:0;transform:translateY(16px);transition:opacity .9s cubic-bezier(.2,.7,.2,1),transform .9s cubic-bezier(.2,.7,.2,1)}
 .reveal.in{opacity:1;transform:translateY(0)}
@@ -1000,11 +1015,11 @@ h1 em,h2 em,h3 em{font-style:italic;font-weight:400;color:var(--signal)}
 <!-- ============ PULL QUOTE ============ -->
 <section class="pullquote">
   <div class="shell">
-    <blockquote class="reveal">
+    <blockquote class="reveal" id="rotatingQuote">
       You wouldn't ask your PM to run your books.
       <b>So why ask them to negotiate a $500K contract?</b>
     </blockquote>
-    <p class="attrib reveal" data-d="1">— The thesis, in one line</p>
+    <p class="attrib reveal" data-d="1" id="rotatingAttrib">— The thesis, in one line</p>
   </div>
 </section>
 
@@ -1120,6 +1135,18 @@ h1 em,h2 em,h3 em{font-style:italic;font-weight:400;color:var(--signal)}
     </div>
   </div>
 </section>
+
+<!-- ============ EXIT INTENT ============ -->
+<div class="exit-overlay" id="exitOverlay">
+  <div class="exit-modal">
+    <button class="exit-close" id="exitClose">Close</button>
+    <h3>Before you go — <em>one question.</em></h3>
+    <p>Do you know where your procurement gaps are costing you money? Most companies find $200K+ in contract leakage they didn't know about.</p>
+    <a href="#contact" class="btn" id="exitCta">Book a Gap Analysis <span class="arrow">&rarr;</span></a>
+    <br>
+    <a href="quiz.html" class="btn btn-ghost" style="margin-top:8px">Take the 2-min quiz <span class="arrow">&rarr;</span></a>
+  </div>
+</div>
 
 </main>
 
@@ -1260,6 +1287,47 @@ h1 em,h2 em,h3 em{font-style:italic;font-weight:400;color:var(--signal)}
         btn.disabled = false;
       });
     });
+  }
+
+  // Exit intent
+  let exitShown = false;
+  document.addEventListener('mouseout', function(e) {
+    if (exitShown || e.clientY > 5) return;
+    if (sessionStorage.getItem('pw_exit')) return;
+    exitShown = true;
+    sessionStorage.setItem('pw_exit', '1');
+    document.getElementById('exitOverlay').classList.add('show');
+  });
+  document.getElementById('exitClose').addEventListener('click', function() {
+    document.getElementById('exitOverlay').classList.remove('show');
+  });
+  document.getElementById('exitOverlay').addEventListener('click', function(e) {
+    if (e.target === this) this.classList.remove('show');
+  });
+  document.getElementById('exitCta').addEventListener('click', function() {
+    document.getElementById('exitOverlay').classList.remove('show');
+  });
+
+  // Rotating pull quotes
+  const quotes = [
+    { text: 'You wouldn\'t ask your PM to run your books.', bold: 'So why ask them to negotiate a $500K contract?', attrib: '— The thesis, in one line' },
+    { text: 'Your COR expired 6 months ago.', bold: 'Your contractor didn\'t tell you.', attrib: '— What unmanaged compliance looks like' },
+    { text: 'That invoice you just approved?', bold: '$40K of it was unbacked hours.', attrib: '— What we find in the first 30 days' },
+    { text: '3–5% of construction spend walks out the door.', bold: 'On a $50M project, that\'s $2.5M.', attrib: '— The cost of doing nothing' }
+  ];
+  let quoteIdx = 0;
+  const quoteEl = document.getElementById('rotatingQuote');
+  const attribEl = document.getElementById('rotatingAttrib');
+  if (quoteEl && attribEl) {
+    setInterval(function() {
+      quoteEl.classList.add('fading');
+      setTimeout(function() {
+        quoteIdx = (quoteIdx + 1) % quotes.length;
+        quoteEl.innerHTML = quotes[quoteIdx].text + ' <b>' + quotes[quoteIdx].bold + '</b>';
+        attribEl.textContent = quotes[quoteIdx].attrib;
+        quoteEl.classList.remove('fading');
+      }, 600);
+    }, 6000);
   }
 </script>
 
