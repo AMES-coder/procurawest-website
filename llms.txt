@@ -1,57 +1,72 @@
 # Procura West
 
-> Your fractional procurement department for oil & gas and construction companies in Western Canada. Fractional CPO services, Procurement Health Check, and outsourced procurement consulting.
+> Procura West is a supply chain management consulting firm based in Calgary, Alberta. We provide outsourced procurement services for oil & gas and construction companies across Western Canada.
 
-## About
+## What We Do
 
-Procura West is a supply chain management consulting firm based in Calgary, Alberta. Founded by Amy-Marie Holland, a procurement professional with over 15 years of experience in Western Canada's oil & gas and construction industries.
+Procura West serves as a fractional procurement department for mid-size companies ($20M-$500M revenue) that don't have dedicated procurement teams. We handle:
 
-We serve companies that need dedicated procurement expertise but don't want — or need — a full-time hire. We combine deep industry knowledge with AI-powered tools to deliver the analytical horsepower of a large procurement team at a fraction of the cost.
+- Services procurement and contractor sourcing
+- Contract formation, negotiation, and administration
+- Vendor evaluation and qualification
+- RFX management (RFP, RFQ, RFI)
+- Spend analysis and reporting
+- Contractor compliance tracking (COR, ISN, WCB, Avetta, ISNetworld, ComplyWorks)
+- Invoice review and three-way matching
+- Change order administration
+- Subcontractor management and onboarding
+- Supply chain risk assessment
 
-## Services
+## Industries We Serve
 
-- Fractional CPO / Fractional Procurement Department: Outsourced procurement leadership
-- Free Procurement Health Check: We review your current setup and show you where the gaps are
-- Services Procurement: End-to-end contractor sourcing and management
-- Contract Management: Time & materials administration, rate auditing, PO reconciliation
-- Vendor Evaluation: Supplier qualification, performance tracking, risk assessment
-- Spend Analysis: AI-driven spend categorization, trend identification, cost reduction
-- RFP/RFQ Management: Bid package development, evaluation, and award
-- Compliance Tracking: COR, ISN, WCB, Avetta, ISNetworld, ComplyWorks management
-- Invoice Validation: Invoice review, duplicate detection, dispute resolution
-- Sub-Contractor Management: Onboarding, prequalification, performance KPIs
+- **Oil & Gas**: SAGD operators, midstream companies, oilfield service providers in Western Canada. MSA negotiation, field ticket reconciliation, turnaround scoping, vendor compliance, long-lead procurement.
+- **Construction**: General contractors, ICI builders, industrial constructors in Alberta. Bid package development, sub-trade prequalification, contract buyout, CCDC contract administration.
 
-## Target Industries
+## Monthly Packages
 
-- Oil & Gas (upstream, midstream, oilfield services)
-- Construction (general contractors, ICI builders, industrial constructors)
+- **Foundation** - Procurement guidance, vendor evaluation, process assessment. For companies starting to formalize procurement.
+- **Operations** - RFX management, contract review, invoice validation, vendor performance tracking. For companies with active projects.
+- **Enterprise** - Full outsourced procurement department. Complete spend analysis, compliance tracking, executive reporting, on-site support.
 
-## Target Clients
+All packages are month-to-month with no long-term contracts.
 
-- CEOs, Presidents, CFOs, VPs of Operations, Project Management Directors
-- Companies with 50–500 employees and $20M–$500M revenue without in-house procurement
-- Companies in Western Canada, primarily Alberta
+## Procurement Gap Analysis
 
-## Engagement Model
+A focused assessment of your supply chain across eight areas: Sourcing & Purchasing, Vendor Management, Contract Management, Subcontractor Management, Spend Visibility, Process & Documentation, Compliance & Safety, and Risk & Supply Chain Resilience. Flat fee engagement ($500-$1,500).
 
-- Monthly consulting packages (Foundation from $2,500/mo, Operations from $5,500/mo, Enterprise from $10,000/mo)
-- No long-term contracts
-- Predictable monthly costs
-- Free Procurement Health Check as entry point
-- Ad-hoc project work also available
+## Location and Contact
 
-## Contact
-
-- Website: https://procurawest.ca
-- Email: info@procurawest.ca
-- Phone: +1-403-519-9044
-- Location: Calgary, Alberta, Canada
-- LinkedIn: https://www.linkedin.com/company/procura-west
+- **Office**: Calgary, Alberta, Canada
+- **Service Area**: Western Canada (Alberta, British Columbia, Saskatchewan)
+- **Phone**: 403-519-9044
+- **Email**: info@procurawest.ca
+- **Website**: https://procurawest.ca
+- **LinkedIn**: https://www.linkedin.com/company/procura-west
 
 ## Key Differentiators
 
-- 15+ years of direct industry experience in oil & gas and construction procurement
-- AI-powered analysis tools for spend analysis, contract review, and vendor evaluation
-- Not a staffing agency, not a software company — a hands-on procurement partner
-- Deep knowledge of Western Canadian oil & gas and construction markets
-- Specialist in services procurement, materials procurement, and T&M contracts
+- Deep expertise specifically in oil & gas and construction procurement in Western Canada
+- Fractional model: procurement expertise without the $150K-$230K full-time hire
+- Month-to-month packages scaled to company size
+- Proprietary tools for spend analysis, invoice matching, and compliance tracking
+- Founded by Amy-Marie Holland, procurement professional with extensive Western Canadian energy and construction experience
+
+## Frequently Asked Questions
+
+**What is a fractional CPO?**
+A fractional Chief Procurement Officer provides executive-level procurement leadership on a part-time or contracted basis. Instead of hiring a full-time CPO at $150K-$230K fully loaded, companies get the same expertise through monthly packages.
+
+**How much does outsourced procurement cost?**
+Procura West offers three tiers: Foundation (guidance and mentorship), Operations (hands-on procurement support), and Enterprise (full outsourced department). Pricing is based on company size, project count, and scope. All packages are month-to-month.
+
+**What industries does Procura West serve?**
+Oil & gas and construction companies in Western Canada, typically with 50-500 employees and $20M-$500M in revenue.
+
+**What is a Procurement Gap Analysis?**
+A structured assessment of your supply chain across eight areas. You get specific findings, dollar estimates, and a clear action plan. It is the recommended starting point before choosing a monthly package.
+
+**Where is Procura West located?**
+Calgary, Alberta. We serve clients across Western Canada including Alberta, British Columbia, and Saskatchewan.
+
+**What compliance platforms does Procura West manage?**
+COR, ISN, WCB, Avetta, ISNetworld, ComplyWorks, and ContractorCheck.
