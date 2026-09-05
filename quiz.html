@@ -188,8 +188,6 @@ h1 em,h2 em,h3 em{font-style:italic;font-weight:400;color:var(--signal)}
       <a href="services.html">Services</a>
       <a href="index.html#results">Results</a>
       <a href="blog.html">Blog</a>
-      <a href="quiz.html" style="color:var(--signal)">Quiz</a>
-      <a href="packages.html">Packages</a>
       <a href="index.html#about">About</a>
       <a href="index.html#contact">Contact</a>
     </nav>
@@ -299,7 +297,7 @@ h1 em,h2 em,h3 em{font-style:italic;font-weight:400;color:var(--signal)}
   <div id="emailScreen" style="display:none">
     <div class="email-gate">
       <h2>Your results are <em>ready.</em></h2>
-      <p class="lede">Drop your email and we'll send you a personalized breakdown - plus a few tips based on where you scored.</p>
+      <p class="lede">Drop your email and I'll send you a personalized breakdown - plus a few tips based on where you scored.</p>
       <div class="email-form">
         <input type="email" id="quizEmail" placeholder="you@company.com" required autocomplete="email">
         <button class="btn" id="emailBtn" onclick="submitEmail()">Show my results <span class="arrow">&rarr;</span></button>
@@ -315,8 +313,8 @@ h1 em,h2 em,h3 em{font-style:italic;font-weight:400;color:var(--signal)}
       <h2 class="score-label" id="scoreLabel"></h2>
       <p class="verdict" id="scoreVerdict"></p>
       <div class="cta-row">
-        <a href="index.html#contact" class="btn">Book a Procurement Gap Analysis <span class="arrow">&rarr;</span></a>
-        <a href="packages.html" class="btn btn-ghost">See our packages <span class="arrow">&rarr;</span></a>
+        <a href="index.html#contact" class="btn">Get in touch <span class="arrow">&rarr;</span></a>
+        <a href="services.html" class="btn btn-ghost">What I handle <span class="arrow">&rarr;</span></a>
       </div>
 
       <div class="share-strip">
@@ -365,8 +363,6 @@ h1 em,h2 em,h3 em{font-style:italic;font-weight:400;color:var(--signal)}
           <li><a href="services.html">Services</a></li>
           <li><a href="index.html#results">Results</a></li>
           <li><a href="blog.html">Blog</a></li>
-          <li><a href="quiz.html">Quiz</a></li>
-          <li><a href="packages.html">Packages</a></li>
           <li><a href="index.html#about">About</a></li>
         </ul>
       </div>
@@ -501,10 +497,10 @@ function showResults(){
   var label,verdict;
   if(score <= 6){
     label = 'Writing Blank <em>Cheques.</em>';
-    verdict = 'Your contractor spend is running on autopilot. Invoices aren\'t getting checked against contracted rates, compliance is a guessing game, and nobody\'s benchmarking what you\'re paying against market. <b>Industry data says companies in this range lose 3–5% of contractor spend to leakage</b> - and on a $10M spend, that\'s $300K–$500K walking out the door every year. The good news: the biggest wins are in front of you.';
+    verdict = 'Your contractor spend is running on autopilot. Invoices aren\'t getting checked against contracted rates, compliance is a guessing game, and nobody\'s benchmarking what you\'re paying against market. <b>Industry data says companies in this range lose 3-5% of contractor spend to leakage</b> - and on a $10M spend, that\'s $300K-$500K walking out the door every year. The good news: the biggest wins are in front of you.';
   } else if(score <= 12){
     label = 'Paying a <em>Premium.</em>';
-    verdict = 'You\'ve got some controls in place, but there are gaps - and those gaps have dollar signs attached. Maybe invoices get a second look but rates aren\'t benchmarked. Maybe compliance is tracked but the spreadsheet is months behind. <b>Companies in this range typically find 15–25% savings on their first contract rate review.</b> You\'re not flying blind, but you\'re definitely paying more than you should be.';
+    verdict = 'You\'ve got some controls in place, but there are gaps - and those gaps have dollar signs attached. Maybe invoices get a second look but rates aren\'t benchmarked. Maybe compliance is tracked but the spreadsheet is months behind. <b>Companies in this range typically find 15-25% savings on their first contract rate review.</b> You\'re not flying blind, but you\'re definitely paying more than you should be.';
   } else {
     label = 'Locked <em>Down.</em>';
     verdict = 'Your procurement game is tight. Rates are benchmarked, invoices get matched, compliance is tracked, and change orders go through a real process. <b>You\'re ahead of 80% of companies in Western Canada\'s energy and construction sectors.</b> The question now is whether you can maintain this as you scale - and whether there are pockets of spend that haven\'t gotten the same attention.';
