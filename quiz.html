@@ -467,11 +467,10 @@ function submitEmail(){
     'paying-a-premium': '192111216057910938',
     'locked-down': '192111241184937652'
   };
-  fetch('https://connect.mailerlite.com/api/subscribers', {
+  fetch('https://procurawest-subscribe.winter-leaf-32e3.workers.dev', {
     method: 'POST',
     headers: {
-      'Content-Type': 'application/json',
-      'Authorization': 'Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiI0IiwianRpIjoiOGNlYmI2ZDY1NWZkNjVhNWRlN2NhYzQ1NjE0OTU4MWJiZGE5OGM3MDk0Y2YwMjYyYjI2MDg3ODc3OTM1NmZlZmVjOGM0Mjc1MzQ5MWRmNDgiLCJpYXQiOjE3ODMyMTQ4MTkuOTE5NTYxLCJuYmYiOjE3ODMyMTQ4MTkuOTE5NTYzLCJleHAiOjQ5Mzg4ODg0MTkuOTEzMTYxLCJzdWIiOiIyNTA3NjY3Iiwic2NvcGVzIjpbXX0.oUe2lNqZWPr3ViocxmaYGLmp6fAHye4iWEi4LhN1fvGcRkroOCK-2xRjxSVZFDgvqHLi-zbXE498QAQpNUjzy9DdVlgJWk3u9oBHSfxfWX1pwiKQh1Wz_0cLQZs7Y8TY0-fiiFsaKlwi90ppIAK2iqzUhlY4SNM6i4QS43dlkCSnG4XhuLcZ4iWk-Av1_LKlu9YjIbAhicF5Csf67fey4E2ZjM2IDqUNin5Ms-JpOsaCW1mVEm8GmdcSCzkGTwVMguV3E3Rp-B87qVA3mUOq2y6QPZjsP4xqoQi9bOAsMpx4cIdMLa_pT0WLrDd4Wuth5_TOIO9KMZIbF6_eHujbaWCEauyKPpPV-LJjPsJudOpUO8hcpWfME6iMV649nv3TI14ozRVVzDkTESBcU05hsadK5UYOSgexlJ8njSrfd9SjZ0hTPEGn4uQ2K_FJjG7Dl-ID6uO0r-ZFlcwe_OEtGQHCxBVtvkbX7OdGC_ga9hcCsk2TViGUYA9wic1bghvauYN7NUl86XUB-LY_9FlG0jmSFM1Ax7oAePbUKY3mibDnCF85s3zQEVvrUVTsSuGxqCYw-b-6quDxSqsYpbnTcxCBiHRnrAIdbwkM1Twwb4i11FjBfLxSyslM-XVjbh9OVTnFj5WzuEVTw4LF_--JUtb6x1hqsQmsvy1ElUeKIAE'
+      'Content-Type': 'application/json'
     },
     body: JSON.stringify({
       email: email,
