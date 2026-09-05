@@ -397,6 +397,7 @@ h1 em,h2 em,h3 em{font-style:italic;font-weight:400;color:var(--signal)}
 var score = 0;
 var current = 1;
 var total = 6;
+var answers = {};
 
 function startQuiz(){
   document.getElementById('introScreen').style.display='none';
@@ -410,7 +411,10 @@ function selectAnswer(btn){
   var btns = card.querySelectorAll('.answer-btn');
   btns.forEach(function(b){b.classList.remove('selected')});
   btn.classList.add('selected');
-  score += parseInt(btn.getAttribute('data-pts'));
+  var pts = parseInt(btn.getAttribute('data-pts'));
+  score += pts;
+  var qLabels = {1:'invoices',2:'benchmarking',3:'compliance',4:'renewals',5:'spend_visibility',6:'change_orders'};
+  answers[qLabels[parseInt(card.getAttribute('data-q'))]] = pts;
 
   setTimeout(function(){
     card.classList.remove('active');
@@ -452,6 +456,12 @@ function submitEmail(){
   data.append('quiz', 'contractor-overpay');
   data.append('score', score);
   data.append('band', band);
+  data.append('q1_invoices', answers.invoices);
+  data.append('q2_benchmarking', answers.benchmarking);
+  data.append('q3_compliance', answers.compliance);
+  data.append('q4_renewals', answers.renewals);
+  data.append('q5_spend_visibility', answers.spend_visibility);
+  data.append('q6_change_orders', answers.change_orders);
   fetch('https://formspree.io/f/mlgyldrb', {
     method:'POST', body:data, headers:{'Accept':'application/json'}
   });
@@ -470,7 +480,7 @@ function submitEmail(){
     body: JSON.stringify({
       email: email,
       groups: [groupMap[band]],
-      fields: { quiz_score: score.toString(), quiz_band: band }
+      fields: { quiz_score: score.toString(), quiz_band: band, q1_invoices: answers.invoices.toString(), q2_benchmarking: answers.benchmarking.toString(), q3_compliance: answers.compliance.toString(), q4_renewals: answers.renewals.toString(), q5_spend_visibility: answers.spend_visibility.toString(), q6_change_orders: answers.change_orders.toString() }
     })
   }).then(function(r){
     if(r.ok){
