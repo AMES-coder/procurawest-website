@@ -222,6 +222,7 @@ h1 em,h2 em,h3 em{font-style:italic;font-weight:400;color:var(--signal)}
       </div>
 
       <div class="print-row">
+        <a href="assets/contractor-compliance-checklist.pdf" target="_blank" class="btn" style="font-size:13px;padding:14px 28px;margin-right:12px">Download PDF <span class="arrow">&darr;</span></a>
         <button class="print-btn" onclick="window.print()">Print this checklist</button>
       </div>
 
@@ -493,6 +494,14 @@ gateForm.addEventListener('submit', function(e){
         event_category: 'lead_magnet',
         event_label: 'contractor_compliance_checklist'
       });
+      fetch('https://procurawest-subscribe.winter-leaf-32e3.workers.dev', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          email: email,
+          fields: { lead_source: 'checklist', name: name }
+        })
+      }).catch(function(){});
       revealChecklist();
     } else {
       throw new Error('fail');
