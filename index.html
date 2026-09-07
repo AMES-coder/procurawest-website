@@ -1149,6 +1149,18 @@ h1 em,h2 em,h3 em{font-style:italic;font-weight:400;color:var(--signal)}
         headers: { 'Accept': 'application/json' }
       }).then(function(response){
         if(response.ok){
+          var email = formData.get('email');
+          var name = formData.get('name');
+          if(email){
+            fetch('https://procurawest-subscribe.winter-leaf-32e3.workers.dev', {
+              method: 'POST',
+              headers: { 'Content-Type': 'application/json' },
+              body: JSON.stringify({
+                email: email,
+                fields: { lead_source: 'contact_form', name: name || '' }
+              })
+            }).catch(function(){});
+          }
           btn.innerHTML = 'Message sent \u2713';
           btn.style.background = '#2E7D4F';
           btn.style.borderColor = '#2E7D4F';
