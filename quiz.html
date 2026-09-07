@@ -404,8 +404,10 @@ function startQuiz(){
 
 function selectAnswer(btn){
   var card = btn.closest('.question-card');
+  if(card.getAttribute('data-answered')) return;
+  card.setAttribute('data-answered','true');
   var btns = card.querySelectorAll('.answer-btn');
-  btns.forEach(function(b){b.classList.remove('selected')});
+  btns.forEach(function(b){b.disabled=true;b.classList.remove('selected')});
   btn.classList.add('selected');
   var pts = parseInt(btn.getAttribute('data-pts'));
   score += pts;
