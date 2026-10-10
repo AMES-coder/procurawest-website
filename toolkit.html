@@ -11,13 +11,13 @@
   gtag('config', 'G-EXHL2RQ9D9');
 </script>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="AI Procurement Toolkit - 6 professional documents to evaluate, contract, and govern AI vendors. Risk classification, vendor assessment, contract clauses, RFP scoring, vendor screening. By Procura West.">
+<meta name="description" content="AI Procurement Toolkit - Pick the right AI tool, ask the right questions, protect the contract. 6 step-by-step tools to evaluate vendors and avoid lock-in. From $47.">
 <title>AI Procurement Toolkit | Procura West</title>
 
 <link rel="icon" type="image/png" href="assets/procura_west_logo_icon.png">
 <meta property="og:image" content="https://procurawest.ca/assets/procura_west_logo.png">
 <meta property="og:title" content="AI Procurement Toolkit | Procura West">
-<meta property="og:description" content="Everything you need to evaluate, contract, and govern AI vendors - risk classification, vendor assessment, contract clauses, RFP scoring, vendor screening. No consultants required.">
+<meta property="og:description" content="Pick the right AI tool. Ask the right questions. Protect the contract. 6 step-by-step tools from $47. Don't end up locked in with the wrong vendor.">
 <meta name="keywords" content="AI procurement toolkit, AI vendor assessment, AI contract clauses, AI risk classification, AI RFP evaluation, responsible AI procurement, AI governance framework">
 <meta name="robots" content="index, follow">
 <meta property="og:type" content="product">
@@ -228,6 +228,128 @@ h1 em,h2 em,h3 em{font-style:italic;font-weight:400;color:var(--signal)}
   color:var(--signal);font-weight:600;
 }
 
+/* ---- TIER GRID ---- */
+.tier-grid{
+  display:grid;grid-template-columns:repeat(auto-fit, minmax(300px, 1fr));
+  gap:clamp(20px,2vw,32px);margin-top:clamp(20px,2vw,32px);
+  align-items:start;
+}
+.tier-card{
+  background:var(--offwhite);border:1px solid var(--rule);border-radius:4px;
+  padding:clamp(28px,3vw,40px);position:relative;
+  display:flex;flex-direction:column;
+}
+.tk-section:nth-child(even) .tier-card{background:#fff}
+.tier-card--featured{
+  border-color:var(--copper);border-width:2px;
+}
+.tier-badge{
+  position:absolute;top:-13px;left:clamp(24px,2vw,36px);
+  background:var(--copper);color:#fff;
+  font-family:var(--mono);font-size:11px;letter-spacing:.12em;
+  text-transform:uppercase;font-weight:500;
+  padding:4px 14px;border-radius:2px;
+}
+.tier-label{
+  font-family:var(--mono);font-size:12px;letter-spacing:.16em;
+  text-transform:uppercase;color:var(--slate);font-weight:500;
+  margin-bottom:8px;display:block;
+}
+.tier-price{
+  font-family:var(--serif);font-size:clamp(32px,3vw,44px);
+  color:var(--midnight);font-weight:400;margin-bottom:16px;
+}
+.tier-price span{font-size:.45em;color:var(--slate);font-family:var(--sans);vertical-align:middle}
+.tier-desc{
+  font-size:clamp(14px,1.05vw,16px);line-height:1.6;color:var(--slate);
+  margin-bottom:20px;
+}
+.tier-includes{
+  list-style:none;margin-bottom:28px;flex:1;
+}
+.tier-includes li{
+  font-size:clamp(14px,1vw,15px);line-height:1.6;color:var(--ink);
+  padding:6px 0 6px 22px;position:relative;
+  border-bottom:1px solid var(--rule);
+}
+.tier-includes li:last-child{border-bottom:0}
+.tier-includes li::before{
+  content:"\2713";position:absolute;left:0;top:6px;
+  color:var(--signal);font-weight:600;font-size:13px;
+}
+.tier-card .btn{align-self:stretch;justify-content:center;margin-top:auto}
+
+/* ---- PROBLEM SECTION ---- */
+.problem-grid{
+  display:grid;grid-template-columns:repeat(auto-fit, minmax(260px, 1fr));
+  gap:clamp(16px,2vw,24px);margin-top:clamp(20px,2vw,32px);
+}
+.problem-card{
+  background:var(--offwhite);border:1px solid var(--rule);border-radius:4px;
+  padding:clamp(24px,2vw,32px);border-top:3px solid var(--copper);
+}
+.tk-section:nth-child(even) .problem-card{background:#fff}
+.problem-card h3{
+  font-family:var(--serif);font-size:clamp(18px,1.5vw,22px);
+  color:var(--midnight);margin-bottom:8px;font-weight:400;
+}
+.problem-card p{
+  font-size:clamp(14px,1vw,15px);line-height:1.65;color:var(--slate);
+}
+.problem-card .scenario{
+  font-style:italic;color:var(--midnight);font-size:clamp(14px,1vw,15px);
+  line-height:1.55;margin-bottom:10px;
+}
+
+/* ---- STEP CARDS ---- */
+.step-grid{
+  display:grid;grid-template-columns:1fr;
+  gap:clamp(12px,1.5vw,16px);margin-top:clamp(20px,2vw,32px);
+}
+.step-card{
+  background:var(--offwhite);border:1px solid var(--rule);border-radius:4px;
+  padding:clamp(20px,2vw,28px);
+  display:grid;grid-template-columns:auto 1fr;gap:16px;
+  align-items:start;
+}
+.tk-section:nth-child(even) .step-card{background:#fff}
+.step-num{
+  font-family:var(--serif);font-size:clamp(28px,2.5vw,36px);
+  color:var(--copper);font-weight:400;line-height:1;opacity:.65;
+  min-width:32px;text-align:center;padding-top:2px;
+}
+.step-card h3{
+  font-family:var(--serif);font-size:clamp(17px,1.4vw,20px);
+  color:var(--midnight);font-weight:400;margin-bottom:4px;
+}
+.step-card .step-detail{
+  font-size:clamp(14px,1vw,15px);line-height:1.6;color:var(--slate);
+}
+.step-card .step-doc{
+  font-family:var(--mono);font-size:11px;letter-spacing:.12em;
+  text-transform:uppercase;color:var(--signal);font-weight:500;
+  margin-top:6px;display:inline-block;
+}
+@media(max-width:500px){
+  .step-card{grid-template-columns:1fr}
+}
+
+/* ---- MOMENT LIST ---- */
+.moment-list{
+  list-style:none;display:grid;grid-template-columns:1fr;
+  gap:0;margin-top:clamp(16px,2vw,24px);
+}
+.moment-list li{
+  font-size:clamp(15px,1.1vw,17px);line-height:1.6;color:var(--ink);
+  padding:14px 0 14px 24px;position:relative;
+  border-bottom:1px solid var(--rule);
+}
+.moment-list li:last-child{border-bottom:0}
+.moment-list li::before{
+  content:"\2192";position:absolute;left:0;top:14px;
+  color:var(--copper);font-weight:600;
+}
+
 /* ---- CTA BAND ---- */
 .cta-band{
   background:var(--midnight);color:var(--offwhite);
@@ -333,51 +455,94 @@ h1 em,h2 em,h3 em{font-style:italic;font-weight:400;color:var(--signal)}
 <!-- ============ PAGE HERO ============ -->
 <section class="page-hero">
   <div class="shell">
-    <div class="eyebrow reveal">Digital Toolkit</div>
-    <h1 class="reveal" data-d="1">Stop buying <em>AI blind.</em></h1>
-    <p class="page-hero-lede reveal" data-d="2">Everything you need to evaluate, contract, and govern AI vendors - from first screening to signed contract. 6 professional documents, 1 complete system. No consultants required.</p>
-    <div class="price-tag reveal" data-d="3">$199 <span>USD</span></div>
+    <div class="eyebrow reveal">AI Procurement Toolkit</div>
+    <h1 class="reveal" data-d="1">Pick the right AI tool. <em>Don't get locked in.</em></h1>
+    <p class="page-hero-lede reveal" data-d="2">You're about to spend real money on AI. This toolkit tells you which questions to ask, how to score the vendors, and what to put in the contract - so you don't end up trapped with the wrong tool, the wrong terms, or both.</p>
+    <div class="price-tag reveal" data-d="3">From $47 <span>USD</span></div>
     <a class="btn btn-lg btn-copper gumroad-button reveal" data-d="3" href="https://procurawest.gumroad.com/l/ai-procurement-toolkit">Get the toolkit <span class="arrow">&rarr;</span></a>
   </div>
 </section>
 
-<!-- ============ WHAT'S INSIDE ============ -->
+<!-- ============ WHAT GOES WRONG ============ -->
 <section class="tk-section">
   <div class="shell">
-    <div class="eyebrow reveal">What's Inside</div>
-    <h2 class="reveal" data-d="1">6 documents. <em>1 complete system.</em></h2>
-    <p class="reveal" data-d="2">Every document connects to the others. Your risk tier drives which contract clauses are mandatory, what the minimum vendor scores are, how many evaluators you need, and what the evaluation timeline looks like.</p>
+    <div class="eyebrow reveal">Without A Process</div>
+    <h2 class="reveal" data-d="1">Three things that happen when you <em>buy AI without asking the right questions.</em></h2>
+    <div class="problem-grid">
+      <div class="problem-card reveal">
+        <p class="scenario">"We want to switch AI tools but we can't get our data out."</p>
+        <h3>You get locked in</h3>
+        <p>The auto-renewal kicked in. Your data can't be exported in a usable format. Switching to a competitor costs more than staying with a tool that doesn't work. You signed this contract 18 months ago and nobody read the exit clause.</p>
+      </div>
+      <div class="problem-card reveal" data-d="1">
+        <p class="scenario">"Wait - they're training their model on our proprietary data?"</p>
+        <h3>Your data becomes their product</h3>
+        <p>Buried in the terms of service: the vendor uses your company data to improve their AI. Your customer information. Your internal processes. Your competitive advantage. It's on page 14 of the agreement nobody opened.</p>
+      </div>
+      <div class="problem-card reveal" data-d="2">
+        <p class="scenario">"The demo was great. The invoice was not."</p>
+        <h3>You overpay and can't prove why</h3>
+        <p>The price tripled at renewal. You're paying for 50 seats but 8 people use it. The features you actually need are in a higher tier. When the CFO asks how you chose this vendor, your answer is "the demo looked good."</p>
+      </div>
+    </div>
+  </div>
+</section>
 
-    <div class="doc-grid">
-      <div class="doc-card reveal">
-        <span class="doc-num">Document 1</span>
-        <h3>Quick Start Guide</h3>
-        <p>Start here. Step by step instructions for using all 5 tools together. Includes scenario based quick reference for common situations.</p>
+<!-- ============ HOW IT WORKS ============ -->
+<section class="tk-section">
+  <div class="shell">
+    <div class="eyebrow reveal">How It Works</div>
+    <h2 class="reveal" data-d="1">6 steps from "we need AI" <em>to signed contract.</em></h2>
+    <p class="reveal" data-d="2">Each step builds on the last. Your answers in step 1 determine how thorough the rest of the process needs to be - a low-risk tool gets a lighter review, a high-risk one gets the full treatment.</p>
+
+    <div class="step-grid">
+      <div class="step-card reveal">
+        <div class="step-num">1</div>
+        <div>
+          <h3>Read the playbook</h3>
+          <p class="step-detail">Start here. A plain-language walkthrough of the entire process with scenario-based shortcuts for common situations. Takes 15 minutes.</p>
+          <span class="step-doc">Quick Start Guide</span>
+        </div>
       </div>
-      <div class="doc-card reveal" data-d="1">
-        <span class="doc-num">Document 2</span>
-        <h3>Risk Classification Matrix</h3>
-        <p>Classify every AI purchase into 4 risk tiers using 6 scored questions and escalation factors. Your risk tier drives every downstream decision.</p>
+      <div class="step-card reveal" data-d="1">
+        <div class="step-num">2</div>
+        <div>
+          <h3>Figure out how risky this AI purchase is</h3>
+          <p class="step-detail">Answer 6 questions about the AI tool you're considering. The toolkit scores it into one of 4 risk levels - and that score drives every decision after this. Takes 10 minutes.</p>
+          <span class="step-doc">Risk Classification Matrix</span>
+        </div>
       </div>
-      <div class="doc-card reveal" data-d="2">
-        <span class="doc-num">Document 3</span>
-        <h3>Vendor Assessment Rubric</h3>
-        <p>Score vendors across 10 categories on a 1-5 scale. Includes scoring criteria, key questions, red flags, and minimum passing scores by risk tier.</p>
+      <div class="step-card reveal" data-d="2">
+        <div class="step-num">3</div>
+        <div>
+          <h3>Score the vendor on the 10 things that matter</h3>
+          <p class="step-detail">Rate each vendor on data privacy, bias, security, transparency, and 6 other categories. Built-in red flags tell you when to walk away. Minimum scores are set by your risk level.</p>
+          <span class="step-doc">Vendor Assessment Rubric</span>
+        </div>
       </div>
-      <div class="doc-card reveal">
-        <span class="doc-num">Document 4</span>
-        <h3>Contract Clause Library</h3>
-        <p>19 AI specific contract clauses covering what standard software agreements miss. Organized by risk tier with negotiation guidance by vendor size.</p>
+      <div class="step-card reveal">
+        <div class="step-num">4</div>
+        <div>
+          <h3>Send 107 pre-screening questions to the vendor</h3>
+          <p class="step-detail">Hand this questionnaire to any vendor you're considering. A serious vendor answers every question. An unprepared one stalls, hedges, or says "we'll get back to you." That tells you everything.</p>
+          <span class="step-doc">Vendor Pre-Qualification Questionnaire</span>
+        </div>
       </div>
-      <div class="doc-card reveal" data-d="1">
-        <span class="doc-num">Document 5</span>
-        <h3>RFP Evaluation Criteria</h3>
-        <p>Weighted scoring framework with 6 categories and 27 subcategories. Weight percentages shift based on your risk tier. Includes disqualification criteria.</p>
+      <div class="step-card reveal" data-d="1">
+        <div class="step-num">5</div>
+        <div>
+          <h3>Compare proposals so the best vendor wins, not the best presenter</h3>
+          <p class="step-detail">Weighted scoring across 27 criteria. The weights shift based on your risk level. When someone asks "why did we pick this vendor?" you have a defensible, documented answer.</p>
+          <span class="step-doc">RFP Evaluation Criteria</span>
+        </div>
       </div>
-      <div class="doc-card reveal" data-d="2">
-        <span class="doc-num">Document 6</span>
-        <h3>Vendor Pre-Qualification Questionnaire</h3>
-        <p>107 questions across 12 sections to send to vendors before shortlisting. The quality of the response tells you as much as the content.</p>
+      <div class="step-card reveal" data-d="2">
+        <div class="step-num">6</div>
+        <div>
+          <h3>Add 19 contract protections your vendor hopes you skip</h3>
+          <p class="step-detail">Data ownership, exit rights, liability for AI errors, bias audit requirements, kill switches, insurance minimums. The clauses that standard software agreements leave out - organized by risk level with negotiation tips by vendor size.</p>
+          <span class="step-doc">Contract Clause Library</span>
+        </div>
       </div>
     </div>
   </div>
@@ -387,33 +552,66 @@ h1 em,h2 em,h3 em{font-style:italic;font-weight:400;color:var(--signal)}
 <section class="tk-section">
   <div class="shell">
     <div class="eyebrow reveal">Who This Is For</div>
-    <h2 class="reveal" data-d="1">If you're buying AI, <em>you need a process.</em></h2>
-    <ul class="who-list reveal" data-d="2">
-      <li>Procurement teams buying AI products for the first time</li>
-      <li>IT leaders evaluating AI vendors without a structured framework</li>
-      <li>Legal teams who need AI specific contract language</li>
-      <li>Compliance officers building AI governance programs</li>
-      <li>Consultants advising clients on responsible AI procurement</li>
-      <li>Government agencies subject to AI procurement regulations</li>
+    <h2 class="reveal" data-d="1">If any of these sound familiar, <em>this is for you.</em></h2>
+    <ul class="moment-list reveal" data-d="2">
+      <li>Your boss just said "find us an AI tool" and you have no idea where to start</li>
+      <li>You're comparing 3 AI vendors and the only difference you can see is the price</li>
+      <li>You picked an AI tool based on a demo and now you're second-guessing it</li>
+      <li>You're about to sign an AI contract and you don't know what to look for</li>
+      <li>Your company is spending real money on AI and nobody's asking the right questions</li>
+      <li>A client asked you to help them buy AI and you need a process to hand them</li>
     </ul>
+  </div>
+</section>
+
+<!-- ============ CHOOSE YOUR TIER ============ -->
+<section class="tk-section">
+  <div class="shell">
+    <div class="eyebrow reveal">Choose Your Tier</div>
+    <h2 class="reveal" data-d="1">Start evaluating AI <em>today.</em></h2>
+    <div class="tier-grid">
+      <div class="tier-card reveal">
+        <span class="tier-label">Starter</span>
+        <div class="tier-price">$47 <span>USD</span></div>
+        <p class="tier-desc">Figure out how risky the purchase is and score vendors on the 10 things that matter. Enough to make a smart decision on any AI tool.</p>
+        <ul class="tier-includes">
+          <li>Risk scoring tool (6 questions, 4 risk levels)</li>
+          <li>Vendor scorecard (10 categories, red flags, pass/fail thresholds)</li>
+        </ul>
+        <a class="btn btn-ghost gumroad-button" href="https://procurawest.gumroad.com/l/ai-procurement-toolkit">Get Starter <span class="arrow">&rarr;</span></a>
+      </div>
+      <div class="tier-card tier-card--featured reveal" data-d="1">
+        <span class="tier-badge">Most Popular</span>
+        <span class="tier-label">Pro</span>
+        <div class="tier-price">$97 <span>USD</span></div>
+        <p class="tier-desc">The complete process - from "we need an AI tool" to a signed contract with the right protections. Everything in Starter plus 4 more tools.</p>
+        <ul class="tier-includes">
+          <li>Everything in Starter</li>
+          <li>107 vendor screening questions</li>
+          <li>Proposal comparison scoring system</li>
+          <li>19 contract clauses vendors hope you skip</li>
+          <li>Step-by-step playbook</li>
+        </ul>
+        <a class="btn btn-lg btn-copper gumroad-button" href="https://procurawest.gumroad.com/l/ai-procurement-toolkit">Get Pro <span class="arrow">&rarr;</span></a>
+      </div>
+    </div>
   </div>
 </section>
 
 <!-- ============ WHY IT'S DIFFERENT ============ -->
 <section class="tk-section">
   <div class="shell">
-    <div class="eyebrow reveal">Why This Is Different</div>
-    <h2 class="reveal" data-d="1">The only <em>end-to-end</em> AI procurement system.</h2>
-    <p class="reveal" data-d="2">There are AI governance templates, compliance checklists, and general procurement playbooks out there. None of them take you from "we're thinking about buying AI" to "here's the signed contract" in one integrated system.</p>
-    <p class="reveal" data-d="2" style="margin-top:16px">Other templates are built by programmers, lawyers, or compliance consultants. This one is built by a procurement professional who understands the actual buying process - not just the governance theory, but how contracts get negotiated, how vendors push back, and where the gaps in standard software agreements will cost you.</p>
+    <div class="eyebrow reveal">Why This Exists</div>
+    <h2 class="reveal" data-d="1">Because a 20-minute demo is <em>not due diligence.</em></h2>
+    <p class="reveal" data-d="2">There are AI governance templates and compliance checklists out there. But none of them help you actually pick a vendor, compare proposals, and negotiate a contract. This toolkit does - because it was built by someone who buys things for a living, not by a programmer or a lawyer.</p>
 
     <ul class="diff-list reveal" data-d="3">
-      <li>19 AI specific contract clauses with negotiation guidance - not theory, actual language</li>
-      <li>Risk tiered clause selection - know exactly which clauses are required vs. recommended</li>
-      <li>Authorized use protections that close the vendor upsell loophole</li>
-      <li>International regulatory coverage (EU AI Act, GDPR, PIPEDA, CCPA, Colorado AI Act, NYC Local Law 144)</li>
-      <li>Integrated scoring with minimum thresholds so vendor selection is defensible</li>
-      <li>Built on standard procurement practices with an AI specific layer on top</li>
+      <li>Covers the entire process - from "should we even buy this?" to signed contract with protections</li>
+      <li>Plain-language contract clauses with tips on what vendors will push back on and how to respond</li>
+      <li>Your risk level drives the whole process - low-risk tools get a quick review, high-risk tools get the full treatment</li>
+      <li>Covers Canadian and international regulations - PIPEDA, EU AI Act, GDPR, and more - in one place</li>
+      <li>Built-in protections for data ownership, vendor lock-in, auto-renewal traps, and AI liability</li>
+      <li>Defensible documentation - when someone asks "why did we pick this vendor?" you have the receipts</li>
     </ul>
   </div>
 </section>
@@ -421,9 +619,9 @@ h1 em,h2 em,h3 em{font-style:italic;font-weight:400;color:var(--signal)}
 <!-- ============ CTA BAND ============ -->
 <section class="cta-band">
   <div class="shell">
-    <h2 class="reveal">Get the <em>complete system.</em></h2>
-    <p class="reveal" data-d="1">6 professional documents. Ready to use today. Risk classification through signed contract.</p>
-    <a class="btn btn-lg btn-copper gumroad-button reveal" data-d="2" href="https://procurawest.gumroad.com/l/ai-procurement-toolkit">Get the toolkit - $199 <span class="arrow">&rarr;</span></a>
+    <h2 class="reveal">Stop guessing. <em>Start evaluating.</em></h2>
+    <p class="reveal" data-d="1">6 tools. One process. Ready to use the day you buy it. From picking the right vendor to protecting the contract.</p>
+    <a class="btn btn-lg btn-copper gumroad-button reveal" data-d="2" href="https://procurawest.gumroad.com/l/ai-procurement-toolkit">Get the toolkit - from $47 <span class="arrow">&rarr;</span></a>
   </div>
 </section>
 
