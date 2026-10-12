@@ -33,7 +33,7 @@ Verify every item before work begins. Do not allow any contractor to start until
 | # | Item | Details | Verified |
 |---|------|---------|----------|
 | 08 | **Signed MSA or Contract Agreement** | Fully executed before work starts. No handshake deals, no "we'll get to it." Unsigned agreements mean zero legal protection. | _____ |
-| 09 | **Rate Schedule** | Confirmed and attached to the agreement. Every labour category, equipment rate, and markup should be documented and agreed upon in writing. | _____ |
+| 09 | **Rate Schedule** | Confirmed and attached to the agreement. Every labour category, equipment rate, and markup should be documented and agreed upon in writing. Compare rates against current market before accepting. | _____ |
 | 10 | **Scope of Work** | Clearly defined with exclusions noted. Ambiguous scope is the number one cause of change order disputes and cost overruns. | _____ |
 
 ---
