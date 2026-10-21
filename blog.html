@@ -11,7 +11,7 @@
   gtag('config', 'G-EXHL2RQ9D9');
 </script>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Procurement insights for oil & gas and construction companies in Alberta. Practical guides on contract procurement, contract management, contractor compliance, spend analysis, and procurement strategy from Procura West.">
+<meta name="description" content="Procurement insights for oil & gas and construction companies in Alberta. Practical guides on fractional CPO services, contract management, contractor compliance, spend analysis, and procurement strategy from Procura West.">
 <title>Procurement Blog - Insights for Oil & Gas & Construction | Procura West Calgary</title>
 
 <link rel="icon" type="image/png" href="assets/procura_west_logo_icon.png">
@@ -65,9 +65,11 @@ h1 em,h2 em{font-style:italic;font-weight:400;color:var(--signal)}
 .eyebrow{font-family:var(--mono);font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--slate);font-weight:500;display:inline-flex;align-items:center;gap:10px;margin-bottom:24px}
 .eyebrow::before{content:"";width:22px;height:1px;background:currentColor;display:inline-block}
 
+.section-label{font-family:var(--mono);font-size:10px;letter-spacing:.22em;text-transform:uppercase;color:var(--slate);font-weight:500;padding:clamp(32px,4vw,52px) 0 14px;border-bottom:2px solid var(--midnight);margin-bottom:0}
+
 .blog-grid{display:grid;grid-template-columns:1fr;gap:0;padding-bottom:clamp(60px,8vw,120px)}
 .blog-card{display:grid;grid-template-columns:1fr 2fr;gap:clamp(24px,4vw,48px);padding:clamp(28px,4vw,48px) 0;border-bottom:1px solid var(--rule);transition:background .3s;align-items:start}
-.blog-card:first-child{border-top:1px solid var(--rule)}
+.blog-card.first-in-section{border-top:1px solid var(--rule)}
 .blog-card:hover{background:var(--warm);margin:0 calc(-1 * var(--pad));padding-left:var(--pad);padding-right:var(--pad)}
 .blog-card-meta{display:flex;flex-direction:column;gap:8px}
 .blog-card-date{font-family:var(--mono);font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--slate);font-weight:500}
@@ -130,9 +132,11 @@ h1 em,h2 em{font-style:italic;font-weight:400;color:var(--signal)}
     <div class="meta" aria-hidden="true">Calgary · Western Canada</div>
     <nav class="nav" id="nav">
       <a href="services.html">Services</a>
-      <a href="toolkit.html">Toolkit</a>
       <a href="index.html#results">Results</a>
       <a href="blog.html">Blog</a>
+      <a href="quiz.html">Quiz</a>
+      <a href="packages.html">Packages</a>
+      <a href="roi.html">ROI Calc</a>
       <a href="index.html#about">About</a>
       <a href="index.html#contact">Contact</a>
     </nav>
@@ -152,25 +156,85 @@ h1 em,h2 em{font-style:italic;font-weight:400;color:var(--signal)}
 <section class="blog-grid">
   <div class="shell">
 
-    <!-- Quiz promo -->
-    <article class="blog-card" style="background:var(--midnight);margin:0 calc(-1 * var(--pad));padding-left:var(--pad);padding-right:var(--pad);border-color:var(--deep)">
+    <!-- ====== TOOLS SECTION ====== -->
+    <div class="section-label">Tools &amp; Checklists</div>
+
+    <!-- Subcontractor Risk Quiz featured promo (dark) -->
+    <article class="blog-card first-in-section" style="background:var(--midnight);margin:0 calc(-1 * var(--pad));padding-left:var(--pad);padding-right:var(--pad);border-color:var(--deep)">
       <div class="blog-card-meta">
         <span class="blog-card-date" style="color:var(--ice)">Interactive</span>
-        <span class="blog-card-tag" style="border-color:var(--signal);color:var(--ice)">Quiz</span>
+        <span class="blog-card-tag" style="border-color:var(--signal);color:var(--ice)">Risk Check</span>
         <span class="blog-card-read" style="color:var(--ice);opacity:.7">2 min</span>
       </div>
       <div>
-        <h2 style="color:var(--offwhite)"><a href="quiz.html" style="color:var(--offwhite)">Are You Overpaying Your <em>Contractors?</em></a></h2>
-        <p style="color:rgba(245,247,250,.8)">Six honest questions about how your company handles contractor rates, invoices, and compliance. The results might sting a little.</p>
-        <a href="quiz.html" class="read-more" style="color:var(--ice)">Take the quiz <span>&rarr;</span></a>
+        <h2 style="color:var(--offwhite)"><a href="subcontractor-risk-quiz.html" style="color:var(--offwhite)">Subcontractor Financial Red Flags - <em>7 warning signs</em> before they tell you.</a></h2>
+        <p style="color:rgba(245,247,250,.8)">Subcontractor defaults don't happen overnight. Each question maps to a documented warning sign from real default situations in Canadian construction. Built for project managers, not accountants.</p>
+        <a href="subcontractor-risk-quiz.html" class="read-more" style="color:var(--ice)">Check my subcontractor &rarr;</a>
+      </div>
+    </article>
+
+    <!-- Prime Contractor OHS Exposure Quiz promo (dark) -->
+    <article class="blog-card" style="background:var(--midnight);margin:0 calc(-1 * var(--pad));padding-left:var(--pad);padding-right:var(--pad);border-color:var(--deep)">
+      <div class="blog-card-meta">
+        <span class="blog-card-date" style="color:var(--ice)">Interactive</span>
+        <span class="blog-card-tag" style="border-color:var(--signal);color:var(--ice)">OHS Exposure</span>
+        <span class="blog-card-read" style="color:var(--ice);opacity:.7">2 min</span>
+      </div>
+      <div>
+        <h2 style="color:var(--offwhite)"><a href="prime-contractor-quiz.html" style="color:var(--offwhite)">Are you carrying OHS liability <em>you don't know about?</em></a></h2>
+        <p style="color:rgba(245,247,250,.8)">Prime contractor designation under Alberta law isn't administrative - it's criminal liability exposure. Most mid-market operators carry it on multi-contractor sites without realizing it. Seven questions. Two minutes.</p>
+        <a href="prime-contractor-quiz.html" class="read-more" style="color:var(--ice)">Check my OHS exposure &rarr;</a>
+      </div>
+    </article>
+
+    <!-- PPCLA Compliance Checklist promo -->
+    <article class="blog-card" style="background:var(--deep);margin:0 calc(-1 * var(--pad));padding-left:var(--pad);padding-right:var(--pad);border-color:var(--deep)">
+      <div class="blog-card-meta">
+        <span class="blog-card-date" style="color:var(--ice)">Interactive</span>
+        <span class="blog-card-tag" style="border-color:var(--signal);color:var(--ice)">AP Compliance Audit</span>
+        <span class="blog-card-read" style="color:var(--ice);opacity:.7">5 min</span>
+      </div>
+      <div>
+        <h2 style="color:var(--offwhite)"><a href="ppcla-checklist.html" style="color:var(--offwhite)">Is your AP process <em>PPCLA-compliant?</em> A 10-point audit for Alberta operators.</a></h2>
+        <p style="color:rgba(245,247,250,.8)">Alberta's Prompt Payment Act runs a 28-day clock on every construction invoice. If your AP process was built before the Act, you may have live adjudication risk right now. Ten questions. Find out in 5 minutes.</p>
+        <a href="ppcla-checklist.html" class="read-more" style="color:var(--ice)">Run the compliance check &rarr;</a>
+      </div>
+    </article>
+
+    <!-- Worker Classification quiz promo (standard) -->
+    <article class="blog-card">
+      <div class="blog-card-meta">
+        <span class="blog-card-date">Interactive</span>
+        <span class="blog-card-tag">Risk Audit</span>
+        <span class="blog-card-read">3 min</span>
+      </div>
+      <div>
+        <h2><a href="worker-classification-quiz.html">Worker Classification Risk Audit - are your contractors actually <em>employees?</em></a></h2>
+        <p>10 questions that map directly to CRA's Fourfold Test and WCB's coverage rules. Find out your misclassification risk before CRA does. For Alberta O&amp;G and construction companies.</p>
+        <a href="worker-classification-quiz.html" class="read-more">Check my risk <span>&rarr;</span></a>
+      </div>
+    </article>
+
+    <!-- Inflation-Proof Checklist standard card -->
+    <article class="blog-card">
+      <div class="blog-card-meta">
+        <span class="blog-card-date">Interactive</span>
+        <span class="blog-card-tag">MSA Audit</span>
+        <span class="blog-card-read">3 min check</span>
+      </div>
+      <div>
+        <h2><a href="inflation-proof-checklist.html">Is your services contract inflation-proof? A <em>12-point MSA audit.</em></a></h2>
+        <p>Construction input prices ran at 12.6% annualized in early 2026. Check which protection clauses your MSA is missing before your next renewal.</p>
+        <a href="inflation-proof-checklist.html" class="read-more">Run the audit <span>&rarr;</span></a>
       </div>
     </article>
 
     <!-- Checklist lead magnet promo -->
-    <article class="blog-card" style="background:var(--deep);margin:0 calc(-1 * var(--pad));padding-left:var(--pad);padding-right:var(--pad);border-color:var(--deep)">
+    <article class="blog-card" style="background:var(--signal);margin:0 calc(-1 * var(--pad));padding-left:var(--pad);padding-right:var(--pad);border-color:var(--signal)">
       <div class="blog-card-meta">
-        <span class="blog-card-date" style="color:var(--ice)">Free Download</span>
-        <span class="blog-card-tag" style="border-color:var(--signal);color:var(--ice)">Checklist</span>
+        <span class="blog-card-date" style="color:var(--ice);opacity:.7">Free Download</span>
+        <span class="blog-card-tag" style="border-color:rgba(181,212,244,.4);color:var(--ice)">Compliance Checklist</span>
+        <span class="blog-card-read" style="color:var(--ice);opacity:.7">5 min</span>
       </div>
       <div>
         <h2 style="color:var(--offwhite)"><a href="checklist.html" style="color:var(--offwhite)">Contractor Compliance <em>Checklist</em></a></h2>
@@ -179,7 +243,171 @@ h1 em,h2 em{font-style:italic;font-weight:400;color:var(--signal)}
       </div>
     </article>
 
-    <!-- 5 Signs post hidden until ready to launch -->
+    <!-- ====== GUIDES & BLOG POSTS SECTION ====== -->
+    <div class="section-label">Guides &amp; Blog Posts</div>
+
+    <!-- Annual MSA Rate Review Guide featured promo (dark) - September 2026 -->
+    <article class="blog-card first-in-section" style="background:var(--midnight);margin:0 calc(-1 * var(--pad));padding-left:var(--pad);padding-right:var(--pad);border-color:var(--deep)">
+      <div class="blog-card-meta">
+        <span class="blog-card-date" style="color:var(--ice)">September 7, 2026</span>
+        <span class="blog-card-tag" style="border-color:var(--signal);color:var(--ice)">Contract Management</span>
+        <span class="blog-card-read" style="color:var(--ice);opacity:.7">8 min read</span>
+      </div>
+      <div>
+        <h2 style="color:var(--offwhite)"><a href="blog/annual-msa-rate-review.html" style="color:var(--offwhite)">The annual MSA rate review: <em>when to do it, how to run it,</em> what to ask for.</a></h2>
+        <p style="color:rgba(245,247,250,.8)">Q4 renewals are here. If your contractor submits a rate increase first and you haven't benchmarked, the negotiation has already started at their number. Here's the 60-day process that changes that.</p>
+        <a href="blog/annual-msa-rate-review.html" class="read-more" style="color:var(--ice)">Read the guide &rarr;</a>
+      </div>
+    </article>
+
+    <!-- Carbon Levy Passthrough - October 2026 -->
+    <article class="blog-card">
+      <div class="blog-card-meta">
+        <span class="blog-card-date">October 12, 2026</span>
+        <span class="blog-card-tag">Contract Management</span>
+        <span class="blog-card-read">8 min read</span>
+      </div>
+      <div>
+        <h2><a href="blog/carbon-levy-passthrough.html">Alberta carbon pricing passthrough: what your <em>MSA needs</em> before January 1.</a></h2>
+        <p>Alberta's consumer fuel charge has been $0 since April 1, 2025 - but contractors are still putting "carbon costs" into their 2027 rate submissions, sometimes for a charge that no longer exists. If your multi-year MSA doesn't have a carbon passthrough clause, you can't verify them. Here's what the clause needs to say.</p>
+        <a href="blog/carbon-levy-passthrough.html" class="read-more">Read article <span>&rarr;</span></a>
+      </div>
+    </article>
+
+    <!-- Lien Claimant Management - October 2026 -->
+    <article class="blog-card">
+      <div class="blog-card-meta">
+        <span class="blog-card-date">October 5, 2026</span>
+        <span class="blog-card-tag">Contract Compliance</span>
+        <span class="blog-card-read">8 min read</span>
+      </div>
+      <div>
+        <h2><a href="blog/lien-claimant-management.html">Lien claimant management for Alberta project owners: <em>the 60-day holdback</em> and what happens when a lien lands.</a></h2>
+        <p>Paying the GC in full does not discharge a subcontractor's lien right. The 60-day holdback period and a title search before release are your protection. When a lien does land, the first 72 hours determine whether you have options. Here's the owner's playbook.</p>
+        <a href="blog/lien-claimant-management.html" class="read-more">Read article <span>&rarr;</span></a>
+      </div>
+    </article>
+
+    <!-- Owner-Supplied Materials / GFM - September 2026 -->
+    <article class="blog-card">
+      <div class="blog-card-meta">
+        <span class="blog-card-date">September 21, 2026</span>
+        <span class="blog-card-tag">Contract Management</span>
+        <span class="blog-card-read">9 min read</span>
+      </div>
+      <div>
+        <h2><a href="blog/owner-supplied-materials-gfm.html">Owner-supplied materials: <em>who bears the risk</em> when your equipment fails on site?</a></h2>
+        <p>No delivery inspection protocol. No risk-of-loss clause. No contractor notification obligation. When owner-supplied material fails during installation, those gaps are the dispute. Here's what the MSA needs to say before anything is delivered to site.</p>
+        <a href="blog/owner-supplied-materials-gfm.html" class="read-more">Read article <span>&rarr;</span></a>
+      </div>
+    </article>
+
+    <!-- PPCLA Flow-Down - September 2026 -->
+    <article class="blog-card">
+      <div class="blog-card-meta">
+        <span class="blog-card-date">September 14, 2026</span>
+        <span class="blog-card-tag">Contract Compliance</span>
+        <span class="blog-card-read">8 min read</span>
+      </div>
+      <div>
+        <h2><a href="blog/ppcla-flow-down.html">PPCLA flow-down: what Alberta GCs owe <em>their subcontractors.</em></a></h2>
+        <p>Pay-when-paid clauses can't extend the Act's deadlines. Unless you give a proper notice of non-payment, the 35-day backstop means the owner's slow payment is your problem - not your sub's. Here's what your sub-agreements need to reflect.</p>
+        <a href="blog/ppcla-flow-down.html" class="read-more">Read article <span>&rarr;</span></a>
+      </div>
+    </article>
+
+    <!-- Turnaround & Shutdown Procurement Guide card - August 2026 -->
+    <article class="blog-card">
+      <div class="blog-card-meta">
+        <span class="blog-card-date">August 31, 2026</span>
+        <span class="blog-card-tag">TAR Procurement</span>
+        <span class="blog-card-read">9 min read</span>
+      </div>
+      <div>
+        <h2><a href="blog/turnaround-procurement-guide.html">The turnaround procurement <em>playbook</em> for Alberta mid-market O&amp;G.</a></h2>
+        <p>Rate schedules, scope lock timing, field change authorization, back-charge documentation. TAR procurement is structurally different from regular services procurement - here's why and what to do differently.</p>
+        <a href="blog/turnaround-procurement-guide.html" class="read-more">Read the playbook <span>&rarr;</span></a>
+      </div>
+    </article>
+
+    <!-- August 10, 2026 blog posts -->
+    <article class="blog-card">
+      <div class="blog-card-meta">
+        <span class="blog-card-date">August 10, 2026</span>
+        <span class="blog-card-tag">Contract Compliance</span>
+        <span class="blog-card-read">7 min read</span>
+      </div>
+      <div>
+        <h2><a href="blog/ppcla-owners-guide.html">Are you a prompt payment liability? What Alberta's PPCLA means for the <em>owner side.</em></a></h2>
+        <p>Alberta's Prompt Payment Act gives contractors a 28-day payment window. Most mid-market operators' AP processes weren't built for it - and the penalty is fast-track adjudication that runs in weeks, not years.</p>
+        <a href="blog/ppcla-owners-guide.html" class="read-more">Read article <span>&rarr;</span></a>
+      </div>
+    </article>
+
+    <article class="blog-card">
+      <div class="blog-card-meta">
+        <span class="blog-card-date">August 10, 2026</span>
+        <span class="blog-card-tag">Invoice Management</span>
+        <span class="blog-card-read">6 min read</span>
+      </div>
+      <div>
+        <h2><a href="blog/contractor-invoice-red-flags.html">Contractor invoice fraud: <em>15 red flags</em> that cost you money.</a></h2>
+        <p>Billing errors and intentional manipulation in services contracts are more common than most AP teams expect. Here's exactly what to look for before you approve payment.</p>
+        <a href="blog/contractor-invoice-red-flags.html" class="read-more">Read article <span>&rarr;</span></a>
+      </div>
+    </article>
+
+    <article class="blog-card">
+      <div class="blog-card-meta">
+        <span class="blog-card-date">August 10, 2026</span>
+        <span class="blog-card-tag">Procurement Governance</span>
+        <span class="blog-card-read">6 min read</span>
+      </div>
+      <div>
+        <h2><a href="blog/sole-source-governance.html">Sole-source procurement governance: how to document it so it <em>survives an audit.</em></a></h2>
+        <p>Alberta's labour shortage is forcing sole-source procurement. Undocumented sole-source is an audit liability. Here's what the justification file needs to contain.</p>
+        <a href="blog/sole-source-governance.html" class="read-more">Read article <span>&rarr;</span></a>
+      </div>
+    </article>
+
+    <article class="blog-card">
+      <div class="blog-card-meta">
+        <span class="blog-card-date">July 27, 2026</span>
+        <span class="blog-card-tag">Contract Management</span>
+        <span class="blog-card-read">7 min read</span>
+      </div>
+      <div>
+        <h2><a href="blog/tariff-playbook-alberta.html">The Tariff Playbook: what every Alberta services contract needs <em>right now.</em></a></h2>
+        <p>Escalation clauses protect materials contracts. But your services contracts? Probably unprotected. Five clauses every Alberta O&amp;G and construction operator needs before their next renewal.</p>
+        <a href="blog/tariff-playbook-alberta.html" class="read-more">Read article <span>&rarr;</span></a>
+      </div>
+    </article>
+
+    <article class="blog-card">
+      <div class="blog-card-meta">
+        <span class="blog-card-date">July 20, 2026</span>
+        <span class="blog-card-tag">Contract Management</span>
+        <span class="blog-card-read">6 min read</span>
+      </div>
+      <div>
+        <h2><a href="blog/tm-contract-leakage.html">The real cost of T&amp;M contract leakage in oil &amp; gas and <em>construction.</em></a></h2>
+        <p>WorldCC and Deloitte research puts average contract value erosion at 8.6% from weak contracting. On a $5M contractor spend, that's $430,000 gone every year. Here's where it hides and how to stop it.</p>
+        <a href="blog/tm-contract-leakage.html" class="read-more">Read article <span>&rarr;</span></a>
+      </div>
+    </article>
+
+    <article class="blog-card">
+      <div class="blog-card-meta">
+        <span class="blog-card-date">July 20, 2026</span>
+        <span class="blog-card-tag">Contractor Compliance</span>
+        <span class="blog-card-read">7 min read</span>
+      </div>
+      <div>
+        <h2><a href="blog/contractor-prequalification-alberta.html">Contractor prequalification without the <em>chaos.</em></a></h2>
+        <p>ISN, Avetta, ComplyWorks, ContractorCheck - the platforms are good tools. But somebody has to actually manage them. Here's what a functioning prequalification program looks like for Alberta O&amp;G and construction.</p>
+        <a href="blog/contractor-prequalification-alberta.html" class="read-more">Read article <span>&rarr;</span></a>
+      </div>
+    </article>
 
     <article class="blog-card">
       <div class="blog-card-meta">
@@ -240,9 +468,11 @@ h1 em,h2 em{font-style:italic;font-weight:400;color:var(--signal)}
         <h4>Navigate</h4>
         <ul>
           <li><a href="services.html">Services</a></li>
-          <li><a href="toolkit.html">Toolkit</a></li>
           <li><a href="index.html#results">Results</a></li>
           <li><a href="blog.html">Blog</a></li>
+          <li><a href="quiz.html">Quiz</a></li>
+          <li><a href="packages.html">Packages</a></li>
+          <li><a href="roi.html">ROI Calc</a></li>
           <li><a href="index.html#about">About</a></li>
         </ul>
       </div>
@@ -286,7 +516,6 @@ h1 em,h2 em{font-style:italic;font-weight:400;color:var(--signal)}
   }));
 </script>
 
-<script src="quiz-bubble.js"></script>
 <!-- Cloudflare Web Analytics --><script type='module' src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "abd07da1f1294a6baf354afcd847a0e2"}'></script><!-- End Cloudflare Web Analytics -->
 </body>
 </html>

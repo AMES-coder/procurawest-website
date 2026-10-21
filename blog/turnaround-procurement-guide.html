@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-EXHL2RQ9D9"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-EXHL2RQ9D9');
+</script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Most Alberta operators run turnaround procurement like regular project procurement with a shorter timeline. Here's why that's wrong - and what to do differently.">
+<title>The Turnaround Procurement Playbook for Alberta Mid-Market O&G - Procura West</title>
+
+<link rel="icon" type="image/png" href="../assets/procura_west_logo_icon.png">
+<meta property="og:image" content="https://procurawest.ca/assets/procura_west_logo.png">
+<meta property="og:title" content="The Turnaround Procurement Playbook for Alberta Mid-Market O&G">
+<meta property="og:description" content="Rate schedule review, scope lock timing, field change management, and back-charge documentation. Built for Alberta O&G operators managing turnarounds and shutdowns.">
+<meta property="og:url" content="https://procurawest.ca/blog/turnaround-procurement-guide.html">
+<meta property="og:type" content="article">
+<meta property="article:published_time" content="2026-08-31">
+<meta property="article:author" content="Amy-Marie Holland">
+<meta name="keywords" content="Alberta turnaround procurement, TAR contractor management, shutdown procurement O&G, turnaround contractor strategy, Alberta oil gas shutdown services, procurement consulting Calgary">
+<meta name="geo.region" content="CA-AB">
+<meta name="geo.placename" content="Calgary">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://procurawest.ca/blog/turnaround-procurement-guide.html">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<style>
+:root{
+  --midnight:#042C53;--deep:#0C447C;--signal:#185FA5;--ice:#B5D4F4;--slate:#5A7A9E;--steel:#C8D4E0;--offwhite:#F5F7FA;--warm:#E8E6E3;--copper:#C4844E;
+  --rule:rgba(4,44,83,.12);--ink:#042C53;
+  --serif:Georgia,"Times New Roman",serif;--sans:"Inter",-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif;--mono:"Inter",-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif;
+  --pad:clamp(20px,4vw,56px);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+html,body{background:var(--offwhite);color:var(--ink);font-family:var(--sans);font-weight:400;font-size:16px;line-height:1.55;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility;overflow-x:hidden}
+a{color:inherit;text-decoration:none}
+img{display:block;max-width:100%}
+button{font:inherit;cursor:pointer;background:none;border:0;color:inherit}
+::selection{background:var(--midnight);color:var(--offwhite)}
+
+.shell{max-width:1480px;margin:0 auto;padding:0 var(--pad);position:relative}
+
+h1,h2,h3,h4{font-family:var(--serif);font-weight:400;letter-spacing:-.02em;line-height:1.04;color:var(--midnight)}
+h1 em,h2 em,h3 em{font-style:italic;font-weight:400;color:var(--signal)}
+
+.logo{display:flex;align-items:center;gap:14px;color:var(--midnight)}
+.logo-divider{width:1px;align-self:stretch;background:var(--steel);margin:4px 0}
+.logo-wordmark{display:flex;flex-direction:column;align-items:flex-start;line-height:1}
+.logo-procura{font-family:var(--serif);font-weight:400;font-size:22px;letter-spacing:.12em;color:var(--midnight);text-transform:uppercase}
+.logo-west-row{display:flex;align-items:center;gap:8px;margin-top:4px}
+.logo-west{font-family:var(--serif);font-weight:400;font-size:13px;letter-spacing:.22em;color:var(--signal);text-transform:uppercase}
+
+.masthead{position:sticky;top:0;z-index:50;background:rgba(245,247,250,.9);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border-bottom:1px solid var(--rule)}
+.masthead-inner{display:grid;grid-template-columns:1fr auto 1fr;align-items:center;padding:14px 0;gap:24px}
+.meta{font-family:var(--mono);font-size:11px;letter-spacing:.14em;color:var(--slate);text-transform:uppercase;text-align:center;white-space:nowrap;font-weight:500}
+.nav{display:flex;justify-content:flex-end;gap:26px;font-family:var(--mono);font-size:12px;letter-spacing:.12em;text-transform:uppercase;font-weight:500}
+.nav a{position:relative;padding:4px 0;color:var(--midnight)}
+.nav a::after{content:"";position:absolute;left:0;right:0;bottom:0;height:1px;background:var(--signal);transform:scaleX(0);transform-origin:left;transition:transform .35s cubic-bezier(.2,.7,.2,1)}
+.nav a:hover{color:var(--signal)}
+.nav a:hover::after{transform:scaleX(1)}
+.menu-btn{display:none;font-family:var(--mono);font-size:12px;letter-spacing:.12em;text-transform:uppercase;font-weight:500;color:var(--midnight)}
+
+.article-hero{padding:clamp(60px,10vw,120px) 0 clamp(40px,6vw,60px)}
+.article-hero .eyebrow{font-family:var(--mono);font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--slate);font-weight:500;display:inline-flex;align-items:center;gap:10px;margin-bottom:24px}
+.article-hero .eyebrow::before{content:"";width:22px;height:1px;background:currentColor;display:inline-block}
+.article-hero h1{font-size:clamp(32px,5vw,56px);line-height:1.08;letter-spacing:-.02em;max-width:22ch}
+.article-meta{display:flex;gap:24px;margin-top:24px;padding-top:24px;border-top:1px solid var(--rule);font-family:var(--mono);font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--slate);font-weight:500}
+
+.article-body{max-width:720px;padding-bottom:clamp(60px,8vw,120px)}
+.article-body h2{font-size:clamp(24px,3vw,34px);margin:clamp(40px,5vw,56px) 0 20px;letter-spacing:-.015em;line-height:1.1}
+.article-body h3{font-size:clamp(20px,2.5vw,26px);margin:clamp(32px,4vw,44px) 0 16px;letter-spacing:-.01em;line-height:1.15}
+.article-body p{font-size:clamp(16px,1.1vw,18px);line-height:1.7;margin-bottom:20px;color:var(--ink)}
+.article-body p b{font-weight:500;color:var(--midnight)}
+.article-body ul,.article-body ol{margin:0 0 24px 0;padding-left:24px}
+.article-body li{font-size:clamp(16px,1.1vw,18px);line-height:1.7;margin-bottom:10px;color:var(--ink)}
+.article-body blockquote{border-left:3px solid var(--signal);padding:16px 0 16px 24px;margin:32px 0;font-family:var(--serif);font-style:italic;font-size:clamp(18px,1.4vw,22px);line-height:1.5;color:var(--midnight)}
+
+.stat-callout{background:var(--midnight);color:var(--offwhite);padding:clamp(28px,3vw,44px);margin:clamp(32px,4vw,48px) 0;border-radius:2px;display:flex;flex-direction:column;gap:8px}
+.stat-callout .num{font-family:var(--serif);font-size:clamp(36px,5vw,64px);font-weight:400;color:var(--ice);letter-spacing:-.03em;line-height:1}
+.stat-callout .label{font-family:var(--mono);font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:rgba(245,247,250,.7);font-weight:500}
+.stat-callout .context{font-size:15px;color:rgba(245,247,250,.82);line-height:1.55;margin-top:8px}
+
+.timeline-grid{display:grid;grid-template-columns:1fr;gap:0;margin:clamp(24px,3vw,40px) 0;border-top:1px solid var(--rule)}
+.timeline-item{padding:clamp(20px,2.4vw,32px) 0;border-bottom:1px solid var(--rule);display:grid;grid-template-columns:auto 1fr;gap:20px;align-items:start}
+.timeline-day{font-family:var(--serif);font-size:clamp(22px,2.5vw,34px);color:var(--signal);line-height:1;font-weight:400;white-space:nowrap;min-width:90px}
+.timeline-item h3{font-size:clamp(17px,1.5vw,21px);margin-bottom:8px;color:var(--midnight)}
+.timeline-item p{font-size:15px;line-height:1.6;color:var(--slate);margin:0}
+
+.warning-box{background:rgba(184,92,26,.08);border-left:3px solid var(--copper);padding:clamp(20px,2.5vw,32px);margin:clamp(24px,3vw,40px) 0;border-radius:0 2px 2px 0}
+.warning-box .label{font-family:var(--mono);font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--copper);font-weight:500;margin-bottom:10px}
+.warning-box p{font-size:15px;line-height:1.6;color:var(--midnight);margin:0}
+
+.process-grid{display:grid;grid-template-columns:1fr;gap:0;margin:clamp(24px,3vw,40px) 0;border-top:1px solid var(--rule)}
+.process-item{padding:clamp(16px,2vw,28px) 0;border-bottom:1px solid var(--rule);display:grid;grid-template-columns:auto 1fr;gap:20px;align-items:start}
+.process-num{font-family:var(--serif);font-size:clamp(28px,3vw,40px);color:var(--signal);line-height:1;font-weight:400}
+.process-item h3{font-size:clamp(17px,1.5vw,21px);margin-bottom:8px;color:var(--midnight)}
+.process-item p{font-size:15px;line-height:1.6;color:var(--slate);margin:0}
+
+.article-cta{background:var(--midnight);color:var(--offwhite);padding:clamp(40px,5vw,60px);margin:clamp(40px,5vw,56px) 0;border-radius:2px}
+.article-cta h3{color:var(--offwhite);font-size:clamp(24px,3vw,34px);margin-bottom:16px}
+.article-cta p{color:rgba(245,247,250,.82);margin-bottom:24px;font-size:15px;line-height:1.6}
+.article-cta .btn{display:inline-flex;align-items:center;gap:12px;font-family:var(--mono);font-size:12px;letter-spacing:.14em;text-transform:uppercase;font-weight:500;padding:16px 22px;border:1px solid var(--signal);background:var(--signal);color:#fff;border-radius:2px;transition:background .3s,border-color .3s;cursor:pointer}
+.article-cta .btn:hover{background:var(--ice);color:var(--midnight);border-color:var(--ice)}
+.article-cta .btn-ghost{background:transparent;border-color:rgba(181,212,244,.4);color:var(--ice);margin-top:12px}
+.article-cta .btn-ghost:hover{background:rgba(181,212,244,.1);border-color:var(--ice)}
+.article-cta .cta-btns{display:flex;gap:12px;flex-wrap:wrap}
+
+.footer{background:var(--offwhite);padding:clamp(50px,6vw,90px) 0 30px;border-top:1px solid var(--rule)}
+.footer-top{padding-bottom:40px;border-bottom:1px solid var(--rule);display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:clamp(24px,3vw,60px)}
+.footer-brand .tagline{font-family:var(--mono);font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--slate);font-weight:500;line-height:1.7}
+.footer h4{font-family:var(--serif);font-size:14px;letter-spacing:.04em;text-transform:uppercase;color:var(--slate);margin-bottom:16px;font-weight:400}
+.footer ul{list-style:none;display:flex;flex-direction:column;gap:10px}
+.footer a{transition:color .3s;color:var(--midnight)}
+.footer a:hover{color:var(--signal)}
+.footer-bottom{display:flex;justify-content:space-between;align-items:center;padding-top:24px;font-family:var(--mono);font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--slate);flex-wrap:wrap;gap:12px;font-weight:500}
+
+@media (max-width:820px){
+  .masthead-inner{grid-template-columns:1fr auto}
+  .meta{display:none}
+  .nav{display:none}
+  .nav.open{display:flex;flex-direction:column;position:fixed;inset:0;background:var(--offwhite);padding:100px 32px 32px;font-size:22px;gap:18px;z-index:40}
+  .nav.open a{font-family:var(--serif);letter-spacing:-.01em;text-transform:none;font-size:30px;color:var(--midnight)}
+  .menu-btn{display:inline-flex;z-index:60;position:relative}
+  .footer-top{grid-template-columns:1fr 1fr;gap:30px}
+  .timeline-item,.process-item{grid-template-columns:1fr}
+  .article-cta .cta-btns{flex-direction:column}
+}
+@media (max-width:540px){
+  .footer-top{grid-template-columns:1fr}
+  .footer-bottom{flex-direction:column;align-items:flex-start}
+  .logo-procura{font-size:18px;letter-spacing:.1em}
+  .logo-west{font-size:11px;letter-spacing:.2em}
+  .article-meta{flex-direction:column;gap:8px}
+  .timeline-day{font-size:18px;min-width:70px}
+}
+</style>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "The Turnaround Procurement Playbook for Alberta Mid-Market O&G",
+  "description": "Most Alberta operators run turnaround procurement like regular project procurement with a shorter timeline. Here's why that's wrong - and what to do differently.",
+  "author": {
+    "@type": "Person",
+    "name": "Amy-Marie Holland",
+    "jobTitle": "Founder",
+    "url": "https://procurawest.ca"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Procura West",
+    "logo": "https://procurawest.ca/assets/procura_west_logo.png"
+  },
+  "datePublished": "2026-08-31",
+  "dateModified": "2026-08-31",
+  "mainEntityOfPage": "https://procurawest.ca/blog/turnaround-procurement-guide.html",
+  "keywords": ["Alberta turnaround procurement", "TAR contractor management", "shutdown procurement oil gas", "Alberta TAR services contracts", "turnaround scope management", "procurement consulting Calgary"]
+}
+</script>
+</head>
+<body>
+
+<!-- ============ MASTHEAD ============ -->
+<header class="masthead">
+  <div class="shell masthead-inner">
+    <a href="../index.html" class="logo" aria-label="Procura West - Home">
+      <svg class="logo-mark" width="46" height="36" viewBox="0 0 60 46" aria-hidden="true">
+        <polygon points="6,42 14,24 22,42" fill="#185FA5"/>
+        <polygon points="14,42 24,16 34,42" fill="#0C447C"/>
+        <polygon points="22,42 40,6 58,42" fill="#042C53"/>
+        <polygon points="37,10 40,6 43,10 42,12.5 38,12.5" fill="#B5D4F4"/>
+        <rect x="4" y="42" width="54" height="1" fill="#042C53"/>
+      </svg>
+      <span class="logo-divider" aria-hidden="true"></span>
+      <span class="logo-wordmark">
+        <span class="logo-procura">Procura</span>
+        <span class="logo-west-row">
+          <span class="logo-west">West</span>
+        </span>
+      </span>
+    </a>
+    <div class="meta" aria-hidden="true">Calgary · Western Canada</div>
+    <nav class="nav" id="nav">
+      <a href="../services.html">Services</a>
+      <a href="../index.html#results">Results</a>
+      <a href="../blog.html">Blog</a>
+      <a href="../quiz.html">Quiz</a>
+      <a href="../packages.html">Packages</a>
+      <a href="../roi.html">ROI Calc</a>
+      <a href="../index.html#about">About</a>
+      <a href="../index.html#contact">Contact</a>
+    </nav>
+    <button class="menu-btn" id="menuBtn" aria-label="Toggle menu" aria-expanded="false">Menu</button>
+  </div>
+</header>
+
+<main>
+
+<!-- ============ ARTICLE HERO ============ -->
+<section class="article-hero">
+  <div class="shell">
+    <span class="eyebrow">Blog · Turnaround Procurement</span>
+    <h1>The turnaround procurement <em>playbook</em> for Alberta mid-market O&amp;G.</h1>
+    <div class="article-meta">
+      <span>Amy-Marie Holland</span>
+      <span>August 31, 2026</span>
+      <span>9 min read</span>
+    </div>
+  </div>
+</section>
+
+<!-- ============ ARTICLE BODY ============ -->
+<article class="article-body">
+  <div class="shell">
+
+    <p>Most Alberta operators treat turnaround and shutdown procurement like regular project procurement with a shorter timeline. Tighter schedule, same process. Get the contractors you used last time, negotiate a rate, send a PO, manage the work.</p>
+
+    <p>That approach works fine when the TAR runs smoothly. It falls apart when it doesn't - and in my experience, plenty of them don't. Turnarounds are structurally different from routine services procurement in ways that make the standard approach unreliable. The labour cost structure is different. The scope definition problem is worse. The multi-contractor coordination creates liability exposure that doesn't exist on regular project sites. And the back-charge and change management piece is where most of the money gets lost.</p>
+
+    <p>This guide covers the procurement side of a turnaround or shutdown - not the engineering and planning, but how to set up your contractor strategy so that when execution starts, you're not making expensive decisions under pressure.</p>
+
+    <div class="stat-callout">
+      <span class="num">Scope</span>
+      <span class="label">The root cause behind most TAR cost overruns I see: incomplete scope at contract award</span>
+      <span class="context">In my experience in Alberta's O&G sector, the most common root cause of turnaround budget overruns isn't contractor performance - it's scope definition gaps that weren't closed before contractors were engaged. Every item added to scope after contract award costs more than it would have cost in the original engagement, and it costs more than you expect because you have no negotiating position once execution is underway.</span>
+    </div>
+
+    <h2>Why turnaround procurement is <em>different</em></h2>
+
+    <p>Three things make TAR procurement structurally different from routine services procurement, and each one requires a different response.</p>
+
+    <p><b>Labour costs are inflated throughout.</b> Turnaround work is concentrated - you're running long hours over a compressed schedule, which means premium trades, overtime at statutory rates, and mobilization and demobilization costs that eat a larger percentage of total hours than they would on a longer project. A welder on a regular services contract at $48/hour might cost $60+/hour fully loaded on a TAR when overtime and shift differentials are applied. If your rate schedule doesn't address how overtime is calculated and capped, every hour worked past the base shift is a billing dispute waiting to happen.</p>
+
+    <p><b>Scope changes mid-execution are expensive.</b> On a regular services contract, a change order is inconvenient. On a TAR, a change order during execution is a crisis. The facility is already down. Your contractor is the only one on site with the right certifications and equipment. The cost of mobilizing a different crew is the cost of extended downtime. In that environment, you have no negotiating position. Any scope item that wasn't in the contract before execution starts will be priced by the contractor at whatever rate the urgency allows.</p>
+
+    <p><b>Multi-contractor coordination creates OHS liability you may not have recognized.</b> Most turnarounds involve overlapping scopes - mechanical, instrumentation, inspection, civil - with multiple contractors on the same site simultaneously. Under Alberta's OHS Act, construction and oil and gas work sites with two or more employers must have a prime contractor, designated in writing by the person in control of the work site. The prime contractor holds responsibility for the health and safety of every person on that site, regardless of which employer they work for. Most TAR contracts don't explicitly name the prime contractor or define what that designation means in terms of coordination obligations. If an incident happens and no prime contractor was designated in writing, the person in control of the work site - usually the operator - is the prime contractor by default.</p>
+
+    <h2>The <em>12-week</em> TAR procurement timeline</h2>
+
+    <p>Here's the timeline I use. The numbers assume a standard fall or spring turnaround - adjust if you're working on a tighter or longer planning horizon.</p>
+
+    <div class="timeline-grid">
+      <div class="timeline-item">
+        <span class="timeline-day">Week −12</span>
+        <div>
+          <h3>Scope lock and contractor pre-qualification</h3>
+          <p>Scope lock means the engineering team has committed to the work list and isn't expecting to add to it after this point. This is rarely achieved in practice, but the date exists so procurement has something to contract against. Simultaneously, confirm your short-listed contractors are still active, their WCB clearance letters are current, and their ISN/Avetta/ComplyWorks status is up to date. TAR-specific prequalification should also confirm: do they have the trades and certifications your scope requires? Have they worked on this type of facility before? What is their current TAR workload - are they already committed to another shutdown in the same window?</p>
+        </div>
+      </div>
+      <div class="timeline-item">
+        <span class="timeline-day">Week −10</span>
+        <div>
+          <h3>RFQ issued and rate schedule review</h3>
+          <p>Issue your RFQ with the complete scope and the draft rate schedule for contractor review. The rate schedule - labour classifications, overtime structure, equipment and small tools rates, standby provisions - is where the billing disputes get baked in or locked out. Get the contractor's comments on the rate schedule before you issue a PO, not after the first invoice arrives. Specifically: how is overtime triggered? What's included in the labour rate vs. billed separately? What's the standby rate for equipment you've requested them to keep on site? These questions are negotiable before contract award. They are not negotiable on day 14 of execution.</p>
+        </div>
+      </div>
+      <div class="timeline-item">
+        <span class="timeline-day">Week −8</span>
+        <div>
+          <h3>Contract award and prime contractor designation</h3>
+          <p>Contract award should happen at least 8 weeks before start to allow for crew planning, equipment procurement, and any required certifications or orientations. The contract must name the prime contractor explicitly and define what that designation covers: who runs the site safety orientation, who coordinates the daily pre-job tailgate meetings, who holds the site emergency plan, and who has authority to stop work for safety. If you're designating one of your own employees as prime contractor, confirm they have the on-site presence and authority to fulfill that role - not just the paper designation.</p>
+        </div>
+      </div>
+      <div class="timeline-item">
+        <span class="timeline-day">Week −4</span>
+        <div>
+          <h3>Pre-TAR alignment and field change authorization</h3>
+          <p>Four weeks out, hold a pre-TAR meeting with every contractor who will be on site. Cover: the approved scope, the rate schedule, the invoicing process, the field change authorization procedure, and the prime contractor coordination protocol. The field change authorization procedure is the most important document in this meeting. Every operator needs a process for handling scope changes during execution - who can authorize a field change, what documentation is required before work starts, what the ceiling is for a verbal authorization vs. a signed COR, and what happens to scope items that get identified during execution and weren't on the original list.</p>
+        </div>
+      </div>
+      <div class="timeline-item">
+        <span class="timeline-day">Execution</span>
+        <div>
+          <h3>Daily invoice reconciliation and field ticket management</h3>
+          <p>The biggest source of post-TAR billing disputes is field tickets - daily records of hours worked, equipment used, and materials consumed. Your contract should specify how field tickets are generated, who signs them (contractor supervisor + your site representative), how quickly they must be submitted, and what happens if there's a discrepancy between the field ticket and the invoice. If your site representative is signing field tickets they haven't reviewed, you've created a billing authorization process with no verification step. The time to review a field ticket is the day it's generated - not when the invoice arrives 30 days later.</p>
+        </div>
+      </div>
+    </div>
+
+    <h2>The <em>scope lock</em> problem</h2>
+
+    <p>Scope lock is the single highest-impact procurement action in a turnaround, and it's the one most operators handle worst. The dynamic is predictable: engineering wants flexibility to add items identified during inspection. Operations wants to minimize downtime by doing everything while the facility is already down. Procurement wants a committed scope to contract against. Nobody gets what they want.</p>
+
+    <p>The result is a contract awarded against an incomplete scope, with a verbal understanding that "we'll handle additions on a change order." That's not a process - that's an invitation for billing disputes. A change order issued during execution, when the only contractor who can do the work is already on site, will not be negotiated. It will be accepted, because the alternative is a delayed restart.</p>
+
+    <p>The way to manage this isn't to force engineering to commit to an impossible deadline. It's to create a two-tier scope structure in the contract: a committed base scope that is fully priced and authorized, and a pre-approved contingency budget for inspection-identified items. The contingency budget uses the same rate schedule as the base scope, is approved in advance at a dollar ceiling, and requires a specific field authorization before any contingency work starts. Work within the ceiling doesn't require a new COR. Work that exceeds the ceiling triggers a proper change order process.</p>
+
+    <blockquote>A two-tier scope structure - base plus contingency - isn't a workaround. It's an honest acknowledgment that turnarounds always find more work once the facility is open, and a structure that prices that work in advance instead of after.</blockquote>
+
+    <h2>Rate schedule review: the <em>TAR-specific</em> billing traps</h2>
+
+    <p>A standard services contract rate schedule covers regular-time labour, a few equipment categories, and maybe a consumables provision. A TAR rate schedule needs to go further. These are the categories where I see billing disputes most often on turnarounds:</p>
+
+    <p><b>Overtime trigger and calculation.</b> When does overtime apply - after 8 hours in a shift, or after 44 hours in a week? What's the multiplier - 1.5x, 2.0x, or flat rate premium? Does Saturday work attract overtime automatically, or only if the worker exceeds their weekly threshold? If your rate schedule is silent on this, the contractor will invoice at whatever their internal overtime policy says.</p>
+
+    <p><b>Mobilization and demobilization.</b> Are mob/demob charges included in the labour rate or billed separately? If billed separately, what's the basis - a flat rate, a per-person charge, or actual cost? If the TAR extends for a crew refresh, does mob/demob apply again for the new crew?</p>
+
+    <p><b>Standby time.</b> Equipment standby - when gear is on site but not running - is a legitimate cost. But the standby rate, the trigger conditions, and the maximum standby hours should be in the contract. A piece of heavy equipment sitting on site for two days waiting for an access issue to resolve is a significant daily cost if there's no standby cap in the agreement.</p>
+
+    <p><b>Small tools and consumables.</b> The boundary between what's included in the labour rate and what gets billed as a separate tool or consumable charge is different on a TAR than on a regular services contract. Define it before execution starts.</p>
+
+    <div class="warning-box">
+      <div class="label">Back-Charge Documentation</div>
+      <p>If a contractor causes damage, leaves deficiencies, or requires rework during a TAR, your ability to recover those costs depends entirely on your documentation process. Back-charges that aren't documented at the time - with photos, a written description, the contractor's acknowledgment, and a cost estimate - are extremely difficult to recover after the contract closes. Your site representative needs to know: document the issue the day it's identified, in writing, and get the contractor representative's acknowledgment. Verbal agreements to "sort it out later" rarely hold.</p>
+    </div>
+
+    <h2>Prime contractor designation and <em>multi-crew coordination</em></h2>
+
+    <p>When your mechanical crew, your inspection crew, and your instrumentation crew are all working at the same time, your site looks like a construction project - which means Alberta's OHS prime contractor rules apply. One entity on that site is legally responsible for the health and safety of every worker present, regardless of which employer they work for.</p>
+
+    <p>Most TAR contracts don't address this. The assumption is that each contractor manages their own OHS program, and the site somehow operates safely through mutual cooperation. That assumption is fine until there's an incident - at which point, if nobody was designated in writing, the prime contractor role falls by default on the person in control of the work site - usually the operator.</p>
+
+    <p>The fix is straightforward: name the prime contractor in each contract. Specify what the prime contractor designation requires: who runs the site orientation, who holds the emergency response plan, who coordinates the daily tailgate meetings, and who has authority to stop work for a safety concern. If the operator is designating one of their own supervisors as prime contractor, that person needs to be physically present on the site, not managing the TAR remotely from an office 40 kilometres away.</p>
+
+    <h2>Close-out: field tickets, invoices, and <em>back-charges</em></h2>
+
+    <p>The TAR close-out process is where operators recover from or pay for everything that went wrong during execution. A well-managed close-out requires three things: reconciled field tickets, a final invoice that matches the field ticket record, and a back-charge register that documents any deficiencies or costs incurred due to contractor performance issues.</p>
+
+    <div class="process-grid">
+      <div class="process-item">
+        <span class="process-num">01</span>
+        <div>
+          <h3>Field ticket reconciliation</h3>
+          <p>Before you approve any final invoice, reconcile every field ticket against the hours billed. Hours on the final invoice should match hours on the signed field tickets - any discrepancy is a billing error until it's explained. Labour classification on the field ticket should match what the contractor invoiced - if a journeyman hour was signed off in the field and a foreman rate appears on the invoice, that's a billing dispute. Settle all field ticket discrepancies before the final invoice is submitted.</p>
+        </div>
+      </div>
+      <div class="process-item">
+        <span class="process-num">02</span>
+        <div>
+          <h3>COR and change order reconciliation</h3>
+          <p>Every COR that was issued during execution should appear on the final invoice in a form you can reconcile to the approved change order amount. Scope that was added verbally and never confirmed in a COR should not be on the final invoice - and if it is, the conversation about whether to pay it starts at $0, not at the contractor's submitted price. The COR reconciliation is also where you confirm that the contingency budget ceiling was not exceeded without proper authorization.</p>
+        </div>
+      </div>
+      <div class="process-item">
+        <span class="process-num">03</span>
+        <div>
+          <h3>Back-charge documentation and offset</h3>
+          <p>Any cost incurred by the operator due to contractor deficiencies - rework, site cleanup, third-party costs caused by contractor error - should be presented as a back-charge against the final invoice. The back-charge must be documented: what happened, when, what it cost, and the contractor's acknowledgment at the time. If the contractor disputes the back-charge, the documentation is your evidence. Without it, you're negotiating with no bargaining power.</p>
+        </div>
+      </div>
+      <div class="process-item">
+        <span class="process-num">04</span>
+        <div>
+          <h3>Deficiency list and holdback release</h3>
+          <p>The PPCLA's holdback rules (a 10% holdback on lienable work) can apply to construction-related TAR work - confirm which of your TAR scopes are covered. If you're holding back a percentage of contract value pending completion, confirm that the deficiency list is in writing and that the holdback release is tied to a specific completion trigger - not a vague "when work is done to our satisfaction." Holdback that isn't released within the PPCLA timeframes creates a prompt payment liability. Holdback that doesn't have a documented deficiency list behind it is harder to maintain if the contractor disputes it.</p>
+        </div>
+      </div>
+    </div>
+
+    <h2>What separates good TAR procurement from the rest</h2>
+
+    <p>The operators who manage turnarounds well have a few things in common. They engage contractors early - well before the scope is fully locked - so that the pricing conversation happens when both parties have time to negotiate properly. They have a rate schedule that was built for TAR conditions, not copied from the regular services MSA. They have a field change authorization process that is enforced consistently during execution, not improvised. And they have a site representative who understands that signing a field ticket is an authorization to pay - not just a record of what happened.</p>
+
+    <p>None of this requires a large procurement team. It requires the right processes, established before the TAR starts, and enforced consistently during execution and close-out. The cost of getting this right is significantly less than the cost of one TAR billing dispute.</p>
+
+    <div class="article-cta">
+      <h3>Running a turnaround this fall?</h3>
+      <p>I help mid-market Alberta O&G operators set up the contractor strategy, rate schedules, and field change processes that prevent TAR cost overruns. If you've got a shutdown or turnaround coming up and want a second set of eyes on your procurement approach, reach out.</p>
+      <div class="cta-btns">
+        <a href="../index.html#contact" class="btn">Talk to me</a>
+        <a href="../quiz.html" class="btn btn-ghost">Take the overpayment quiz first →</a>
+      </div>
+    </div>
+
+  </div>
+</article>
+
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="footer">
+  <div class="shell">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <div class="logo" style="margin-bottom:16px">
+          <svg width="36" height="28" viewBox="0 0 60 46" aria-hidden="true">
+            <polygon points="6,42 14,24 22,42" fill="#185FA5"/>
+            <polygon points="14,42 24,16 34,42" fill="#0C447C"/>
+            <polygon points="22,42 40,6 58,42" fill="#042C53"/>
+            <polygon points="37,10 40,6 43,10 42,12.5 38,12.5" fill="#B5D4F4"/>
+            <rect x="4" y="42" width="54" height="1" fill="#042C53"/>
+          </svg>
+          <span class="logo-divider" aria-hidden="true"></span>
+          <span class="logo-wordmark">
+            <span class="logo-procura">Procura</span>
+            <span class="logo-west-row"><span class="logo-west">West</span></span>
+          </span>
+        </div>
+        <p class="tagline">Built on Trust<br>Driven by Results<br><br>Calgary, Alberta</p>
+      </div>
+      <div>
+        <h4>Services</h4>
+        <ul>
+          <li><a href="../services.html">What I Do</a></li>
+          <li><a href="../packages.html">Packages</a></li>
+          <li><a href="../roi.html">ROI Calculator</a></li>
+          <li><a href="../index.html#contact">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Tools</h4>
+        <ul>
+          <li><a href="../quiz.html">Overpayment Quiz</a></li>
+          <li><a href="../worker-classification-quiz.html">Worker Classification</a></li>
+          <li><a href="../subcontractor-risk-quiz.html">Subcontractor Risk</a></li>
+          <li><a href="../inflation-proof-checklist.html">MSA Checklist</a></li>
+          <li><a href="../ppcla-checklist.html">PPCLA Compliance</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Blog</h4>
+        <ul>
+          <li><a href="../blog.html">All Posts</a></li>
+          <li><a href="tm-contract-leakage.html">T&amp;M Leakage</a></li>
+          <li><a href="ppcla-owners-guide.html">PPCLA Guide</a></li>
+          <li><a href="contractor-invoice-red-flags.html">Invoice Red Flags</a></li>
+          <li><a href="sole-source-governance.html">Sole-Source Governance</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Procura West Inc. All rights reserved.</span>
+      <span>Supply chain management · Calgary, Alberta</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+const menuBtn = document.getElementById('menuBtn');
+const nav = document.getElementById('nav');
+menuBtn.addEventListener('click', () => {
+  const open = nav.classList.toggle('open');
+  menuBtn.setAttribute('aria-expanded', open);
+  menuBtn.textContent = open ? 'Close' : 'Menu';
+});
+</script>
+
+<!-- Cloudflare Web Analytics --><script type='module' src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "abd07da1f1294a6baf354afcd847a0e2"}'></script><!-- End Cloudflare Web Analytics -->
+</body>
+</html>

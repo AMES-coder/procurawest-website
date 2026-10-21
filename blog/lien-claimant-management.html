@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-EXHL2RQ9D9"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-EXHL2RQ9D9');
+</script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Alberta's PPCLA gives lien claimants rights against your holdback even after you've paid the GC. A practical guide for project owners on managing the 60-day holdback period, conducting lien searches, and releasing holdback without double-paying.">
+<title>Lien Claimant Management for Alberta Project Owners: The 60-Day Holdback - Procura West</title>
+
+<link rel="icon" type="image/png" href="../assets/procura_west_logo_icon.png">
+<meta property="og:image" content="https://procurawest.ca/assets/procura_west_logo.png">
+<meta property="og:title" content="Lien Claimant Management for Alberta Project Owners: The 60-Day Holdback and What Happens When a Lien Lands">
+<meta property="og:description" content="Paying the GC doesn't protect you from the subcontractor's lien. Here's how to manage Alberta holdback obligations and release holdback without exposure.">
+<meta property="og:url" content="https://procurawest.ca/blog/lien-claimant-management.html">
+<meta property="og:type" content="article">
+<meta property="article:published_time" content="2026-10-05">
+<meta property="article:author" content="Amy-Marie Holland">
+<meta name="keywords" content="Alberta lien claimant management, PPCLA holdback release, Alberta construction lien, 60-day lien period Alberta, holdback release checklist, Alberta owner lien exposure, mechanics lien Alberta, procurement consulting Calgary">
+<meta name="geo.region" content="CA-AB">
+<meta name="geo.placename" content="Calgary">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://procurawest.ca/blog/lien-claimant-management.html">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<style>
+:root{
+  --midnight:#042C53;--deep:#0C447C;--signal:#185FA5;--ice:#B5D4F4;--slate:#5A7A9E;--steel:#C8D4E0;--offwhite:#F5F7FA;--warm:#E8E6E3;--copper:#C4844E;
+  --rule:rgba(4,44,83,.12);--ink:#042C53;
+  --serif:Georgia,"Times New Roman",serif;--sans:"Inter",-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif;--mono:"Inter",-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif;
+  --pad:clamp(20px,4vw,56px);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+html,body{background:var(--offwhite);color:var(--ink);font-family:var(--sans);font-weight:400;font-size:16px;line-height:1.55;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility;overflow-x:hidden}
+a{color:inherit;text-decoration:none}
+img{display:block;max-width:100%}
+button{font:inherit;cursor:pointer;background:none;border:0;color:inherit}
+::selection{background:var(--midnight);color:var(--offwhite)}
+
+.shell{max-width:1480px;margin:0 auto;padding:0 var(--pad);position:relative}
+
+h1,h2,h3,h4{font-family:var(--serif);font-weight:400;letter-spacing:-.02em;line-height:1.04;color:var(--midnight)}
+h1 em,h2 em,h3 em{font-style:italic;font-weight:400;color:var(--signal)}
+
+.logo{display:flex;align-items:center;gap:14px;color:var(--midnight)}
+.logo-divider{width:1px;align-self:stretch;background:var(--steel);margin:4px 0}
+.logo-wordmark{display:flex;flex-direction:column;align-items:flex-start;line-height:1}
+.logo-procura{font-family:var(--serif);font-weight:400;font-size:22px;letter-spacing:.12em;color:var(--midnight);text-transform:uppercase}
+.logo-west-row{display:flex;align-items:center;gap:8px;margin-top:4px}
+.logo-west{font-family:var(--serif);font-weight:400;font-size:13px;letter-spacing:.22em;color:var(--signal);text-transform:uppercase}
+
+.masthead{position:sticky;top:0;z-index:50;background:rgba(245,247,250,.9);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border-bottom:1px solid var(--rule)}
+.masthead-inner{display:grid;grid-template-columns:1fr auto 1fr;align-items:center;padding:14px 0;gap:24px}
+.meta{font-family:var(--mono);font-size:11px;letter-spacing:.14em;color:var(--slate);text-transform:uppercase;text-align:center;white-space:nowrap;font-weight:500}
+.nav{display:flex;justify-content:flex-end;gap:26px;font-family:var(--mono);font-size:12px;letter-spacing:.12em;text-transform:uppercase;font-weight:500}
+.nav a{position:relative;padding:4px 0;color:var(--midnight)}
+.nav a::after{content:"";position:absolute;left:0;right:0;bottom:0;height:1px;background:var(--signal);transform:scaleX(0);transform-origin:left;transition:transform .35s cubic-bezier(.2,.7,.2,1)}
+.nav a:hover{color:var(--signal)}
+.nav a:hover::after{transform:scaleX(1)}
+.menu-btn{display:none;font-family:var(--mono);font-size:12px;letter-spacing:.12em;text-transform:uppercase;font-weight:500;color:var(--midnight)}
+
+.article-hero{padding:clamp(60px,10vw,120px) 0 clamp(40px,6vw,60px)}
+.article-hero .eyebrow{font-family:var(--mono);font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--slate);font-weight:500;display:inline-flex;align-items:center;gap:10px;margin-bottom:24px}
+.article-hero .eyebrow::before{content:"";width:22px;height:1px;background:currentColor;display:inline-block}
+.article-hero h1{font-size:clamp(32px,5vw,56px);line-height:1.08;letter-spacing:-.02em;max-width:22ch}
+.article-meta{display:flex;gap:24px;margin-top:24px;padding-top:24px;border-top:1px solid var(--rule);font-family:var(--mono);font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--slate);font-weight:500}
+
+.article-body{max-width:720px;padding-bottom:clamp(60px,8vw,120px)}
+.article-body h2{font-size:clamp(24px,3vw,34px);margin:clamp(40px,5vw,56px) 0 20px;letter-spacing:-.015em;line-height:1.1}
+.article-body h3{font-size:clamp(20px,2.5vw,26px);margin:clamp(32px,4vw,44px) 0 16px;letter-spacing:-.01em;line-height:1.15}
+.article-body p{font-size:clamp(16px,1.1vw,18px);line-height:1.7;margin-bottom:20px;color:var(--ink)}
+.article-body p b{font-weight:500;color:var(--midnight)}
+.article-body ul,.article-body ol{margin:0 0 24px 0;padding-left:24px}
+.article-body li{font-size:clamp(16px,1.1vw,18px);line-height:1.7;margin-bottom:10px;color:var(--ink)}
+.article-body blockquote{border-left:3px solid var(--signal);padding:16px 0 16px 24px;margin:32px 0;font-family:var(--serif);font-style:italic;font-size:clamp(18px,1.4vw,22px);line-height:1.5;color:var(--midnight)}
+
+.stat-callout{background:var(--midnight);color:var(--offwhite);padding:clamp(28px,3vw,44px);margin:clamp(32px,4vw,48px) 0;border-radius:2px;display:flex;flex-direction:column;gap:8px}
+.stat-callout .num{font-family:var(--serif);font-size:clamp(36px,5vw,64px);font-weight:400;color:var(--ice);letter-spacing:-.03em;line-height:1}
+.stat-callout .label{font-family:var(--mono);font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:rgba(245,247,250,.7);font-weight:500}
+.stat-callout .context{font-size:15px;color:rgba(245,247,250,.82);line-height:1.55;margin-top:8px}
+
+.payment-chain{display:grid;grid-template-columns:1fr;gap:0;margin:clamp(24px,3vw,40px) 0;border-top:2px solid var(--midnight)}
+.chain-item{padding:clamp(20px,2.4vw,32px) 0;border-bottom:1px solid var(--rule);display:grid;grid-template-columns:auto 1fr;gap:24px;align-items:start}
+.chain-badge{background:var(--signal);color:#fff;font-family:var(--mono);font-size:11px;letter-spacing:.1em;text-transform:uppercase;font-weight:500;padding:6px 12px;border-radius:2px;white-space:nowrap;align-self:start;min-width:80px;text-align:center}
+.chain-item h3{font-size:clamp(17px,1.5vw,21px);margin-bottom:8px;color:var(--midnight)}
+.chain-item p{font-size:15px;line-height:1.6;color:var(--slate);margin:0}
+
+.warning-box{background:rgba(184,92,26,.08);border-left:3px solid var(--copper);padding:clamp(20px,2.5vw,32px);margin:clamp(24px,3vw,40px) 0;border-radius:0 2px 2px 0}
+.warning-box .label{font-family:var(--mono);font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--copper);font-weight:500;margin-bottom:10px}
+.warning-box p{font-size:15px;line-height:1.6;color:var(--midnight);margin:0}
+
+.checklist-box{background:var(--ice);border-left:3px solid var(--signal);padding:clamp(20px,2.5vw,32px);margin:clamp(24px,3vw,40px) 0;border-radius:0 2px 2px 0}
+.checklist-box .label{font-family:var(--mono);font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--signal);font-weight:500;margin-bottom:14px}
+.checklist-box ul{margin:0;padding-left:20px}
+.checklist-box li{font-size:15px;line-height:1.6;color:var(--midnight);margin-bottom:10px}
+.checklist-box li:last-child{margin-bottom:0}
+
+.article-cta{background:var(--midnight);color:var(--offwhite);padding:clamp(40px,5vw,60px);margin:clamp(40px,5vw,56px) 0;border-radius:2px}
+.article-cta h3{color:var(--offwhite);font-size:clamp(24px,3vw,34px);margin-bottom:16px}
+.article-cta p{color:rgba(245,247,250,.82);margin-bottom:24px;font-size:15px;line-height:1.6}
+.article-cta .btn{display:inline-flex;align-items:center;gap:12px;font-family:var(--mono);font-size:12px;letter-spacing:.14em;text-transform:uppercase;font-weight:500;padding:16px 22px;border:1px solid var(--signal);background:var(--signal);color:#fff;border-radius:2px;transition:background .3s,border-color .3s;cursor:pointer}
+.article-cta .btn:hover{background:var(--ice);color:var(--midnight);border-color:var(--ice)}
+.article-cta .btn-ghost{background:transparent;border-color:rgba(181,212,244,.4);color:var(--ice);margin-top:12px}
+.article-cta .btn-ghost:hover{background:rgba(181,212,244,.1);border-color:var(--ice)}
+.article-cta .cta-btns{display:flex;gap:12px;flex-wrap:wrap}
+
+.footer{background:var(--offwhite);padding:clamp(50px,6vw,90px) 0 30px;border-top:1px solid var(--rule)}
+.footer-top{padding-bottom:40px;border-bottom:1px solid var(--rule);display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:clamp(24px,3vw,60px)}
+.footer-brand .tagline{font-family:var(--mono);font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--slate);font-weight:500;line-height:1.7}
+.footer h4{font-family:var(--serif);font-size:14px;letter-spacing:.04em;text-transform:uppercase;color:var(--slate);margin-bottom:16px;font-weight:400}
+.footer ul{list-style:none;display:flex;flex-direction:column;gap:10px}
+.footer a{transition:color .3s;color:var(--midnight)}
+.footer a:hover{color:var(--signal)}
+.footer-bottom{display:flex;justify-content:space-between;align-items:center;padding-top:24px;font-family:var(--mono);font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--slate);flex-wrap:wrap;gap:12px;font-weight:500}
+
+@media (max-width:820px){
+  .masthead-inner{grid-template-columns:1fr auto}
+  .meta{display:none}
+  .nav{display:none}
+  .nav.open{display:flex;flex-direction:column;position:fixed;inset:0;background:var(--offwhite);padding:100px 32px 32px;font-size:22px;gap:18px;z-index:40}
+  .nav.open a{font-family:var(--serif);letter-spacing:-.01em;text-transform:none;font-size:30px;color:var(--midnight)}
+  .menu-btn{display:inline-flex;z-index:60;position:relative}
+  .footer-top{grid-template-columns:1fr 1fr;gap:30px}
+  .chain-item{grid-template-columns:1fr}
+  .article-cta .cta-btns{flex-direction:column}
+}
+@media (max-width:540px){
+  .footer-top{grid-template-columns:1fr}
+  .footer-bottom{flex-direction:column;align-items:flex-start}
+  .logo-procura{font-size:18px;letter-spacing:.1em}
+  .logo-west{font-size:11px;letter-spacing:.2em}
+  .article-meta{flex-direction:column;gap:8px}
+}
+</style>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Lien Claimant Management for Alberta Project Owners: The 60-Day Holdback and What Happens When a Lien Lands",
+  "description": "Alberta's PPCLA gives lien claimants rights against your holdback even after you've paid the GC. A practical guide for project owners on managing the 60-day period, conducting lien searches, and releasing holdback without double-paying.",
+  "author": {
+    "@type": "Person",
+    "name": "Amy-Marie Holland",
+    "jobTitle": "Founder",
+    "url": "https://procurawest.ca"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Procura West",
+    "logo": "https://procurawest.ca/assets/procura_west_logo.png"
+  },
+  "datePublished": "2026-10-05",
+  "dateModified": "2026-10-05",
+  "mainEntityOfPage": "https://procurawest.ca/blog/lien-claimant-management.html",
+  "keywords": ["Alberta lien claimant management", "PPCLA holdback release", "Alberta construction lien", "60-day lien period", "holdback release checklist", "procurement consulting Calgary"]
+}
+</script>
+</head>
+<body>
+
+<!-- ============ MASTHEAD ============ -->
+<header class="masthead">
+  <div class="shell masthead-inner">
+    <a href="../index.html" class="logo" aria-label="Procura West - Home">
+      <svg class="logo-mark" width="46" height="36" viewBox="0 0 60 46" aria-hidden="true">
+        <polygon points="6,42 14,24 22,42" fill="#185FA5"/>
+        <polygon points="14,42 24,16 34,42" fill="#0C447C"/>
+        <polygon points="22,42 40,6 58,42" fill="#042C53"/>
+        <polygon points="37,10 40,6 43,10 42,12.5 38,12.5" fill="#B5D4F4"/>
+        <rect x="4" y="42" width="54" height="1" fill="#042C53"/>
+      </svg>
+      <span class="logo-divider" aria-hidden="true"></span>
+      <span class="logo-wordmark">
+        <span class="logo-procura">Procura</span>
+        <span class="logo-west-row">
+          <span class="logo-west">West</span>
+        </span>
+      </span>
+    </a>
+    <div class="meta" aria-hidden="true">Calgary · Western Canada</div>
+    <nav class="nav" id="nav">
+      <a href="../services.html">Services</a>
+      <a href="../index.html#results">Results</a>
+      <a href="../blog.html">Blog</a>
+      <a href="../quiz.html">Quiz</a>
+      <a href="../packages.html">Packages</a>
+      <a href="../roi.html">ROI Calc</a>
+      <a href="../index.html#about">About</a>
+      <a href="../index.html#contact">Contact</a>
+    </nav>
+    <button class="menu-btn" id="menuBtn" aria-label="Toggle menu" aria-expanded="false">Menu</button>
+  </div>
+</header>
+
+<main>
+
+<!-- ============ ARTICLE HERO ============ -->
+<section class="article-hero">
+  <div class="shell">
+    <span class="eyebrow">Blog · Contract Compliance</span>
+    <h1>Lien claimant management: the <em>60-day holdback</em> and what happens when a lien lands.</h1>
+    <div class="article-meta">
+      <span>Amy-Marie Holland</span>
+      <span>October 5, 2026</span>
+      <span>7 min read</span>
+    </div>
+  </div>
+</section>
+
+<!-- ============ ARTICLE BODY ============ -->
+<article class="article-body">
+  <div class="shell">
+
+    <p>The GC finished the job. You paid the progress draws. The final invoice arrives and looks clean. You issue the final payment - holdback included.</p>
+
+    <p>Three weeks later, a notice arrives from a roofing sub who says the GC owes them $78,000 and they've registered a lien against your property title.</p>
+
+    <p>Here's the part that surprises most project owners: the fact that you already paid the GC in full doesn't protect you. Under Alberta's <em>Prompt Payment and Construction Lien Act</em> (PPCLA), your holdback isn't just a retention device you hold until you're satisfied with the work. It is security for lien claimants - contractors, subcontractors, suppliers, and workers who provided services or materials to your project. If you released it before the lien period expired, and before you confirmed no one was owed, you may owe the sub's claim directly - out of money you've already paid once.</p>
+
+    <p>This guide covers what the PPCLA requires from project owners on holdback and lien management, what happens when a lien actually lands, and the five-step process for releasing holdback without exposure.</p>
+
+    <div class="stat-callout">
+      <span class="num">60 days</span>
+      <span class="label">The lien period after substantial completion during which liens can be registered against your property</span>
+      <span class="context">Under the PPCLA, a lien can be registered against your property title within 60 days of substantial completion of the contract, or within 60 days of the last date the contractor, subcontractor, or supplier furnished services or materials. The clock runs from the last work done - not just the GC's completion date. An unpaid finishing trade who wrapped up two weeks after the GC's substantial completion date has until 60 days after their own last day on site. Concrete supply and work on oil or gas wells and well sites have a longer 90-day lien period. (The old <em>Builders' Lien Act</em> period was 45 days; the PPCLA extended it for contracts entered into on or after August 29, 2022.)</span>
+    </div>
+
+    <h2>The holdback obligation: <em>what the PPCLA requires</em></h2>
+
+    <p>Any owner who has an improvement made to their land is required by the PPCLA to retain 10% of the value of services and materials as holdback. This applies whether or not your contract explicitly mentions holdback. The obligation is statutory - it exists even if you forgot to include a holdback clause, even if you agreed to waive it, and even if the contractor asked you to release it early.</p>
+
+    <p>The holdback must be maintained for the entire 60-day lien period after the earlier of:</p>
+    <ul>
+      <li>The date of substantial completion of the contract</li>
+      <li>The date of abandonment (if the contractor walks off before completing)</li>
+      <li>The date of termination (if you end the contract early)</li>
+    </ul>
+
+    <p>During that 60-day period, the holdback is not yours to release. It belongs - as a matter of law - to the potential lien claimants who may have claims against the work. Releasing it early doesn't just expose you to a dispute with the sub. It can make you personally liable for the sub's claim up to the amount of holdback you released prematurely.</p>
+
+    <h2>Who can file a lien - and <em>why the owner is the target</em></h2>
+
+    <p>In Alberta, anyone who contributes labour, services, or materials to an improvement to land has lien rights. That includes:</p>
+    <ul>
+      <li>The GC (your direct contractor)</li>
+      <li>Subcontractors hired by the GC</li>
+      <li>Sub-subcontractors hired by the subs</li>
+      <li>Material suppliers who delivered to the site</li>
+      <li>Workers who weren't paid by the contractor or sub</li>
+    </ul>
+
+    <p>The lien attaches to the land - specifically, it is registered against your property title. When a sub registers a lien, it encumbers your title, blocks financing or refinancing, and creates a cloud on ownership that can prevent sale or transfer of the property. The sub's claim is against your property, not just against the GC who didn't pay them.</p>
+
+    <div class="warning-box">
+      <div class="label">Paying the GC does not extinguish a sub's lien right</div>
+      <p>This is the most common misconception I encounter. When you pay the GC in full - including holdback - and a sub later registers a lien, the sub's lien does not simply disappear because the GC has been paid. The sub's claim is against your holdback obligation and against your property. If you released holdback before the lien period expired, the sub may be able to recover their unpaid amount directly from you, to the extent of the holdback you released. You may end up paying twice: once to the GC who collected your money without paying their sub, and once to the sub through lien enforcement. The holdback is the protection against this - but only if you hold it for the full period.</p>
+    </div>
+
+    <h2>Three lien scenarios <em>Alberta owners face</em></h2>
+
+    <p>Liens don't only land after project completion. Here are the three most common scenarios mid-market operators encounter:</p>
+
+    <div class="payment-chain">
+      <div class="chain-item">
+        <span class="chain-badge">Scenario 1</span>
+        <div>
+          <h3>Completion lien - sub was never paid by the GC</h3>
+          <p>The project finishes, you pay the GC including holdback, and the GC distributes some but not all sub payments before filing for insolvency or simply not paying. A sub registers a lien within 60 days of their last work on site. They name your property. Their claim is for the unpaid portion of their sub-contract. If you held the full 10% for the full lien period and conducted a lien search before releasing, you have the holdback to negotiate the claim. If you released early, you don't. This is the scenario the holdback obligation was designed to prevent.</p>
+        </div>
+      </div>
+      <div class="chain-item">
+        <span class="chain-badge">Scenario 2</span>
+        <div>
+          <h3>Dispute lien - GC and sub have a billing disagreement mid-project</h3>
+          <p>During an active project, a sub and GC get into a dispute over scope or back-charges. The sub registers a lien as a pressure tactic before completing their work - or immediately after. This lien isn't about you, but it attaches to your property and complicates everything: financing, permit draws, progress payments to the GC. The PPCLA gives you a mechanism to post security or apply to the court to vacate the lien, but that process takes time and legal cost. The best position is one where your contract with the GC addresses how lien disputes are handled - specifically, the GC's obligation to address sub-lien claims and your right to hold the corresponding amount from GC payments.</p>
+        </div>
+      </div>
+      <div class="chain-item">
+        <span class="chain-badge">Scenario 3</span>
+        <div>
+          <h3>Insolvency lien - GC becomes insolvent mid-project</h3>
+          <p>Your GC goes under during the project. Multiple subs who have outstanding invoices register liens simultaneously. Your property may have three, four, or five lien registrations from separate claimants. Each one encumbers your title. You now have to manage a multi-claimant lien process while also finding a replacement GC to finish the work. The holdback you've retained becomes central: it is the fund from which competing lien claimants may be paid, and the sequence of payout - who gets paid first and in what priority - is determined by the PPCLA's priority rules. Without proper holdback management throughout the project, you may not have enough retained to satisfy all claimants, even if you've retained the statutory 10% on every progress draw.</p>
+        </div>
+      </div>
+    </div>
+
+    <h2>The five-step holdback release process</h2>
+
+    <p>Most disputes about holdback release happen because the owner's process is informal: the GC submits a final invoice, someone approves it, accounts payable sends the cheque. A proper holdback release is a document-gathering exercise, not just an invoice approval. Here's the process:</p>
+
+    <div class="checklist-box">
+      <div class="label">Lien-Holdback Release Checklist - 5 steps</div>
+      <ul>
+        <li><b>Step 1 - Confirm 60 days have passed from substantial completion.</b> Identify the date of substantial completion - not just the GC's completion date, but the last date any contractor, sub, or supplier was on site furnishing services or materials. If a cleanup crew came through on Day 12 after the GC's completion date, the 60-day clock runs from Day 12. Get this date confirmed in writing from the GC and use it, not the project handover date.</li>
+        <li><b>Step 2 - Conduct a title search for registered liens.</b> Search the property title at the Alberta Land Titles Office for any registered liens against your land. This is not a complex search - it can be done through a lawyer or title search company in 24–48 hours. Do not release holdback until you have a clean search result in hand. A lien registered on Day 59 of the 60-day period is still valid. Search after the 60 days have fully expired.</li>
+        <li><b>Step 3 - Obtain WCB clearance certificate from the contractor.</b> Workers' Compensation Board clearance confirms the GC has no outstanding WCB assessments at the time of project completion. If the GC has unpaid premiums and you paid without a current clearance, WCB-Alberta can hold you responsible for those premiums. The clearance letter is a point-in-time confirmation that the GC's WCB account is in good standing. Require one from the GC before releasing holdback - not just at the start of the project, but specifically at close-out.</li>
+        <li><b>Step 4 - Obtain a statutory declaration from the GC that all subcontractors and suppliers have been paid.</b> A statutory declaration is a sworn statement - the GC declares under oath that all subs and suppliers have been paid in full and that no lien claims are outstanding. If this is false and a lien arrives later, the GC bears personal responsibility for the false declaration. This doesn't eliminate your exposure, but it creates a clear documentary record and gives you a mechanism for recovery against the GC. Use a lawyer for this - a self-drafted "we confirm we've paid everyone" letter is not a statutory declaration.</li>
+        <li><b>Step 5 - Confirm the final invoice meets PPCLA proper invoice requirements.</b> A holdback release is triggered by a proper invoice under the PPCLA. The final invoice must include: the contractor's name and address, the date, the contract number, a description of the work, the period covered, the amount claimed (including holdback), and applicable GST information. If the invoice is deficient, the PPCLA payment clock hasn't started yet - meaning a dispute notice obligation hasn't triggered and the payment window is still open. Issue a deficiency notice if needed. Don't just hold the payment without telling the GC why.</li>
+      </ul>
+    </div>
+
+    <h2>When a lien actually lands: <em>the first 72 hours</em></h2>
+
+    <p>A lien notice doesn't mean you immediately owe the claimant the money they're claiming. It means a claim has been registered against your property and you need to respond. The PPCLA gives lien claimants and property owners a framework for resolving these disputes - litigation is the last resort, not the first step.</p>
+
+    <p>When you receive a lien notice:</p>
+    <ul>
+      <li><b>Don't ignore it.</b> The PPCLA has strict timelines for lien disputes, and some of the most useful owner tools (like serving a notice requiring the claimant to start an action) only work if you act. Ignoring a lien leaves your title encumbered and your options narrower.</li>
+      <li><b>Contact your lawyer immediately.</b> Lien disputes are procedurally specific. The mechanics of responding - whether to dispute the lien, post security to vacate it, or allow it to proceed - require legal advice based on your specific facts.</li>
+      <li><b>Do not release holdback on that project.</b> If a lien has been filed, the holdback is now contested security. Do not release it to the GC, to the lien claimant, or to anyone without legal guidance on how to handle competing claims.</li>
+      <li><b>Gather your documentation.</b> The files you'll need immediately: your contract with the GC, the GC's sub-agreement with the claimant (if you can get it), all progress payment records, WCB clearances already obtained, any statutory declarations already provided, and your title search results.</li>
+      <li><b>Assess whether to post security to vacate the lien.</b> If the lien is blocking a financing transaction or creating an urgent operational problem, you can post security with the court - typically cash or a letter of credit for the amount of the lien - which causes the lien to be discharged from title while the dispute is resolved. This doesn't resolve the underlying claim; it just removes the encumbrance from your property while the dispute proceeds.</li>
+    </ul>
+
+    <blockquote>A lien isn't a judgment. It's a notice that someone believes they're owed money for work on your property and is preserving their right to pursue it. Your response options are wider than most owners realize - but the timelines to exercise those options are short.</blockquote>
+
+    <h2>The <em>PPCLA content cluster</em>: the full picture</h2>
+
+    <p>This guide completes the four-part PPCLA content cluster I've published on procurawest.ca. The four pieces address different positions in the payment chain:</p>
+    <ul>
+      <li><a href="ppcla-owners-guide.html" style="color:var(--signal)">PPCLA Owner's Guide</a> - Owner AP obligations, the 28-day payment clock, and the 14-day dispute window</li>
+      <li><a href="../ppcla-checklist.html" style="color:var(--signal)">PPCLA AP Compliance Checklist</a> - Self-audit tool for owner-side prompt payment compliance</li>
+      <li><a href="ppcla-flow-down.html" style="color:var(--signal)">PPCLA Flow-Down Guide</a> - GC obligations to subcontractors: 7-day payment chain, void pay-when-paid, dispute notice process</li>
+      <li><strong>This guide</strong> - Owner obligations on holdback and lien management through project close-out</li>
+    </ul>
+
+    <p>If you're a project owner in Alberta, all four pieces of this picture apply to you. The payment obligations run from Day 1 of the project. The holdback and lien management obligations run through to project close-out and beyond.</p>
+
+    <p>This is general information, not legal advice. For a specific lien or holdback situation, talk to an Alberta construction lawyer.</p>
+
+    <div class="article-cta">
+      <h3>Managing contract close-out on an active project?</h3>
+      <p>Holdback release, lien search coordination, WCB clearance, and final account review are standard parts of a well-managed project close-out process. Most mid-market operators manage this informally - and most lien disputes I see trace back to a close-out process that didn't have a defined sequence. If you want someone to walk through the close-out on an active project with you, or to review your standard holdback release process - reach out.</p>
+      <div class="cta-btns">
+        <a href="../index.html#contact" class="btn">Talk to me about your project close-out</a>
+        <a href="ppcla-flow-down.html" class="btn btn-ghost">GC managing subs? See the PPCLA flow-down guide →</a>
+      </div>
+    </div>
+
+  </div>
+</article>
+
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="footer">
+  <div class="shell">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <div class="logo" style="margin-bottom:16px">
+          <svg width="36" height="28" viewBox="0 0 60 46" aria-hidden="true">
+            <polygon points="6,42 14,24 22,42" fill="#185FA5"/>
+            <polygon points="14,42 24,16 34,42" fill="#0C447C"/>
+            <polygon points="22,42 40,6 58,42" fill="#042C53"/>
+            <polygon points="37,10 40,6 43,10 42,12.5 38,12.5" fill="#B5D4F4"/>
+            <rect x="4" y="42" width="54" height="1" fill="#042C53"/>
+          </svg>
+          <span class="logo-divider" aria-hidden="true"></span>
+          <span class="logo-wordmark">
+            <span class="logo-procura">Procura</span>
+            <span class="logo-west-row"><span class="logo-west">West</span></span>
+          </span>
+        </div>
+        <p class="tagline">Built on Trust<br>Driven by Results<br><br>Calgary, Alberta</p>
+      </div>
+      <div>
+        <h4>Services</h4>
+        <ul>
+          <li><a href="../services.html">What We Do</a></li>
+          <li><a href="../packages.html">Packages</a></li>
+          <li><a href="../roi.html">ROI Calculator</a></li>
+          <li><a href="../index.html#contact">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Tools</h4>
+        <ul>
+          <li><a href="../quiz.html">Overpayment Quiz</a></li>
+          <li><a href="../worker-classification-quiz.html">Worker Classification</a></li>
+          <li><a href="../subcontractor-risk-quiz.html">Subcontractor Risk</a></li>
+          <li><a href="../inflation-proof-checklist.html">MSA Checklist</a></li>
+          <li><a href="../ppcla-checklist.html">PPCLA Compliance</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Blog</h4>
+        <ul>
+          <li><a href="../blog.html">All Posts</a></li>
+          <li><a href="annual-msa-rate-review.html">MSA Rate Review</a></li>
+          <li><a href="ppcla-owners-guide.html">PPCLA Owner Guide</a></li>
+          <li><a href="ppcla-flow-down.html">PPCLA Flow-Down</a></li>
+          <li><a href="turnaround-procurement-guide.html">TAR Procurement</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Procura West Inc. All rights reserved.</span>
+      <span>Supply chain management · Calgary, Alberta</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+const menuBtn = document.getElementById('menuBtn');
+const nav = document.getElementById('nav');
+menuBtn.addEventListener('click', () => {
+  const open = nav.classList.toggle('open');
+  menuBtn.setAttribute('aria-expanded', open);
+  menuBtn.textContent = open ? 'Close' : 'Menu';
+});
+</script>
+
+<!-- Cloudflare Web Analytics --><script type='module' src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "abd07da1f1294a6baf354afcd847a0e2"}'></script><!-- End Cloudflare Web Analytics -->
+</body>
+</html>
