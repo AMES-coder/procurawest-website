@@ -929,7 +929,7 @@ h1 em,h2 em,h3 em{font-style:italic;font-weight:400;color:var(--signal)}
 
     <div class="results-grid">
       <div class="result-item reveal">
-        <span class="result-num"><span data-count-to="6">0</span>–<span data-count-to="12">0</span>%</span>
+        <span class="result-num"><noscript>6–12%</noscript><span data-count-to="6">0</span>–<span data-count-to="12">0</span>%</span>
         <h3>Cost savings on addressable spend</h3>
         <p>Companies with dedicated procurement save 6–12% compared to those managing it off the side of someone's desk.</p>
         <span class="result-tag">Source · The Hackett Group</span>
@@ -972,6 +972,30 @@ h1 em,h2 em,h3 em{font-style:italic;font-weight:400;color:var(--signal)}
         </div>
       </div>
     </div>
+  </div>
+</section>
+
+<!-- ============ QUIZ CTA ============ -->
+<section class="section" id="quiz-cta" style="background:var(--midnight);border-top:1px solid var(--midnight);border-bottom:1px solid var(--midnight)">
+  <div class="shell" style="text-align:center">
+    <span class="eyebrow reveal" style="color:var(--ice);justify-content:center">Free 2-Minute Assessment</span>
+    <h2 class="reveal" data-d="1" style="color:var(--offwhite);font-size:clamp(34px,5vw,58px);margin:20px auto 16px;max-width:18ch;border:0;padding:0">Are you <em style="color:var(--ice)">overpaying</em> your contractors?</h2>
+    <p class="reveal" data-d="2" style="font-family:var(--sans);font-size:clamp(16px,1.2vw,19px);color:rgba(245,247,250,.82);max-width:50ch;margin:0 auto 32px;line-height:1.6">Six questions that reveal where your contractor spend is leaking margin. Takes 2 minutes. Results are uncomfortably honest.</p>
+    <a href="quiz.html" class="btn btn-light reveal" data-d="3">Take the quiz <span class="arrow">&rarr;</span></a>
+  </div>
+</section>
+
+<!-- ============ NEWSLETTER ============ -->
+<section class="section" id="newsletter" style="background:var(--warm);border-top:1px solid var(--rule);border-bottom:1px solid var(--rule);padding:clamp(50px,6vw,80px) 0">
+  <div class="shell" style="max-width:640px;text-align:center">
+    <span class="eyebrow reveal" style="justify-content:center">Procurement Insights</span>
+    <h2 class="reveal" data-d="1" style="font-size:clamp(28px,4vw,44px);margin:16px 0 12px;border:0;padding:0">Straight talk. <em>No fluff.</em></h2>
+    <p class="reveal" data-d="2" style="font-family:var(--sans);font-size:16px;color:var(--slate);line-height:1.6;margin-bottom:24px">Practical procurement tips for oil & gas and construction leaders in Alberta. I send these when I have something worth reading - not on a schedule.</p>
+    <form class="reveal" data-d="3" id="newsletterForm" style="display:flex;gap:12px;max-width:480px;margin:0 auto;flex-wrap:wrap">
+      <input type="email" name="email" placeholder="you@company.com" required autocomplete="email" style="flex:1;min-width:200px;padding:14px 16px;border:1px solid var(--steel);border-radius:2px;font-family:var(--sans);font-size:16px;background:var(--offwhite);color:var(--ink);outline:none">
+      <button type="submit" class="btn" id="nlBtn" style="white-space:nowrap">Subscribe <span class="arrow">&rarr;</span></button>
+    </form>
+    <p class="reveal" data-d="3" style="font-family:var(--mono);font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:var(--slate);margin-top:12px">No spam. Unsubscribe anytime.</p>
   </div>
 </section>
 
@@ -1074,18 +1098,23 @@ h1 em,h2 em,h3 em{font-style:italic;font-weight:400;color:var(--signal)}
         </ul>
       </div>
       <div>
+        <h4>Free Tools</h4>
+        <ul>
+          <li><a href="quiz.html">Contractor Quiz</a></li>
+          <li><a href="checklist.html">Compliance Checklist</a></li>
+          <li><a href="vendor-scorecard.html">Vendor Scorecard</a></li>
+          <li><a href="contractor-checklist.html">Prequalification Checklist</a></li>
+          <li><a href="ai-assessment.html">AI Buying Assessment</a></li>
+          <li><a href="payment-assessment.html">Payment Assessment</a></li>
+        </ul>
+      </div>
+      <div>
         <h4>Connect</h4>
         <ul>
           <li><a href="tel:+14035199044">403-519-9044</a></li>
           <li><a href="mailto:info@procurawest.ca">info@procurawest.ca</a></li>
           <li><a href="https://www.linkedin.com/company/procura-west" target="_blank" rel="noopener">LinkedIn</a></li>
-        </ul>
-      </div>
-      <div>
-        <h4>Office</h4>
-        <ul>
           <li>Calgary, Alberta</li>
-          <li>Western Canada</li>
         </ul>
       </div>
     </div>
@@ -1127,15 +1156,26 @@ h1 em,h2 em,h3 em{font-style:italic;font-weight:400;color:var(--signal)}
       const target = parseInt(el.dataset.countTo, 10);
       let current = 0;
       const step = Math.max(1, Math.ceil(target / 40));
-      const tick = () => {
-        current = Math.min(current + step, target);
-        el.textContent = current;
-        if (current < target) requestAnimationFrame(tick);
+      const startCount = () => {
+        const tick = () => {
+          current = Math.min(current + step, target);
+          el.textContent = current;
+          if (current < target) requestAnimationFrame(tick);
+        };
+        requestAnimationFrame(tick);
       };
-      requestAnimationFrame(tick);
+      const revealParent = el.closest('.reveal');
+      if (revealParent && !revealParent.classList.contains('in')) {
+        const mo = new MutationObserver(() => {
+          if (revealParent.classList.contains('in')) { mo.disconnect(); startCount(); }
+        });
+        mo.observe(revealParent, { attributes: true, attributeFilter: ['class'] });
+      } else {
+        startCount();
+      }
       countIO.unobserve(el);
     });
-  }, { threshold: .3 });
+  }, { threshold: 0 });
   document.querySelectorAll('[data-count-to]').forEach(el => countIO.observe(el));
 
   const contactForm = document.getElementById('contactForm');
@@ -1227,6 +1267,41 @@ h1 em,h2 em,h3 em{font-style:italic;font-weight:400;color:var(--signal)}
         quoteEl.classList.remove('fading');
       }, 600);
     }, 6000);
+  }
+
+  var nlForm = document.getElementById('newsletterForm');
+  if(nlForm){
+    nlForm.addEventListener('submit', function(e){
+      e.preventDefault();
+      var btn = document.getElementById('nlBtn');
+      var email = this.email.value;
+      btn.innerHTML = 'Subscribing…';
+      btn.disabled = true;
+      fetch('https://procurawest-subscribe.winter-leaf-32e3.workers.dev', {
+        method: 'POST',
+        headers: {'Content-Type': 'application/json'},
+        body: JSON.stringify({email: email, groups: []})
+      }).then(function(r){
+        if(r.ok){
+          btn.innerHTML = 'Subscribed ✓';
+          btn.style.background = '#2E7D4F';
+          btn.style.borderColor = '#2E7D4F';
+          gtag('event','newsletter_signup',{event_category:'lead',event_label:'homepage'});
+          setTimeout(function(){
+            nlForm.reset();
+            btn.innerHTML = 'Subscribe <span class="arrow">→</span>';
+            btn.style.background = '';
+            btn.style.borderColor = '';
+            btn.disabled = false;
+          }, 3000);
+        } else { throw new Error('fail'); }
+      }).catch(function(){
+        btn.innerHTML = 'Error — try again';
+        btn.style.background = '#8B2020';
+        btn.style.borderColor = '#8B2020';
+        btn.disabled = false;
+      });
+    });
   }
 </script>
 
