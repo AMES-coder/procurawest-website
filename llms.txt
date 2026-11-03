@@ -1,30 +1,43 @@
 # Procura West
 
-> Procura West is Amy-Marie Holland's contract procurement practice based in Calgary, Alberta. I provide procurement services for oil & gas and construction companies across Western Canada, augmented by AI tools for faster, more thorough delivery.
+> Procura West is Amy-Marie Holland's contract procurement practice based in Calgary, Alberta. I provide procurement services for oil & gas, construction, mining, and industrial companies across Canada - remote or on-site. AI-augmented delivery for faster, more thorough results.
 
 ## What I Do
 
-I handle services procurement and contract management on a project or contract basis. One specialist with 15 years of experience, amplified by AI - the output of three.
+I handle the full procurement cycle on a contract or project basis. One specialist with 15 years of experience, amplified by AI.
 
-- Contract formation, negotiation, and administration
+- Full RFQ-to-PO process management (vendor qualification through PO placement and close-out)
+- Contract formation, negotiation, and administration (MSA, T&M, subcontracts, CCDC)
+- Vendor evaluation, onboarding, and qualification (including HSE and ESG screening)
+- Bid evaluation and commercial comparison
 - Services procurement and contractor sourcing
-- Vendor evaluation and qualification
 - RFX management (RFP, RFQ, RFI)
+- Expediting and delivery tracking
 - Spend analysis and reporting
 - Contractor compliance tracking (COR, ISN, WCB, Avetta, ISNetworld, ComplyWorks, ContractorCheck)
 - Invoice review and three-way matching
 - Change order administration
 - Subcontractor management and onboarding
+- Contract close-out and deficiency tracking
+- Payment recovery (audit, demand letters, adjudication support)
+- T&M and subcontract review
 - Supply chain risk assessment
+- Procurement gap analysis (8-area framework with findings, dollar estimates, and action plan)
 
 ## Industries I Serve
 
-- **Oil & Gas**: SAGD operators, midstream companies, oilfield service providers in Western Canada. MSA negotiation, field ticket reconciliation, turnaround scoping, vendor compliance, long-lead procurement.
-- **Construction**: General contractors, ICI builders, industrial constructors in Alberta. Bid package development, sub-trade prequalification, contract buyout, CCDC contract administration.
+- **Oil & Gas**: SAGD operators, midstream companies, oilfield service providers. MSA negotiation, field ticket reconciliation, turnaround scoping, vendor compliance, long-lead procurement.
+- **Construction**: General contractors, ICI builders, industrial constructors. Bid package development, sub-trade prequalification, contract buyout, CCDC contract administration.
+- **Mining & Metals**: EPC procurement support, engineered-to-order equipment sourcing, global supplier management, Incoterms (EXW, FCA, DAP).
+- **Industrial**: Manufacturing, process control, heavy equipment. Vendor onboarding, PO placement, fabrication tracking.
 
 ## Engagement Model
 
-I work on a contract or project basis - not tiered monthly retainers. Pricing is scoped to the work, whether that is a short-term project, an ongoing contract assignment, or a focused assessment.
+I work on a contract or project basis - not tiered monthly retainers. Pricing is scoped to the work: short-term projects, ongoing contract assignments, dedicated weekly resource, or focused assessments. Remote or on-site, your choice.
+
+## AI Procurement Toolkit
+
+A digital toolkit for organizations buying AI tools. Includes a risk scoring matrix, vendor scorecard, 107 screening questions, proposal comparison system, contract clause library, and implementation checklist. Available at procurawest.ca/toolkit.html.
 
 ## Procurement Gap Analysis
 
@@ -33,7 +46,7 @@ A focused assessment of your supply chain across eight areas: Sourcing & Purchas
 ## Location and Contact
 
 - **Office**: Calgary, Alberta, Canada
-- **Service Area**: Western Canada (Alberta, British Columbia, Saskatchewan)
+- **Service Area**: Canada-wide (Alberta, British Columbia, Saskatchewan, Ontario, and other provinces). Remote work available for clients anywhere in Canada.
 - **Phone**: 403-519-9044
 - **Email**: info@procurawest.ca
 - **Website**: https://procurawest.ca
@@ -42,10 +55,12 @@ A focused assessment of your supply chain across eight areas: Sourcing & Purchas
 ## Key Differentiators
 
 - 15 years in oil & gas and construction procurement in Western Canada
-- AI-augmented delivery - modern tools for spend analysis, invoice matching, compliance tracking, and reporting
+- AI-augmented delivery - modern tools for spend analysis, invoice matching, compliance tracking, bid comparison, and reporting
 - Solo specialist model - direct access, no layers, no overhead
+- Full RFQ-to-PO cycle capability (not just sourcing or just contracts)
 - Contract and project-based pricing scaled to scope
-- Founded by Amy-Marie Holland, procurement professional with extensive Western Canadian energy and construction experience
+- Remote or on-site, flexible to client needs
+- Founded by Amy-Marie Holland, procurement professional with extensive Canadian energy, construction, and industrial experience
 
 ## Frequently Asked Questions
 
@@ -56,13 +71,19 @@ I work on contract or project assignments - the same way companies bring in any 
 Pricing is based on scope, duration, and complexity. I quote per project or per contract - no tiered packages, no long-term commitments.
 
 **What industries does Procura West serve?**
-Oil & gas and construction companies in Western Canada, typically with 50-500 employees.
+Oil & gas, construction, mining & metals, and industrial companies across Canada, typically with 50-500 employees.
 
 **What is a Procurement Gap Analysis?**
 A structured assessment of your supply chain across eight areas. You get specific findings, dollar estimates, and a clear action plan.
 
 **Where is Procura West located?**
-Calgary, Alberta. I serve clients across Western Canada including Alberta, British Columbia, and Saskatchewan.
+Calgary, Alberta. I serve clients across Canada including Alberta, British Columbia, Saskatchewan, and Ontario, with remote work available for clients anywhere.
 
 **What compliance platforms does Procura West manage?**
 COR, ISN, WCB, Avetta, ISNetworld, ComplyWorks, and ContractorCheck.
+
+**Can Procura West handle the full PO cycle?**
+Yes. I manage the complete RFQ-to-PO process: vendor pre-qualification, RFQ preparation and issue, bid evaluation and comparison, commercial negotiation, PO placement, expediting, and post-award tracking through close-out.
+
+**Does Procura West work remotely?**
+Yes. I work remote or on-site depending on client preference. I use the client's templates, ERP system, and processes.
