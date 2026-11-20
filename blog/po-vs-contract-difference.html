@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-EXHL2RQ9D9"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-EXHL2RQ9D9');
+</script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="When to use a purchase order vs a contract in Alberta construction and services procurement. Risks of using POs for services work, how the PPCLA applies, and how to structure each properly.">
+<title>Purchase Order vs Contract - What's the Difference and When to Use Each - Procura West</title>
+
+<link rel="icon" type="image/png" href="../assets/procura_west_logo_icon.png">
+<meta property="og:image" content="https://procurawest.ca/assets/procura_west_logo.png">
+<meta property="og:title" content="Purchase Order vs Contract - What's the Difference and When to Use Each">
+<meta property="og:description" content="When to use a purchase order vs a contract in Alberta. Risks of using POs for services, how the PPCLA applies to both, and how to structure each properly.">
+<meta property="og:url" content="https://procurawest.ca/blog/po-vs-contract-difference.html">
+<meta property="og:type" content="article">
+<meta property="article:published_time" content="2026-11-19">
+<meta property="article:author" content="Amy-Marie Holland">
+<meta name="keywords" content="purchase order vs contract, PO vs MSA construction, when to use a contract Alberta, purchase order risks services, procurement documents Alberta">
+<meta name="geo.region" content="CA-AB">
+<meta name="geo.placename" content="Calgary">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://procurawest.ca/blog/po-vs-contract-difference.html">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<style>
+:root{
+  --midnight:#042C53;--deep:#0C447C;--signal:#185FA5;--ice:#B5D4F4;--slate:#5A7A9E;--steel:#C8D4E0;--offwhite:#F5F7FA;--warm:#E8E6E3;--copper:#C4844E;
+  --rule:rgba(4,44,83,.12);--ink:#042C53;
+  --serif:Georgia,"Times New Roman",serif;--sans:"Inter",-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif;--mono:"Inter",-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif;
+  --pad:clamp(20px,4vw,56px);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+html,body{background:var(--offwhite);color:var(--ink);font-family:var(--sans);font-weight:400;font-size:16px;line-height:1.55;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility;overflow-x:hidden}
+a{color:inherit;text-decoration:none}
+img{display:block;max-width:100%}
+button{font:inherit;cursor:pointer;background:none;border:0;color:inherit}
+::selection{background:var(--midnight);color:var(--offwhite)}
+
+.shell{max-width:1480px;margin:0 auto;padding:0 var(--pad);position:relative}
+
+h1,h2,h3,h4{font-family:var(--serif);font-weight:400;letter-spacing:-.02em;line-height:1.04;color:var(--midnight)}
+h1 em,h2 em,h3 em{font-style:italic;font-weight:400;color:var(--signal)}
+
+.logo{display:flex;align-items:center;gap:14px;color:var(--midnight)}
+.logo-divider{width:1px;align-self:stretch;background:var(--steel);margin:4px 0}
+.logo-wordmark{display:flex;flex-direction:column;align-items:flex-start;line-height:1}
+.logo-procura{font-family:var(--serif);font-weight:400;font-size:22px;letter-spacing:.12em;color:var(--midnight);text-transform:uppercase}
+.logo-west-row{display:flex;align-items:center;gap:8px;margin-top:4px}
+.logo-west{font-family:var(--serif);font-weight:400;font-size:13px;letter-spacing:.22em;color:var(--signal);text-transform:uppercase}
+
+.masthead{position:sticky;top:0;z-index:50;background:rgba(245,247,250,.9);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border-bottom:1px solid var(--rule)}
+.masthead-inner{display:grid;grid-template-columns:1fr auto 1fr;align-items:center;padding:14px 0;gap:24px}
+.meta{font-family:var(--mono);font-size:11px;letter-spacing:.14em;color:var(--slate);text-transform:uppercase;text-align:center;white-space:nowrap;font-weight:500}
+.nav{display:flex;justify-content:flex-end;gap:26px;font-family:var(--mono);font-size:12px;letter-spacing:.12em;text-transform:uppercase;font-weight:500}
+.nav a{position:relative;padding:4px 0;color:var(--midnight)}
+.nav a::after{content:"";position:absolute;left:0;right:0;bottom:0;height:1px;background:var(--signal);transform:scaleX(0);transform-origin:left;transition:transform .35s cubic-bezier(.2,.7,.2,1)}
+.nav a:hover{color:var(--signal)}
+.nav a:hover::after{transform:scaleX(1)}
+.menu-btn{display:none;font-family:var(--mono);font-size:12px;letter-spacing:.12em;text-transform:uppercase;font-weight:500;color:var(--midnight)}
+
+.article-hero{padding:clamp(60px,10vw,120px) 0 clamp(40px,6vw,60px)}
+.article-hero .eyebrow{font-family:var(--mono);font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--slate);font-weight:500;display:inline-flex;align-items:center;gap:10px;margin-bottom:24px}
+.article-hero .eyebrow::before{content:"";width:22px;height:1px;background:currentColor;display:inline-block}
+.article-hero h1{font-size:clamp(32px,5vw,56px);line-height:1.08;letter-spacing:-.02em;max-width:22ch}
+.article-meta{display:flex;gap:24px;margin-top:24px;padding-top:24px;border-top:1px solid var(--rule);font-family:var(--mono);font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--slate);font-weight:500}
+
+.article-body{max-width:720px;padding-bottom:clamp(60px,8vw,120px)}
+.article-body h2{font-size:clamp(24px,3vw,34px);margin:clamp(40px,5vw,56px) 0 20px;letter-spacing:-.015em;line-height:1.1}
+.article-body h3{font-size:clamp(20px,2.5vw,26px);margin:clamp(32px,4vw,44px) 0 16px;letter-spacing:-.01em;line-height:1.15}
+.article-body p{font-size:clamp(16px,1.1vw,18px);line-height:1.7;margin-bottom:20px;color:var(--ink)}
+.article-body p b{font-weight:500;color:var(--midnight)}
+.article-body ul,.article-body ol{margin:0 0 24px 0;padding-left:24px}
+.article-body li{font-size:clamp(16px,1.1vw,18px);line-height:1.7;margin-bottom:10px;color:var(--ink)}
+.article-body blockquote{border-left:3px solid var(--signal);padding:16px 0 16px 24px;margin:32px 0;font-family:var(--serif);font-style:italic;font-size:clamp(18px,1.4vw,22px);line-height:1.5;color:var(--midnight)}
+
+.stat-callout{background:var(--midnight);color:var(--offwhite);padding:clamp(28px,3vw,44px);margin:clamp(32px,4vw,48px) 0;border-radius:2px;display:flex;flex-direction:column;gap:8px}
+.stat-callout .num{font-family:var(--serif);font-size:clamp(36px,5vw,64px);font-weight:400;color:var(--ice);letter-spacing:-.03em;line-height:1}
+.stat-callout .label{font-family:var(--mono);font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:rgba(245,247,250,.7);font-weight:500}
+.stat-callout .context{font-size:15px;color:rgba(245,247,250,.82);line-height:1.55;margin-top:8px}
+
+.timeline-item{padding:clamp(18px,2vw,26px);border:1px solid var(--rule);background:#fff;border-radius:2px;display:flex;flex-direction:column;gap:8px;margin-bottom:16px}
+.timeline-item .days{font-family:var(--mono);font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--copper);font-weight:500}
+.timeline-item h3{font-size:clamp(15px,1.2vw,17px);margin:0;line-height:1.35;color:var(--midnight)}
+.timeline-item p{font-size:13px;color:var(--slate);line-height:1.5;margin:0}
+
+.article-cta{background:var(--midnight);color:var(--offwhite);padding:clamp(40px,5vw,60px);margin:clamp(40px,5vw,56px) 0;border-radius:2px}
+.article-cta h3{color:var(--offwhite);font-size:clamp(24px,3vw,34px);margin-bottom:16px}
+.article-cta p{color:rgba(245,247,250,.82);margin-bottom:24px;font-size:15px;line-height:1.6}
+.article-cta .btn{display:inline-flex;align-items:center;gap:12px;font-family:var(--mono);font-size:12px;letter-spacing:.14em;text-transform:uppercase;font-weight:500;padding:16px 22px;border:1px solid var(--signal);background:var(--signal);color:#fff;border-radius:2px;transition:background .3s,border-color .3s;cursor:pointer}
+.article-cta .btn:hover{background:var(--ice);color:var(--midnight);border-color:var(--ice)}
+.article-cta .btn-ghost{background:transparent;border-color:rgba(181,212,244,.4);color:var(--ice);margin-top:12px}
+.article-cta .btn-ghost:hover{background:rgba(181,212,244,.1);border-color:var(--ice)}
+.article-cta .cta-btns{display:flex;gap:12px;flex-wrap:wrap}
+
+.footer{background:var(--offwhite);padding:clamp(50px,6vw,90px) 0 30px;border-top:1px solid var(--rule)}
+.footer-top{padding-bottom:40px;border-bottom:1px solid var(--rule);display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:clamp(24px,3vw,60px)}
+.footer-brand .tagline{font-family:var(--mono);font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--slate);font-weight:500;line-height:1.7}
+.footer h4{font-family:var(--serif);font-size:14px;letter-spacing:.04em;text-transform:uppercase;color:var(--slate);margin-bottom:16px;font-weight:400}
+.footer ul{list-style:none;display:flex;flex-direction:column;gap:10px}
+.footer a{transition:color .3s;color:var(--midnight)}
+.footer a:hover{color:var(--signal)}
+.footer-bottom{display:flex;justify-content:space-between;align-items:center;padding-top:24px;font-family:var(--mono);font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--slate);flex-wrap:wrap;gap:12px;font-weight:500}
+
+@media (max-width:820px){
+  .masthead-inner{grid-template-columns:1fr auto}
+  .meta{display:none}
+  .nav{display:none}
+  .nav.open{display:flex;flex-direction:column;position:fixed;inset:0;background:var(--offwhite);padding:100px 32px 32px;font-size:22px;gap:18px;z-index:40}
+  .nav.open a{font-family:var(--serif);letter-spacing:-.01em;text-transform:none;font-size:30px;color:var(--midnight)}
+  .menu-btn{display:inline-flex;z-index:60;position:relative}
+  .footer-top{grid-template-columns:1fr 1fr;gap:30px}
+  .article-cta .cta-btns{flex-direction:column}
+}
+@media (max-width:540px){
+  .footer-top{grid-template-columns:1fr}
+  .footer-bottom{flex-direction:column;align-items:flex-start}
+  .logo-procura{font-size:18px;letter-spacing:.1em}
+  .logo-west{font-size:11px;letter-spacing:.2em}
+  .article-meta{flex-direction:column;gap:8px}
+}
+</style>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Purchase Order vs Contract - What's the Difference and When to Use Each",
+  "description": "When to use a purchase order vs a contract in Alberta construction and services procurement. Risks of using POs for services work, how the PPCLA applies, and how to structure each properly.",
+  "author": {
+    "@type": "Person",
+    "name": "Amy-Marie Holland",
+    "jobTitle": "Founder",
+    "url": "https://procurawest.ca"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Procura West",
+    "logo": "https://procurawest.ca/assets/procura_west_logo.png"
+  },
+  "datePublished": "2026-11-19",
+  "dateModified": "2026-11-19",
+  "mainEntityOfPage": "https://procurawest.ca/blog/po-vs-contract-difference.html",
+  "keywords": ["purchase order vs contract", "PO vs MSA construction", "when to use a contract Alberta", "purchase order risks services", "procurement documents Alberta"]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What is the difference between a purchase order and a contract?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A purchase order is a one-way document that authorizes a specific purchase of goods at an agreed price. A contract is a two-way agreement that defines the full scope of work, payment terms, liability, insurance, dispute resolution, and termination rights. POs work well for materials and equipment, while contracts are essential for services, construction, and anything with ongoing deliverables."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I use a purchase order for services work in Alberta?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Technically yes, but it creates significant risk. A purchase order typically lacks the terms needed to manage services - scope changes, liability caps, insurance requirements, payment milestones, and dispute resolution. In Alberta construction, the PPCLA requires proper invoicing and payment terms that a basic PO often does not address. Using a contract or master service agreement is strongly recommended for any services engagement."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does Alberta's PPCLA apply to purchase orders?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. The Prompt Payment and Construction Lien Act applies to any agreement for work or materials on a construction project in Alberta, whether that agreement is structured as a purchase order, a contract, or a master service agreement. The 28-day payment deadline, 14-day dispute notice window, and 7-day flow-down obligation all apply regardless of the document type used."
+      }
+    }
+  ]
+}
+</script>
+</head>
+<body>
+
+<!-- ============ MASTHEAD ============ -->
+<header class="masthead">
+  <div class="shell masthead-inner">
+    <a href="../index.html" class="logo" aria-label="Procura West - Home">
+      <svg class="logo-mark" width="46" height="36" viewBox="0 0 60 46" aria-hidden="true">
+        <polygon points="6,42 14,24 22,42" fill="#185FA5"/>
+        <polygon points="14,42 24,16 34,42" fill="#0C447C"/>
+        <polygon points="22,42 40,6 58,42" fill="#042C53"/>
+        <polygon points="37,10 40,6 43,10 42,12.5 38,12.5" fill="#B5D4F4"/>
+        <rect x="4" y="42" width="54" height="1" fill="#042C53"/>
+      </svg>
+      <span class="logo-divider" aria-hidden="true"></span>
+      <span class="logo-wordmark">
+        <span class="logo-procura">Procura</span>
+        <span class="logo-west-row">
+          <span class="logo-west">West</span>
+        </span>
+      </span>
+    </a>
+    <div class="meta" aria-hidden="true">Calgary &middot; Across Canada</div>
+    <nav class="nav" id="nav">
+      <a href="../services.html">Services</a>
+      <a href="../shop.html">Shop</a>
+      <a href="../index.html#results">Results</a>
+      <a href="../blog.html">Blog</a>
+      <a href="../index.html#about">About</a>
+      <a href="../index.html#contact">Contact</a>
+    </nav>
+    <button class="menu-btn" id="menuBtn" aria-label="Toggle menu" aria-expanded="false">Menu</button>
+  </div>
+</header>
+
+<main>
+
+<!-- ============ ARTICLE HERO ============ -->
+<section class="article-hero">
+  <div class="shell">
+    <span class="eyebrow">Blog &middot; Procurement Basics</span>
+    <h1>Purchase order vs contract: <em>what's the difference and when to use each.</em></h1>
+    <div class="article-meta">
+      <span>Amy-Marie Holland</span>
+      <span>November 19, 2026</span>
+      <span>6 min read</span>
+    </div>
+  </div>
+</section>
+
+<!-- ============ ARTICLE BODY ============ -->
+<article class="article-body">
+  <div class="shell">
+
+    <p>I get this question constantly from project managers, construction companies, and procurement teams across Alberta: should I use a purchase order or a contract? The answer depends on what you're buying, how complex the work is, and how much risk you're willing to carry if something goes wrong.</p>
+
+    <p>The short version: purchase orders are for straightforward purchases of goods. Contracts are for everything else. But the long version matters more, because using the wrong document can cost you thousands in disputed invoices, unmanaged scope creep, and legal exposure you never saw coming.</p>
+
+    <h2>What a purchase order <em>actually does</em></h2>
+
+    <p>A purchase order is a one-way authorization. You send it to a supplier, and it says: I want to buy these specific items, at this price, delivered by this date. The supplier accepts by fulfilling the order. That's it.</p>
+
+    <p>POs work well when:</p>
+
+    <ul>
+      <li>You're buying materials, equipment, or supplies with a clear specification</li>
+      <li>The price is fixed and agreed in advance</li>
+      <li>Delivery is a one-time event or a defined schedule</li>
+      <li>There's no ongoing performance obligation beyond shipping the goods</li>
+    </ul>
+
+    <p>A typical example: ordering 500 metres of electrical conduit from a distributor. You know the spec, you know the price, you know the delivery date. A PO handles that perfectly.</p>
+
+    <h2>What a contract <em>covers that a PO doesn't</em></h2>
+
+    <p>A contract is a two-way agreement that covers the full relationship between parties. Beyond price and quantity, a contract defines:</p>
+
+    <ul>
+      <li><b>Scope of work</b> - exactly what's included and what's not</li>
+      <li><b>Change management</b> - how changes get requested, approved, and priced</li>
+      <li><b>Payment terms</b> - milestones, holdbacks, proper invoice requirements</li>
+      <li><b>Insurance and liability</b> - who carries what coverage and what the caps are</li>
+      <li><b>Dispute resolution</b> - how disagreements get handled before they end up in court</li>
+      <li><b>Termination rights</b> - how either party can exit and what happens to outstanding work</li>
+      <li><b>Warranty and deficiency obligations</b> - what the contractor stands behind after completion</li>
+    </ul>
+
+    <p>None of these exist in a standard purchase order. And every single one of them matters the moment something goes wrong on a services engagement or a construction project.</p>
+
+    <div class="stat-callout">
+      <span class="num">PO ≠ Contract</span>
+      <span class="label">The most expensive confusion in procurement</span>
+      <span class="context">A purchase order authorizes a purchase. A contract manages a relationship. Using one where you need the other leaves you exposed on scope, liability, insurance, and payment disputes.</span>
+    </div>
+
+    <h2>The risk of using POs for <em>services work</em></h2>
+
+    <p>Here's where I see the most damage in Alberta. A company hires a contractor for electrical installation, instrumentation work, or engineering services - and issues a purchase order instead of a contract. It seems faster. It avoids the back-and-forth of contract negotiations. And it works fine until it doesn't.</p>
+
+    <p>The problems show up when:</p>
+
+    <ul>
+      <li><b>Scope changes.</b> The contractor does additional work that wasn't on the PO. Without a change management process, you're in a he-said-she-said argument over what was authorized. I've seen companies pay tens of thousands for work they never approved because the PO had no mechanism to manage extras.</li>
+      <li><b>Quality issues.</b> The work isn't done to standard. Without a contract specifying workmanship standards, warranty periods, and deficiency correction timelines, your options are limited.</li>
+      <li><b>Insurance gaps.</b> A PO doesn't typically require proof of insurance, WCB clearance, or liability coverage. If a worker gets hurt on your site and the contractor doesn't have coverage, you're exposed.</li>
+      <li><b>Payment disputes.</b> Without clear payment terms tied to milestones or deliverables, every invoice becomes a negotiation. The contractor says they're owed for completed work. You say the work isn't complete. Neither side has a contract to reference.</li>
+    </ul>
+
+    <h2>How Alberta's PPCLA applies to <em>both</em></h2>
+
+    <p>Alberta's Prompt Payment and Construction Lien Act doesn't care whether you used a purchase order or a contract. If the work falls under a construction project, the PPCLA applies. That means:</p>
+
+    <ul>
+      <li>The 28-day payment deadline starts when a proper invoice is received</li>
+      <li>The 14-day window for a notice of non-payment applies</li>
+      <li>The 7-day flow-down to contractors down the chain is mandatory</li>
+      <li>Interest accrues automatically on late payments at the Bank of Canada rate plus 2%</li>
+    </ul>
+
+    <p>The challenge with POs is that they rarely define what constitutes a proper invoice. Under the PPCLA, a proper invoice must include specific information - contractor name and address, work description, contract reference, amount owing, and payment terms. If your PO doesn't set these out, you may have disputes about whether the payment clock has even started.</p>
+
+    <p>A well-drafted contract includes a proper invoice clause that aligns with the PPCLA requirements. A PO almost never does.</p>
+
+    <h2>When to use <em>which</em></h2>
+
+    <p><b>Use a purchase order when:</b></p>
+
+    <ul>
+      <li>You're buying goods or materials with a clear specification</li>
+      <li>The price is fixed and there's no scope uncertainty</li>
+      <li>Delivery is a one-time event</li>
+      <li>The supplier has no ongoing performance obligation</li>
+      <li>You already have a master agreement in place that covers the commercial terms</li>
+    </ul>
+
+    <p>That last point is important. Many companies use POs as call-off documents under a master service agreement or a standing offer. That's perfectly fine - the PO handles the specifics of each order, and the MSA covers the legal and commercial framework. The problem is when a PO exists without an MSA behind it.</p>
+
+    <p><b>Use a contract when:</b></p>
+
+    <ul>
+      <li>You're engaging someone for services of any kind</li>
+      <li>The work involves construction, installation, or maintenance</li>
+      <li>Scope could change during the engagement</li>
+      <li>You need insurance, WCB, and liability provisions</li>
+      <li>Payment will be tied to milestones, progress, or time worked</li>
+      <li>The engagement will last longer than a single delivery</li>
+    </ul>
+
+    <h2>How to structure it <em>properly</em></h2>
+
+    <p>If you're in Alberta construction or industrial services, here's what I recommend:</p>
+
+    <p><b>For materials and equipment:</b> Use purchase orders, but make sure they reference a master agreement or include standard terms and conditions. At minimum, your PO should specify the delivery date, inspection requirements, rejection process, and payment terms.</p>
+
+    <p><b>For services and construction:</b> Use a contract - either a standalone agreement or an MSA with work orders. The contract should include scope of work, change management, payment terms aligned with the PPCLA, insurance and WCB requirements, dispute resolution, and termination provisions.</p>
+
+    <p><b>For the hybrid situation</b> where you're buying materials and installation together: use a contract. The services component drives the document type. A PO for "supply and install" is a recipe for disputes on scope, quality, and warranty.</p>
+
+    <blockquote>The right document isn't about complexity for its own sake. It's about having the right protections in place before you need them.</blockquote>
+
+    <div class="article-cta">
+      <h3>Not sure which document to use?</h3>
+      <p>I help Alberta companies set up their procurement documents properly - contracts, MSAs, PO frameworks, and PPCLA-compliant invoice templates. Take my free procurement assessment to find out where your gaps are, or get in touch directly.</p>
+      <div class="cta-btns">
+        <a href="../index.html#contact" class="btn">Get in touch &rarr;</a>
+        <a href="../quiz.html" class="btn btn-ghost">Take the free assessment &rarr;</a>
+      </div>
+    </div>
+
+  </div>
+</article>
+
+</main>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="shell">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <div class="footer-logo">
+          <a href="../index.html" class="logo" style="align-items:flex-start">
+            <svg class="logo-mark" width="64" height="50" viewBox="0 0 60 46" aria-hidden="true">
+              <polygon points="6,42 14,24 22,42" fill="#185FA5"/>
+              <polygon points="14,42 24,16 34,42" fill="#0C447C"/>
+              <polygon points="22,42 40,6 58,42" fill="#042C53"/>
+              <polygon points="37,10 40,6 43,10 42,12.5 38,12.5" fill="#B5D4F4"/>
+              <rect x="4" y="42" width="54" height="1" fill="#042C53"/>
+            </svg>
+            <span class="logo-divider" aria-hidden="true"></span>
+            <span class="logo-wordmark">
+              <span class="logo-procura" style="font-size:28px">Procura</span>
+              <span class="logo-west-row">
+                <span class="logo-west" style="font-size:15px">West</span>
+              </span>
+            </span>
+          </a>
+        </div>
+        <p class="tagline">Built on Trust | Driven by Results</p>
+      </div>
+      <div>
+        <h4>Navigate</h4>
+        <ul>
+          <li><a href="../services.html">Services</a></li>
+          <li><a href="../shop.html">Shop</a></li>
+          <li><a href="../index.html#results">Results</a></li>
+          <li><a href="../blog.html">Blog</a></li>
+          <li><a href="../index.html#about">About</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Connect</h4>
+        <ul>
+          <li><a href="tel:+14035199044">403-519-9044</a></li>
+          <li><a href="mailto:info@procurawest.ca">info@procurawest.ca</a></li>
+          <li><a href="https://www.linkedin.com/company/procura-west" target="_blank" rel="noopener">LinkedIn</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Office</h4>
+        <ul>
+          <li>Calgary, Alberta</li>
+          <li>Across Canada</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; 2026 Procura West. All rights reserved.</span>
+      <a href="../privacy.html" style="color:var(--slate);transition:color .3s">Privacy Policy</a>
+      <span>YYC</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+  const nav = document.getElementById('nav');
+  const btn = document.getElementById('menuBtn');
+  btn.addEventListener('click',()=>{
+    const open = nav.classList.toggle('open');
+    btn.textContent = open ? 'Close' : 'Menu';
+    btn.setAttribute('aria-expanded', open);
+  });
+</script>
+
+<!-- Cloudflare Web Analytics --><script type='module' src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "abd07da1f1294a6baf354afcd847a0e2"}'></script><!-- End Cloudflare Web Analytics -->
+</body>
+</html>
