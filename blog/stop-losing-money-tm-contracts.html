@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-EXHL2RQ9D9"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-EXHL2RQ9D9');
+</script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="How to manage time and materials contracts in Alberta - rate schedule design, hours verification, not-to-exceed caps, approval workflows, and common cost leakage points that drain your budget.">
+<title>How to Manage Time and Materials Contracts in Alberta - Procura West</title>
+
+<link rel="icon" type="image/png" href="../assets/procura_west_logo_icon.png">
+<meta property="og:image" content="https://procurawest.ca/assets/procura_west_logo.png">
+<meta property="og:title" content="How to Manage Time and Materials Contracts in Alberta">
+<meta property="og:description" content="Rate schedules, hours verification, not-to-exceed caps, and the most common cost leakage points in T&M contracts. A practical guide for Alberta construction and services.">
+<meta property="og:url" content="https://procurawest.ca/blog/stop-losing-money-tm-contracts.html">
+<meta property="og:type" content="article">
+<meta property="article:published_time" content="2026-11-19">
+<meta property="article:author" content="Amy-Marie Holland">
+<meta name="keywords" content="time and materials contract tips, T&M contract management Alberta, services contract cost control, rate schedule construction, not-to-exceed cap Alberta">
+<meta name="geo.region" content="CA-AB">
+<meta name="geo.placename" content="Calgary">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://procurawest.ca/blog/stop-losing-money-tm-contracts.html">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<style>
+:root{
+  --midnight:#042C53;--deep:#0C447C;--signal:#185FA5;--ice:#B5D4F4;--slate:#5A7A9E;--steel:#C8D4E0;--offwhite:#F5F7FA;--warm:#E8E6E3;--copper:#C4844E;
+  --rule:rgba(4,44,83,.12);--ink:#042C53;
+  --serif:Georgia,"Times New Roman",serif;--sans:"Inter",-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif;--mono:"Inter",-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif;
+  --pad:clamp(20px,4vw,56px);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+html,body{background:var(--offwhite);color:var(--ink);font-family:var(--sans);font-weight:400;font-size:16px;line-height:1.55;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility;overflow-x:hidden}
+a{color:inherit;text-decoration:none}
+img{display:block;max-width:100%}
+button{font:inherit;cursor:pointer;background:none;border:0;color:inherit}
+::selection{background:var(--midnight);color:var(--offwhite)}
+
+.shell{max-width:1480px;margin:0 auto;padding:0 var(--pad);position:relative}
+
+h1,h2,h3,h4{font-family:var(--serif);font-weight:400;letter-spacing:-.02em;line-height:1.04;color:var(--midnight)}
+h1 em,h2 em,h3 em{font-style:italic;font-weight:400;color:var(--signal)}
+
+.logo{display:flex;align-items:center;gap:14px;color:var(--midnight)}
+.logo-divider{width:1px;align-self:stretch;background:var(--steel);margin:4px 0}
+.logo-wordmark{display:flex;flex-direction:column;align-items:flex-start;line-height:1}
+.logo-procura{font-family:var(--serif);font-weight:400;font-size:22px;letter-spacing:.12em;color:var(--midnight);text-transform:uppercase}
+.logo-west-row{display:flex;align-items:center;gap:8px;margin-top:4px}
+.logo-west{font-family:var(--serif);font-weight:400;font-size:13px;letter-spacing:.22em;color:var(--signal);text-transform:uppercase}
+
+.masthead{position:sticky;top:0;z-index:50;background:rgba(245,247,250,.9);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border-bottom:1px solid var(--rule)}
+.masthead-inner{display:grid;grid-template-columns:1fr auto 1fr;align-items:center;padding:14px 0;gap:24px}
+.meta{font-family:var(--mono);font-size:11px;letter-spacing:.14em;color:var(--slate);text-transform:uppercase;text-align:center;white-space:nowrap;font-weight:500}
+.nav{display:flex;justify-content:flex-end;gap:26px;font-family:var(--mono);font-size:12px;letter-spacing:.12em;text-transform:uppercase;font-weight:500}
+.nav a{position:relative;padding:4px 0;color:var(--midnight)}
+.nav a::after{content:"";position:absolute;left:0;right:0;bottom:0;height:1px;background:var(--signal);transform:scaleX(0);transform-origin:left;transition:transform .35s cubic-bezier(.2,.7,.2,1)}
+.nav a:hover{color:var(--signal)}
+.nav a:hover::after{transform:scaleX(1)}
+.menu-btn{display:none;font-family:var(--mono);font-size:12px;letter-spacing:.12em;text-transform:uppercase;font-weight:500;color:var(--midnight)}
+
+.article-hero{padding:clamp(60px,10vw,120px) 0 clamp(40px,6vw,60px)}
+.article-hero .eyebrow{font-family:var(--mono);font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--slate);font-weight:500;display:inline-flex;align-items:center;gap:10px;margin-bottom:24px}
+.article-hero .eyebrow::before{content:"";width:22px;height:1px;background:currentColor;display:inline-block}
+.article-hero h1{font-size:clamp(32px,5vw,56px);line-height:1.08;letter-spacing:-.02em;max-width:22ch}
+.article-meta{display:flex;gap:24px;margin-top:24px;padding-top:24px;border-top:1px solid var(--rule);font-family:var(--mono);font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--slate);font-weight:500}
+
+.article-body{max-width:720px;padding-bottom:clamp(60px,8vw,120px)}
+.article-body h2{font-size:clamp(24px,3vw,34px);margin:clamp(40px,5vw,56px) 0 20px;letter-spacing:-.015em;line-height:1.1}
+.article-body h3{font-size:clamp(20px,2.5vw,26px);margin:clamp(32px,4vw,44px) 0 16px;letter-spacing:-.01em;line-height:1.15}
+.article-body p{font-size:clamp(16px,1.1vw,18px);line-height:1.7;margin-bottom:20px;color:var(--ink)}
+.article-body p b{font-weight:500;color:var(--midnight)}
+.article-body ul,.article-body ol{margin:0 0 24px 0;padding-left:24px}
+.article-body li{font-size:clamp(16px,1.1vw,18px);line-height:1.7;margin-bottom:10px;color:var(--ink)}
+.article-body blockquote{border-left:3px solid var(--signal);padding:16px 0 16px 24px;margin:32px 0;font-family:var(--serif);font-style:italic;font-size:clamp(18px,1.4vw,22px);line-height:1.5;color:var(--midnight)}
+
+.stat-callout{background:var(--midnight);color:var(--offwhite);padding:clamp(28px,3vw,44px);margin:clamp(32px,4vw,48px) 0;border-radius:2px;display:flex;flex-direction:column;gap:8px}
+.stat-callout .num{font-family:var(--serif);font-size:clamp(36px,5vw,64px);font-weight:400;color:var(--ice);letter-spacing:-.03em;line-height:1}
+.stat-callout .label{font-family:var(--mono);font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:rgba(245,247,250,.7);font-weight:500}
+.stat-callout .context{font-size:15px;color:rgba(245,247,250,.82);line-height:1.55;margin-top:8px}
+
+.timeline-item{padding:clamp(18px,2vw,26px);border:1px solid var(--rule);background:#fff;border-radius:2px;display:flex;flex-direction:column;gap:8px;margin-bottom:16px}
+.timeline-item .days{font-family:var(--mono);font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--copper);font-weight:500}
+.timeline-item h3{font-size:clamp(15px,1.2vw,17px);margin:0;line-height:1.35;color:var(--midnight)}
+.timeline-item p{font-size:13px;color:var(--slate);line-height:1.5;margin:0}
+
+.article-cta{background:var(--midnight);color:var(--offwhite);padding:clamp(40px,5vw,60px);margin:clamp(40px,5vw,56px) 0;border-radius:2px}
+.article-cta h3{color:var(--offwhite);font-size:clamp(24px,3vw,34px);margin-bottom:16px}
+.article-cta p{color:rgba(245,247,250,.82);margin-bottom:24px;font-size:15px;line-height:1.6}
+.article-cta .btn{display:inline-flex;align-items:center;gap:12px;font-family:var(--mono);font-size:12px;letter-spacing:.14em;text-transform:uppercase;font-weight:500;padding:16px 22px;border:1px solid var(--signal);background:var(--signal);color:#fff;border-radius:2px;transition:background .3s,border-color .3s;cursor:pointer}
+.article-cta .btn:hover{background:var(--ice);color:var(--midnight);border-color:var(--ice)}
+.article-cta .btn-ghost{background:transparent;border-color:rgba(181,212,244,.4);color:var(--ice);margin-top:12px}
+.article-cta .btn-ghost:hover{background:rgba(181,212,244,.1);border-color:var(--ice)}
+.article-cta .cta-btns{display:flex;gap:12px;flex-wrap:wrap}
+
+.footer{background:var(--offwhite);padding:clamp(50px,6vw,90px) 0 30px;border-top:1px solid var(--rule)}
+.footer-top{padding-bottom:40px;border-bottom:1px solid var(--rule);display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:clamp(24px,3vw,60px)}
+.footer-brand .tagline{font-family:var(--mono);font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--slate);font-weight:500;line-height:1.7}
+.footer h4{font-family:var(--serif);font-size:14px;letter-spacing:.04em;text-transform:uppercase;color:var(--slate);margin-bottom:16px;font-weight:400}
+.footer ul{list-style:none;display:flex;flex-direction:column;gap:10px}
+.footer a{transition:color .3s;color:var(--midnight)}
+.footer a:hover{color:var(--signal)}
+.footer-bottom{display:flex;justify-content:space-between;align-items:center;padding-top:24px;font-family:var(--mono);font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--slate);flex-wrap:wrap;gap:12px;font-weight:500}
+
+@media (max-width:820px){
+  .masthead-inner{grid-template-columns:1fr auto}
+  .meta{display:none}
+  .nav{display:none}
+  .nav.open{display:flex;flex-direction:column;position:fixed;inset:0;background:var(--offwhite);padding:100px 32px 32px;font-size:22px;gap:18px;z-index:40}
+  .nav.open a{font-family:var(--serif);letter-spacing:-.01em;text-transform:none;font-size:30px;color:var(--midnight)}
+  .menu-btn{display:inline-flex;z-index:60;position:relative}
+  .footer-top{grid-template-columns:1fr 1fr;gap:30px}
+  .article-cta .cta-btns{flex-direction:column}
+}
+@media (max-width:540px){
+  .footer-top{grid-template-columns:1fr}
+  .footer-bottom{flex-direction:column;align-items:flex-start}
+  .logo-procura{font-size:18px;letter-spacing:.1em}
+  .logo-west{font-size:11px;letter-spacing:.2em}
+  .article-meta{flex-direction:column;gap:8px}
+}
+</style>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "How to Manage Time and Materials Contracts in Alberta",
+  "description": "Practical guide to managing time and materials contracts in Alberta - rate schedule design, hours verification, not-to-exceed caps, approval workflows, and common cost leakage points.",
+  "author": {
+    "@type": "Person",
+    "name": "Amy-Marie Holland",
+    "jobTitle": "Founder",
+    "url": "https://procurawest.ca"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Procura West",
+    "logo": "https://procurawest.ca/assets/procura_west_logo.png"
+  },
+  "datePublished": "2026-11-19",
+  "dateModified": "2026-11-19",
+  "mainEntityOfPage": "https://procurawest.ca/blog/stop-losing-money-tm-contracts.html",
+  "keywords": ["time and materials contract tips", "T&M contract management Alberta", "services contract cost control", "rate schedule construction", "not-to-exceed cap"]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How do I control costs on a time and materials contract?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The most effective cost controls on a time and materials contract are a not-to-exceed cap, weekly hours verification with signed timesheets, and a clear rate schedule that covers every labour category. Without these three elements, costs tend to drift upward with no mechanism to catch overruns until the invoice arrives."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What should a rate schedule include in a T&M contract?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A proper rate schedule should list every labour classification with its hourly rate, define what is included in that rate (tools, PPE, supervision, travel), specify overtime and premium time multipliers, and state the markup on materials and equipment rentals. Ambiguity in the rate schedule is the most common source of invoice disputes on time and materials work."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is a not-to-exceed cap on a time and materials contract?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A not-to-exceed cap sets a maximum dollar amount the contractor can bill under the time and materials contract without additional written authorization. It does not change the billing method - the contractor still bills actual hours and materials - but it creates a ceiling that triggers a stop-work or re-authorization conversation before the budget is exceeded."
+      }
+    }
+  ]
+}
+</script>
+</head>
+<body>
+
+<!-- ============ MASTHEAD ============ -->
+<header class="masthead">
+  <div class="shell masthead-inner">
+    <a href="../index.html" class="logo" aria-label="Procura West - Home">
+      <svg class="logo-mark" width="46" height="36" viewBox="0 0 60 46" aria-hidden="true">
+        <polygon points="6,42 14,24 22,42" fill="#185FA5"/>
+        <polygon points="14,42 24,16 34,42" fill="#0C447C"/>
+        <polygon points="22,42 40,6 58,42" fill="#042C53"/>
+        <polygon points="37,10 40,6 43,10 42,12.5 38,12.5" fill="#B5D4F4"/>
+        <rect x="4" y="42" width="54" height="1" fill="#042C53"/>
+      </svg>
+      <span class="logo-divider" aria-hidden="true"></span>
+      <span class="logo-wordmark">
+        <span class="logo-procura">Procura</span>
+        <span class="logo-west-row">
+          <span class="logo-west">West</span>
+        </span>
+      </span>
+    </a>
+    <div class="meta" aria-hidden="true">Calgary &middot; Across Canada</div>
+    <nav class="nav" id="nav">
+      <a href="../services.html">Services</a>
+      <a href="../shop.html">Shop</a>
+      <a href="../index.html#results">Results</a>
+      <a href="../blog.html">Blog</a>
+      <a href="../index.html#about">About</a>
+      <a href="../index.html#contact">Contact</a>
+    </nav>
+    <button class="menu-btn" id="menuBtn" aria-label="Toggle menu" aria-expanded="false">Menu</button>
+  </div>
+</header>
+
+<main>
+
+<!-- ============ ARTICLE HERO ============ -->
+<section class="article-hero">
+  <div class="shell">
+    <span class="eyebrow">Blog &middot; Contract Management</span>
+    <h1>How to manage time and materials contracts <em>in Alberta.</em></h1>
+    <div class="article-meta">
+      <span>Amy-Marie Holland</span>
+      <span>November 19, 2026</span>
+      <span>7 min read</span>
+    </div>
+  </div>
+</section>
+
+<!-- ============ ARTICLE BODY ============ -->
+<article class="article-body">
+  <div class="shell">
+
+    <p>Time and materials contracts are one of the most common - and most mismanaged - contract types in Alberta's construction and industrial services sectors. The concept is simple: you pay for actual hours worked at agreed rates, plus the cost of materials used. But without proper controls, the final cost can blow past your budget with no warning and no recourse.</p>
+
+    <p>I've audited dozens of these contracts across Alberta, and the pattern is always the same. The rate schedule is vague. Hours verification is loose or nonexistent. There's no spending cap. And by the time someone notices the costs are out of control, the work is already done and the invoices are already in.</p>
+
+    <p>Here's how to set up and manage a time and materials contract properly.</p>
+
+    <h2>Start with the <em>rate schedule</em></h2>
+
+    <p>The rate schedule is the foundation of every time and materials contract. If it's unclear, everything downstream - invoicing, verification, disputes - gets harder. A proper rate schedule should include:</p>
+
+    <ul>
+      <li><b>Every labour classification</b> that will be used on the work - journeyman, apprentice, foreman, superintendent, project manager. Each one with a specific hourly rate.</li>
+      <li><b>What's included in the rate.</b> Does the hourly rate cover tools, PPE, supervision, small consumables? Or are those billed separately? If the contract is silent, expect to see them on every invoice.</li>
+      <li><b>Overtime and premium time multipliers.</b> Straight time, time-and-a-half, double time - and what triggers each. In Alberta construction, overtime rules vary by trade and by whether the project falls under the Employment Standards Code or a collective agreement.</li>
+      <li><b>Material and equipment markups.</b> If the contractor is supplying materials or renting equipment, what's the markup? Industry standard in Alberta ranges from 10% to 15% on materials and varies widely on equipment. If you don't specify it, the contractor will.</li>
+    </ul>
+
+    <div class="stat-callout">
+      <span class="num">15-25%</span>
+      <span class="label">Typical cost overrun on poorly managed T&M contracts</span>
+      <span class="context">Without a not-to-exceed cap and weekly hours verification, time and materials contracts routinely exceed their estimated budget by 15% to 25%. On a $500,000 engagement, that's $75,000 to $125,000 in unplanned spending.</span>
+    </div>
+
+    <h2>Set a <em>not-to-exceed</em> cap</h2>
+
+    <p>A not-to-exceed (NTE) cap is the single most important cost control on a time and materials contract. It sets a maximum dollar amount the contractor can bill without additional written authorization from you.</p>
+
+    <p>The NTE doesn't change the billing method. The contractor still bills actual hours and materials. But when the running total hits the cap, work stops until you either authorize additional funds or close out the scope. This prevents the situation I see constantly - where a contractor continues working beyond the original estimate and sends you an invoice for the full amount with no prior discussion.</p>
+
+    <p>When setting your NTE:</p>
+
+    <ul>
+      <li>Base it on a realistic estimate of hours and materials, not a lowball number that forces a change order on day two</li>
+      <li>Include a contingency of 10% to 15% above your base estimate</li>
+      <li>Define the notification threshold - typically at 75% and 90% of the cap - where the contractor must alert you in writing</li>
+      <li>Specify that work beyond the NTE without written authorization is at the contractor's risk and cost</li>
+    </ul>
+
+    <h2>Build an hours <em>verification process</em></h2>
+
+    <p>If you're not verifying hours weekly, you're writing blank cheques. I've seen invoices where the billed hours didn't match the sign-in sheets, where overtime was claimed on days the site was shut down, and where labour classifications were bumped up from apprentice to journeyman rates.</p>
+
+    <p>A solid hours verification process includes:</p>
+
+    <ol>
+      <li><b>Daily timesheets</b> signed by the contractor's supervisor and your site representative. Both signatures. Every day.</li>
+      <li><b>Weekly reconciliation</b> where the contractor submits a summary of hours by person, classification, and rate. You compare it to the signed dailies before the next week starts.</li>
+      <li><b>Monthly invoice review</b> where the invoice hours match the approved weekly summaries exactly. No surprises. No adjustments that weren't caught during the weekly check.</li>
+    </ol>
+
+    <p>This sounds like a lot of administration. It is. That's the trade-off with time and materials contracts. You're paying for actual effort, which means you need to verify actual effort. If you don't have the site presence or administrative capacity to do this, a lump sum or unit rate contract might be a better fit.</p>
+
+    <h2>Watch for common <em>leakage points</em></h2>
+
+    <p>Cost leakage on time and materials contracts tends to happen in predictable places. Here are the ones I see most often in Alberta:</p>
+
+    <ul>
+      <li><b>Unbilled travel and mobilization.</b> The rate schedule says the hourly rate covers travel to site. But the invoices include separate line items for travel time, mileage, or per diem. If the contract is ambiguous, the contractor has a reasonable argument for billing it.</li>
+      <li><b>Classification creep.</b> Work that should be performed by an apprentice at $65/hour gets done by a journeyman at $110/hour. Over a 12-week engagement, that difference adds up fast.</li>
+      <li><b>Material markups on rented equipment.</b> The contractor rents a piece of equipment for $500/day and bills you $650/day with a 30% markup. If the contract says 15% on materials but doesn't mention equipment, you're in a grey area.</li>
+      <li><b>Overtime authorization gaps.</b> Overtime gets worked without prior approval, then shows up on the invoice at 1.5x or 2x the rate. The work was necessary, so you feel obligated to pay, but the approval process was never followed.</li>
+      <li><b>Scope creep without change orders.</b> The contractor starts doing work outside the original scope - "while we're here" work - and bills it at time and materials rates. Without a formal change order, the costs just blend into the monthly invoice.</li>
+    </ul>
+
+    <p>For a deeper look at these patterns, see my guide on <a href="tm-contract-leakage.html" style="color:var(--signal)">time and materials contract leakage</a>.</p>
+
+    <h2>Build the right <em>approval workflow</em></h2>
+
+    <p>Every time and materials contract needs a clear approval chain. I recommend:</p>
+
+    <ul>
+      <li><b>Daily sign-off</b> by your site supervisor on timesheets and work completed</li>
+      <li><b>Weekly approval</b> by your project manager on hours summaries and running cost totals</li>
+      <li><b>Overtime pre-approval</b> in writing before any premium time is worked - email is fine, but it has to be before, not after</li>
+      <li><b>Change order approval</b> by your project manager or contract administrator for any scope additions</li>
+      <li><b>NTE threshold notifications</b> that go to both the project manager and the procurement or finance lead when spending hits 75% and 90% of the cap</li>
+    </ul>
+
+    <p>The goal is simple: no cost should appear on an invoice that someone on your side hasn't already seen and approved. If that's happening, your controls have a gap.</p>
+
+    <h2>When time and materials is the <em>right choice</em></h2>
+
+    <p>Despite the management overhead, there are situations where a time and materials contract is the right approach:</p>
+
+    <ul>
+      <li>The scope isn't defined well enough for a lump sum price</li>
+      <li>The work is exploratory - troubleshooting, diagnostics, emergency repairs</li>
+      <li>The duration is short and the total value is low enough that a full lump sum bid process would cost more than the work itself</li>
+      <li>You need the flexibility to adjust scope on the fly without formal change orders for every small adjustment</li>
+    </ul>
+
+    <p>The key is understanding the trade-off: time and materials contracts give you flexibility but shift cost risk to you. If you accept that risk, build the controls to manage it. If the scope is clear enough to price, consider a lump sum or unit rate contract instead.</p>
+
+    <blockquote>A time and materials contract isn't a blank cheque - unless you manage it like one.</blockquote>
+
+    <div class="article-cta">
+      <h3>Need help tightening your contract controls?</h3>
+      <p>I help Alberta companies set up rate schedules, approval workflows, and cost tracking systems for time and materials contracts. Take my free procurement assessment to find out where your gaps are, or reach out directly.</p>
+      <div class="cta-btns">
+        <a href="../index.html#contact" class="btn">Get in touch &rarr;</a>
+        <a href="../quiz.html" class="btn btn-ghost">Take the free assessment &rarr;</a>
+      </div>
+    </div>
+
+  </div>
+</article>
+
+</main>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="shell">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <div class="footer-logo">
+          <a href="../index.html" class="logo" style="align-items:flex-start">
+            <svg class="logo-mark" width="64" height="50" viewBox="0 0 60 46" aria-hidden="true">
+              <polygon points="6,42 14,24 22,42" fill="#185FA5"/>
+              <polygon points="14,42 24,16 34,42" fill="#0C447C"/>
+              <polygon points="22,42 40,6 58,42" fill="#042C53"/>
+              <polygon points="37,10 40,6 43,10 42,12.5 38,12.5" fill="#B5D4F4"/>
+              <rect x="4" y="42" width="54" height="1" fill="#042C53"/>
+            </svg>
+            <span class="logo-divider" aria-hidden="true"></span>
+            <span class="logo-wordmark">
+              <span class="logo-procura" style="font-size:28px">Procura</span>
+              <span class="logo-west-row">
+                <span class="logo-west" style="font-size:15px">West</span>
+              </span>
+            </span>
+          </a>
+        </div>
+        <p class="tagline">Built on Trust | Driven by Results</p>
+      </div>
+      <div>
+        <h4>Navigate</h4>
+        <ul>
+          <li><a href="../services.html">Services</a></li>
+          <li><a href="../shop.html">Shop</a></li>
+          <li><a href="../index.html#results">Results</a></li>
+          <li><a href="../blog.html">Blog</a></li>
+          <li><a href="../index.html#about">About</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Connect</h4>
+        <ul>
+          <li><a href="tel:+14035199044">403-519-9044</a></li>
+          <li><a href="mailto:info@procurawest.ca">info@procurawest.ca</a></li>
+          <li><a href="https://www.linkedin.com/company/procura-west" target="_blank" rel="noopener">LinkedIn</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Office</h4>
+        <ul>
+          <li>Calgary, Alberta</li>
+          <li>Across Canada</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; 2026 Procura West. All rights reserved.</span>
+      <a href="../privacy.html" style="color:var(--slate);transition:color .3s">Privacy Policy</a>
+      <span>YYC</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+  const nav = document.getElementById('nav');
+  const btn = document.getElementById('menuBtn');
+  btn.addEventListener('click',()=>{
+    const open = nav.classList.toggle('open');
+    btn.textContent = open ? 'Close' : 'Menu';
+    btn.setAttribute('aria-expanded', open);
+  });
+</script>
+
+<!-- Cloudflare Web Analytics --><script type='module' src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "abd07da1f1294a6baf354afcd847a0e2"}'></script><!-- End Cloudflare Web Analytics -->
+</body>
+</html>
