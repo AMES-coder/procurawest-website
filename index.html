@@ -656,15 +656,18 @@ h1 em,h2 em,h3 em{font-style:italic;font-weight:400;color:var(--signal)}
     "Vendor Evaluation and Onboarding",
     "RFQ-to-PO Process Management",
     "Spend Analysis",
-    "RFQ-to-PO Management",
     "Bid Evaluation and Comparison",
     "Compliance Tracking",
-    "Invoice Validation",
-    "Sub-Contractor Management",
+    "Invoice Validation and Audit",
+    "Contractor Management",
     "Expediting",
     "Contract Close-Out",
     "Payment Recovery",
-    "Procurement Gap Analysis"
+    "Procurement Gap Analysis",
+    "PPCLA Compliance and Payment Recovery",
+    "Contractor Prequalification",
+    "Rate Schedule Review",
+    "Change Order Administration"
   ],
   "industry": ["Oil and Gas", "Construction", "Mining and Metals", "Industrial"],
   "knowsAbout": [
@@ -690,13 +693,49 @@ h1 em,h2 em,h3 em{font-style:italic;font-weight:400;color:var(--signal)}
     "Construction Procurement",
     "AI Procurement Tools",
     "Incoterms",
-    "T&M Contract Review"
+    "T&M Contract Review",
+    "Prompt Payment and Construction Lien Act",
+    "PPCLA",
+    "Builders Lien Act Alberta",
+    "Contractor Invoice Audit",
+    "Payment Recovery for Contractors",
+    "Schedule of Rates Review"
   ],
   "slogan": "Built on Trust | Driven by Results",
   "priceRange": "Contract and project-based pricing",
   "sameAs": [
     "https://www.linkedin.com/company/procura-west"
-  ]
+  ],
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Procurement Templates and Tools",
+    "itemListElement": [
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Product",
+          "name": "AI Procurement Toolkit - Complete Bundle",
+          "description": "6 procurement templates plus 2 invoice templates for Alberta contractors. Includes Risk Classification Matrix, Vendor Assessment Rubric, Contract Clause Library, RFP Evaluation Criteria, Vendor Pre-Qualification Questionnaire, and Quick Start Guide.",
+          "url": "https://procurawest.ca/shop.html",
+          "offers": {"@type": "Offer", "price": "9.99", "priceCurrency": "CAD"}
+        }
+      }
+    ]
+  }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "Procura West",
+  "url": "https://procurawest.ca",
+  "description": "Contract procurement specialist for oil and gas and construction companies in Calgary and across Canada. Procurement gap analysis, contract management, payment recovery, PPCLA compliance, vendor evaluation, and AI-augmented procurement services.",
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": "https://procurawest.ca/blog.html?q={search_term_string}",
+    "query-input": "required name=search_term_string"
+  }
 }
 </script>
 <script type="application/ld+json">
@@ -734,6 +773,30 @@ h1 em,h2 em,h3 em{font-style:italic;font-weight:400;color:var(--signal)}
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "Oil & gas and construction companies across Canada that don't have a dedicated procurement team - or whose team needs backup. EPCM firms staffing up for projects, mid-size service companies during busy seasons, and any organization where the PM or ops manager is handling contracts, RFQs, and vendor qualification off the side of their desk."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is a proper invoice under the PPCLA in Alberta?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Under Alberta's Prompt Payment and Construction Lien Act (PPCLA), a proper invoice must identify the parties, the contract, the work performed, the amount owing, and the payment terms. Once an owner receives a proper invoice, they have 28 days to pay. If payment is late, interest accrues at the Bank of Canada rate plus 2%. Contractors can file for adjudication if payment is not made within the required timeline."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I audit contractor invoices in Alberta?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Start by comparing each invoice line item against the contract rate schedule and scope of work. Check quantities billed against field-verified work, verify unit rates match the agreement, confirm GST registration is valid, and flag any charges not covered by the contract or approved change orders. Common issues include rate discrepancies, overbilled quantities, duplicate charges, and unapproved extras."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How much does a procurement consultant cost in Calgary?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Procurement consultants in Calgary typically charge between $90 and $150 per hour depending on specialization, or offer contract and project-based pricing. For companies without a full-time procurement team, outsourcing to a specialist is often 30-50% less than hiring internally when you factor in salary, benefits, and training."
       }
     }
   ]
